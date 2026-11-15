@@ -5,7 +5,7 @@ authors:
     orcid: 0009-0003-4937-5858
     affiliation: 1
 affiliations:
-  - name: Massachusetts Institute of Technology
+  - name: University of California, Berkeley
     index: 1
 date: 15 November 2026
 journal: Journal of Legal Engineering & Technology
