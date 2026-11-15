@@ -1,0 +1,29 @@
+{
+  "title": "OpenLex: Open-Source Jurisdiction Mapping Engine for U.S. Law",
+  "description": "OpenLex is an open-source jurisdiction mapping engine that resolves legal topics to applicable statutes, regulations, and governing bodies across all 50 U.S. states. Given a topic and location, it returns structured legal authority data — enabling any legal technology application to answer \"what law applies here?\" without building jurisdiction logic from scratch.",
+  "creators": [
+    {
+      "name": "Allem, Ahmed",
+      "orcid": "0009-0003-4937-5858",
+      "affiliation": "Massachusetts Institute of Technology"
+    }
+  ],
+  "upload_type": "software",
+  "license": "MIT",
+  "keywords": [
+    "legal technology",
+    "jurisdiction mapping",
+    "statutes",
+    "regulations",
+    "open source",
+    "TypeScript"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/kingofmit/openlex",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ]
+}
