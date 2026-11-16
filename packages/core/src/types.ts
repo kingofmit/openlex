@@ -117,6 +117,19 @@ export interface PreemptionDomain {
   rules: PreemptionRule[];
 }
 
+/** Complete court system for a state */
+export interface StateCourtSystem {
+  stateId: string;
+  stateName: string;
+  supremeCourt: Court;
+  appellateCourts: Court[];
+  trialCourts: Court[];
+  specializedCourts: Court[];
+  hasIntermediateAppellate: boolean;
+  judicialDistricts: number | null;
+  notes: string[];
+}
+
 /** A query to the jurisdiction engine */
 export interface JurisdictionQuery {
   topic: string;
