@@ -4,3 +4,13 @@ dist
 *.tsbuildinfo
 .DS_Store
 coverage
+.env
+.env.*
+*.log
+pnpm-debug.log*
+.vscode/
+.idea/
+tmp/
+.cache/
+*.tgz
+.codeagento
