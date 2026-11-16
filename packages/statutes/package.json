@@ -1,6 +1,6 @@
 {
   "name": "@openlex/statutes",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "U.S. Code and state statute database, citation parsing, and statute resolution.",
   "author": "Ahmed Allem",
   "license": "MIT",

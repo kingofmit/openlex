@@ -1,6 +1,6 @@
 {
   "name": "@openlex/api",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "REST API server for OpenLex jurisdiction mapping engine.",
   "author": "Ahmed Allem",
   "license": "MIT",
