@@ -51,15 +51,17 @@ export default function StatutesClient({ topicsJson, statesJson }: Props) {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       {/* Selectors */}
       <div className="flex flex-col sm:flex-row gap-4">
         <div className="flex-1">
-          <label className="block text-sm font-medium text-gray-400 mb-1">State</label>
+          <label className="block text-xs font-semibold uppercase tracking-widest text-[#00e5cc] mb-2">
+            State
+          </label>
           <select
             value={selectedState}
             onChange={(e) => setSelectedState(e.target.value)}
-            className="w-full bg-gray-900 border border-gray-800 rounded-lg px-3 py-2 text-gray-100 focus:outline-none focus:border-teal-500"
+            className="w-full"
           >
             <option value="">Select a state...</option>
             {states.map(([id, name]) => (
@@ -70,11 +72,13 @@ export default function StatutesClient({ topicsJson, statesJson }: Props) {
           </select>
         </div>
         <div className="flex-1">
-          <label className="block text-sm font-medium text-gray-400 mb-1">Topic (optional)</label>
+          <label className="block text-xs font-semibold uppercase tracking-widest text-[#00e5cc] mb-2">
+            Topic (optional)
+          </label>
           <select
             value={selectedTopic}
             onChange={(e) => setSelectedTopic(e.target.value)}
-            className="w-full bg-gray-900 border border-gray-800 rounded-lg px-3 py-2 text-gray-100 focus:outline-none focus:border-teal-500"
+            className="w-full"
           >
             <option value="">All topics</option>
             {topics.map((t) => (
@@ -88,17 +92,30 @@ export default function StatutesClient({ topicsJson, statesJson }: Props) {
 
       {/* Results */}
       {!selectedState ? (
-        <div className="bg-gray-900 border border-gray-800 rounded-xl p-12 text-center">
-          <div className="text-4xl mb-3 text-gray-700">&#167;</div>
-          <p className="text-gray-400">Select a state to view its statutes.</p>
+        <div className="glass glow-border rounded-xl p-16 text-center">
+          <svg
+            className="mx-auto mb-4 opacity-30"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#00e5cc"
+            strokeWidth="1.5"
+          >
+            <path d="M12 3c-1.5 0-3 .5-3 2v2H5c-1 0-2 .5-2 1.5S4 10 5 10h1v8c0 1 1 3 6 3s6-2 6-3v-8h1c1 0 2-.5 2-1.5S20 7 19 7h-4V5c0-1.5-1.5-2-3-2z" />
+            <line x1="12" y1="3" x2="12" y2="8" />
+            <line x1="8" y1="13" x2="8" y2="17" />
+            <line x1="16" y1="13" x2="16" y2="17" />
+          </svg>
+          <p className="text-[#5a8a8a] text-lg">Select a state to view its statutes.</p>
         </div>
       ) : matchingEntries.length === 0 ? (
-        <div className="bg-gray-900 border border-gray-800 rounded-xl p-12 text-center">
-          <p className="text-gray-400">No statutes found for this selection.</p>
+        <div className="glass glow-border rounded-xl p-12 text-center">
+          <p className="text-[#5a8a8a]">No statutes found for this selection.</p>
         </div>
       ) : (
-        <div className="space-y-4">
-          <p className="text-sm text-gray-500">
+        <div className="space-y-6">
+          <p className="text-sm text-[#5a8a8a]">
             {matchingEntries.length} statute{matchingEntries.length !== 1 ? "s" : ""} found
           </p>
           {matchingEntries.map((entry, i) => (
@@ -118,24 +135,26 @@ function StatuteCard({
   formatUnit: (unit: string) => string;
 }) {
   return (
-    <div className="bg-gray-900 border border-gray-800 rounded-xl p-6 space-y-4">
+    <div className="glass glass-hover glow-border glow-border-hover rounded-xl p-6 space-y-5 transition-all">
       {/* Header */}
       <div>
-        <div className="text-xs text-teal-400 font-medium uppercase tracking-wide mb-1">
+        <div className="text-xs text-[#5a8a8a] font-medium uppercase tracking-wide mb-1">
           {entry.topicName.split(",")[0].split(" — ")[0]}
         </div>
-        <h3 className="text-lg font-bold text-gray-100">{entry.fullCitation}</h3>
-        <p className="text-sm text-gray-400 mt-0.5">{entry.title}</p>
+        <h3 className="text-lg font-bold font-mono text-[#00e5cc]">{entry.fullCitation}</h3>
+        <p className="text-sm text-[#b0d4d4] mt-1">{entry.title}</p>
       </div>
 
       {/* Key Provisions */}
       {entry.keyProvisions.length > 0 && (
         <div>
-          <h4 className="text-sm font-semibold text-gray-300 mb-1.5">Key Provisions</h4>
-          <ul className="space-y-1">
+          <h4 className="text-xs font-semibold uppercase tracking-widest text-[#e0f2f1] mb-2">
+            Key Provisions
+          </h4>
+          <ul className="space-y-1.5">
             {entry.keyProvisions.map((p, i) => (
-              <li key={i} className="flex items-start gap-2 text-sm text-gray-400">
-                <span className="text-teal-400 mt-0.5 shrink-0">&bull;</span>
+              <li key={i} className="flex items-start gap-2.5 text-sm text-[#b0d4d4]">
+                <span className="text-[#00e5cc] mt-0.5 shrink-0 text-xs">&#x25CF;</span>
                 <span>{p}</span>
               </li>
             ))}
@@ -146,49 +165,55 @@ function StatuteCard({
       {/* Penalties */}
       {entry.penalties && (
         <div>
-          <h4 className="text-sm font-semibold text-gray-300 mb-1">Penalties</h4>
-          <p className="text-sm text-red-400/80 bg-red-500/5 border border-red-500/10 rounded-lg px-3 py-2">
+          <h4 className="text-xs font-semibold uppercase tracking-widest text-[#e0f2f1] mb-2">
+            Penalties
+          </h4>
+          <div className="rounded-lg px-4 py-3 text-sm text-[#ef4444] bg-[rgba(239,68,68,0.06)] border border-[rgba(239,68,68,0.15)]">
             {entry.penalties}
-          </p>
+          </div>
         </div>
       )}
 
       {/* Exceptions */}
       {entry.exceptions && (
         <div>
-          <h4 className="text-sm font-semibold text-gray-300 mb-1">Exceptions</h4>
-          <p className="text-sm text-amber-400/80 bg-amber-500/5 border border-amber-500/10 rounded-lg px-3 py-2">
+          <h4 className="text-xs font-semibold uppercase tracking-widest text-[#e0f2f1] mb-2">
+            Exceptions
+          </h4>
+          <div className="rounded-lg px-4 py-3 text-sm text-[#f59e0b] bg-[rgba(245,158,11,0.06)] border border-[rgba(245,158,11,0.15)]">
             {entry.exceptions}
-          </p>
+          </div>
         </div>
       )}
 
       {/* Monetary Values */}
       {entry.monetaryValues.length > 0 && (
         <div>
-          <h4 className="text-sm font-semibold text-gray-300 mb-1.5">Monetary Values</h4>
-          <div className="overflow-x-auto rounded-lg border border-gray-800">
-            <table className="w-full text-sm">
+          <h4 className="text-xs font-semibold uppercase tracking-widest text-[#e0f2f1] mb-2">
+            Monetary Values
+          </h4>
+          <div className="rounded-lg overflow-hidden border border-[rgba(0,229,204,0.12)]">
+            <table className="lex-table">
               <thead>
-                <tr className="bg-gray-800/50">
-                  <th className="px-3 py-1.5 text-left text-gray-500 text-xs font-medium">Type</th>
-                  <th className="px-3 py-1.5 text-right text-gray-500 text-xs font-medium">Amount</th>
-                  <th className="px-3 py-1.5 text-left text-gray-500 text-xs font-medium">Description</th>
+                <tr>
+                  <th>Type</th>
+                  <th className="text-right">Amount</th>
+                  <th>Description</th>
                 </tr>
               </thead>
               <tbody>
                 {entry.monetaryValues.map((mv: MonetaryValue, j: number) => (
-                  <tr key={j} className="border-t border-gray-800/50">
-                    <td className="px-3 py-1.5 text-gray-400 capitalize">{mv.type}</td>
-                    <td className="px-3 py-1.5 text-right text-teal-400 font-mono">
+                  <tr key={j}>
+                    <td className="capitalize">{mv.type}</td>
+                    <td className="text-right text-[#00e5cc] font-mono">
                       {mv.unit.startsWith("usd")
                         ? `$${mv.amount.toLocaleString()}`
                         : mv.unit === "percent"
                           ? `${mv.amount}%`
                           : mv.amount.toLocaleString()}
-                      <span className="text-gray-500 ml-1 text-xs">{formatUnit(mv.unit)}</span>
+                      <span className="text-[#5a8a8a] ml-1 text-xs">{formatUnit(mv.unit)}</span>
                     </td>
-                    <td className="px-3 py-1.5 text-gray-400">{mv.description}</td>
+                    <td>{mv.description}</td>
                   </tr>
                 ))}
               </tbody>
@@ -198,15 +223,16 @@ function StatuteCard({
       )}
 
       {/* Footer */}
-      <div className="flex flex-wrap items-center gap-4 pt-2 border-t border-gray-800 text-xs text-gray-500">
+      <div className="gradient-line" />
+      <div className="flex flex-wrap items-center gap-4 text-xs text-[#5a8a8a]">
         {entry.sourceUrl && (
           <a
             href={entry.sourceUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400/70 hover:text-teal-400 underline"
+            className="source-link flex items-center gap-1"
           >
-            Official Source
+            Official Source <span>&rarr;</span>
           </a>
         )}
         {entry.effectiveDate && <span>Effective: {entry.effectiveDate}</span>}

@@ -7,12 +7,12 @@ interface Props {
   domainsJson: string;
 }
 
-const TYPE_COLORS: Record<PreemptionType, { bg: string; text: string; border: string }> = {
-  floor: { bg: "bg-green-500/10", text: "text-green-400", border: "border-green-500/20" },
-  ceiling: { bg: "bg-red-500/10", text: "text-red-400", border: "border-red-500/20" },
-  field: { bg: "bg-yellow-500/10", text: "text-yellow-400", border: "border-yellow-500/20" },
-  express: { bg: "bg-orange-500/10", text: "text-orange-400", border: "border-orange-500/20" },
-  conflict: { bg: "bg-red-500/10", text: "text-red-400", border: "border-red-500/20" },
+const TYPE_BADGE: Record<PreemptionType, string> = {
+  floor: "badge-green",
+  ceiling: "badge-red",
+  field: "badge-amber",
+  express: "badge-purple",
+  conflict: "badge-red",
 };
 
 export default function PreemptionClient({ domainsJson }: Props) {
@@ -22,37 +22,44 @@ export default function PreemptionClient({ domainsJson }: Props) {
   const domain = domains.find((d) => d.domain === selectedDomain);
 
   return (
-    <div className="space-y-6">
-      {/* Domain Selector */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+    <div className="space-y-8">
+      {/* Domain Selector — Grid of Glass Cards */}
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         {domains.map((d) => (
           <button
             key={d.domain}
             onClick={() => setSelectedDomain(d.domain)}
-            className={`rounded-xl p-3 text-left transition-colors border ${
+            className={`glass glass-hover glow-border-hover rounded-xl p-4 text-left transition-all ${
               selectedDomain === d.domain
-                ? "bg-red-500/10 border-red-500/30 text-red-400"
-                : "bg-gray-900 border-gray-800 text-gray-400 hover:text-white hover:border-gray-600"
+                ? "!border-[#00e5cc] glow-border"
+                : ""
             }`}
           >
-            <div className="text-sm font-medium capitalize">{d.domain.replace(/-/g, " ")}</div>
-            <div className="text-xs text-gray-500 mt-0.5">{d.rules.length} rules</div>
+            <div className={`text-sm font-medium capitalize ${
+              selectedDomain === d.domain ? "text-[#00e5cc]" : "text-[#b0d4d4]"
+            }`}>
+              {d.domain.replace(/-/g, " ")}
+            </div>
+            <div className="text-xs text-[#5a8a8a] mt-1">
+              {d.rules.length} rule{d.rules.length !== 1 ? "s" : ""}
+            </div>
           </button>
         ))}
       </div>
 
       {/* Domain Content */}
       {domain && (
-        <div className="space-y-4">
-          <div className="bg-gray-900 border border-gray-800 rounded-xl p-4">
-            <h2 className="text-lg font-bold text-gray-100 capitalize">
+        <div className="space-y-6">
+          {/* Domain Description */}
+          <div className="glass glow-border rounded-xl p-5">
+            <h2 className="text-lg font-bold text-[#e0f2f1] capitalize">
               {domain.domain.replace(/-/g, " ")}
             </h2>
-            <p className="text-sm text-gray-400 mt-1">{domain.description}</p>
+            <p className="text-sm text-[#b0d4d4] mt-2 leading-relaxed">{domain.description}</p>
           </div>
 
           {/* Rules */}
-          <div className="space-y-3">
+          <div className="space-y-4">
             {domain.rules.map((rule) => (
               <RuleCard key={rule.id} rule={rule} />
             ))}
@@ -64,60 +71,58 @@ export default function PreemptionClient({ domainsJson }: Props) {
 }
 
 function RuleCard({ rule }: { rule: PreemptionRule }) {
-  const colors = TYPE_COLORS[rule.type];
+  const badgeClass = TYPE_BADGE[rule.type];
 
   return (
-    <div className="bg-gray-900 border border-gray-800 rounded-xl p-5 space-y-3">
+    <div className="glass glass-hover glow-border glow-border-hover rounded-xl p-6 space-y-4 transition-all">
       {/* Header */}
-      <div className="flex flex-wrap items-start gap-2">
+      <div className="flex flex-wrap items-start gap-3">
         <div className="flex-1 min-w-0">
-          <h3 className="font-semibold text-gray-100">{rule.federalStatute}</h3>
-          <p className="text-xs text-gray-500 font-mono mt-0.5">{rule.federalCitation}</p>
+          <h3 className="font-semibold text-[#e0f2f1] text-base">{rule.federalStatute}</h3>
+          <p className="text-xs text-[#5a8a8a] font-mono mt-1">{rule.federalCitation}</p>
         </div>
         <div className="flex gap-2 shrink-0">
-          <span
-            className={`text-xs px-2 py-0.5 rounded-full border font-medium capitalize ${colors.bg} ${colors.text} ${colors.border}`}
-          >
-            {rule.type}
-          </span>
-          <span
-            className={`text-xs px-2 py-0.5 rounded-full border font-medium ${
-              rule.stateCanExceed
-                ? "bg-green-500/10 text-green-400 border-green-500/20"
-                : "bg-red-500/10 text-red-400 border-red-500/20"
-            }`}
-          >
+          <span className={`badge ${badgeClass} capitalize`}>{rule.type}</span>
+          <span className={`badge ${rule.stateCanExceed ? "badge-green" : "badge-red"}`}>
             {rule.stateCanExceed ? "States Can Exceed" : "States Cannot Exceed"}
           </span>
         </div>
       </div>
 
       {/* Description */}
-      <p className="text-sm text-gray-400">{rule.description}</p>
+      <p className="text-sm text-[#b0d4d4] leading-relaxed">{rule.description}</p>
 
       {/* Scope */}
       <div>
-        <span className="text-xs text-gray-500">Scope: </span>
-        <span className="text-xs text-gray-300">{rule.scope}</span>
+        <span className="text-xs text-[#5a8a8a]">Scope: </span>
+        <span className="text-xs text-[#b0d4d4]">{rule.scope}</span>
       </div>
 
       {/* Key Case */}
       {rule.keyCase && (
-        <div className="bg-gray-800/50 rounded-lg px-3 py-2">
-          <span className="text-xs text-gray-500">Key Case: </span>
-          <span className="text-xs text-gray-300 italic">{rule.keyCase}</span>
+        <div className="glass rounded-lg px-4 py-3 flex items-start gap-2.5">
+          <svg
+            className="shrink-0 mt-0.5"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#00e5cc"
+            strokeWidth="2"
+          >
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+          </svg>
+          <span className="text-xs text-[#b0d4d4] italic leading-relaxed">{rule.keyCase}</span>
         </div>
       )}
 
       {/* Affected Topics */}
       {rule.affectedTopics.length > 0 && (
-        <div className="flex flex-wrap gap-1.5">
-          <span className="text-xs text-gray-500 self-center">Topics:</span>
+        <div className="flex flex-wrap gap-2 items-center">
+          <span className="text-xs text-[#5a8a8a]">Topics:</span>
           {rule.affectedTopics.map((t) => (
-            <span
-              key={t}
-              className="text-xs px-2 py-0.5 rounded-full bg-gray-800 text-gray-400 border border-gray-700"
-            >
+            <span key={t} className="badge badge-cyan">
               {t.replace(/-/g, " ")}
             </span>
           ))}
@@ -127,11 +132,13 @@ function RuleCard({ rule }: { rule: PreemptionRule }) {
       {/* Exceptions */}
       {rule.exceptions.length > 0 && (
         <div>
-          <h4 className="text-xs font-semibold text-gray-500 mb-1">Exceptions</h4>
-          <ul className="space-y-0.5">
+          <h4 className="text-xs font-semibold text-[#5a8a8a] uppercase tracking-widest mb-2">
+            Exceptions
+          </h4>
+          <ul className="space-y-1">
             {rule.exceptions.map((ex, i) => (
-              <li key={i} className="text-xs text-amber-400/70 flex items-start gap-1.5">
-                <span className="text-amber-400 mt-0.5 shrink-0">&bull;</span>
+              <li key={i} className="text-xs text-[#f59e0b] flex items-start gap-2">
+                <span className="shrink-0 mt-0.5">&#x2022;</span>
                 <span>{ex}</span>
               </li>
             ))}
@@ -146,9 +153,9 @@ function RuleCard({ rule }: { rule: PreemptionRule }) {
             href={rule.sourceUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs text-red-400/70 hover:text-red-400 underline"
+            className="source-link flex items-center gap-1"
           >
-            View Source &rarr;
+            View Source <span>&rarr;</span>
           </a>
         </div>
       )}

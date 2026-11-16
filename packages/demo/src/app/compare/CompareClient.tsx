@@ -63,18 +63,22 @@ export default function CompareClient({ matricesJson }: Props) {
   }, [matrix, sortKey, sortAsc]);
 
   if (!matrix) {
-    return <p className="text-gray-400">No data available.</p>;
+    return (
+      <div className="glass glow-border rounded-xl p-12 text-center text-[#5a8a8a]">
+        No data available.
+      </div>
+    );
   }
 
   const { summary } = matrix;
 
   const formatValue = (val: string | number | boolean | null, col: ComparisonColumn) => {
-    if (val == null) return <span className="text-gray-600">N/A</span>;
+    if (val == null) return <span className="text-[#5a8a8a]/50">N/A</span>;
     if (col.type === "boolean") {
       return val ? (
-        <span className="text-green-400 font-medium">Yes</span>
+        <span className="badge badge-green">Yes</span>
       ) : (
-        <span className="text-red-400 font-medium">No</span>
+        <span className="badge badge-red">No</span>
       );
     }
     if (col.type === "currency" && typeof val === "number") {
@@ -87,13 +91,16 @@ export default function CompareClient({ matricesJson }: Props) {
   };
 
   const SortArrow = ({ colKey }: { colKey: string }) => {
-    if (sortKey !== colKey) return <span className="text-gray-700 ml-1">&#x25B4;&#x25BE;</span>;
-    return <span className="text-teal-400 ml-1">{sortAsc ? "\u25B4" : "\u25BE"}</span>;
+    if (sortKey !== colKey)
+      return <span className="text-[#5a8a8a]/30 ml-1">{"\u25B4\u25BE"}</span>;
+    return (
+      <span className="text-[#00e5cc] ml-1">{sortAsc ? "\u25B4" : "\u25BE"}</span>
+    );
   };
 
   return (
-    <div className="space-y-6">
-      {/* Topic Selector */}
+    <div className="space-y-8">
+      {/* Topic Selector — Horizontal Pill Tabs */}
       <div className="flex flex-wrap gap-2">
         {topicIds.map((id) => (
           <button
@@ -102,10 +109,10 @@ export default function CompareClient({ matricesJson }: Props) {
               setSelectedTopic(id);
               setSortKey(null);
             }}
-            className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+            className={`glass px-4 py-2 rounded-full text-sm font-medium transition-all ${
               selectedTopic === id
-                ? "bg-teal-500/20 text-teal-400 border border-teal-500/40"
-                : "bg-gray-900 border border-gray-800 text-gray-400 hover:text-white hover:border-gray-600"
+                ? "!border-[#00e5cc] glow-border text-[#00e5cc]"
+                : "text-[#5a8a8a] glass-hover glow-border-hover"
             }`}
           >
             {matrices[id].topicName}
@@ -114,99 +121,103 @@ export default function CompareClient({ matricesJson }: Props) {
       </div>
 
       {/* Summary Stats */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-        <div className="bg-gray-900 border border-gray-800 rounded-lg p-4 text-center">
-          <div className="text-2xl font-bold text-teal-400">{summary.totalStates}</div>
-          <div className="text-xs text-gray-400 mt-1">States Covered</div>
-        </div>
-        {Object.entries(summary.ranges).slice(0, 3).map(([key, range]) => {
-          const col = matrix.columns.find((c) => c.key === key);
-          const isCurrency = col?.type === "currency";
-          const fmt = (n: number) => isCurrency ? `$${n.toLocaleString()}` : n.toLocaleString();
-          return (
-            <div key={key} className="bg-gray-900 border border-gray-800 rounded-lg p-4 text-center">
-              <div className="text-xs text-gray-500 mb-1">{col?.label ?? key}</div>
-              <div className="text-sm">
-                <span className="text-blue-400">{fmt(range.min)}</span>
-                <span className="text-gray-600 mx-1">/</span>
-                <span className="text-teal-400 font-bold">{fmt(range.median)}</span>
-                <span className="text-gray-600 mx-1">/</span>
-                <span className="text-amber-400">{fmt(range.max)}</span>
+      <div className="glass glow-border rounded-xl p-6">
+        <h3 className="text-xs font-semibold uppercase tracking-widest text-[#00e5cc] mb-4">
+          Summary Statistics
+        </h3>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div className="text-center">
+            <div className="text-3xl font-bold stat-glow">{summary.totalStates}</div>
+            <div className="text-xs text-[#5a8a8a] mt-1">States Covered</div>
+          </div>
+          {Object.entries(summary.ranges).slice(0, 3).map(([key, range]) => {
+            const col = matrix.columns.find((c) => c.key === key);
+            const isCurrency = col?.type === "currency";
+            const fmt = (n: number) =>
+              isCurrency ? `$${n.toLocaleString()}` : n.toLocaleString();
+            return (
+              <div key={key} className="text-center">
+                <div className="text-xs text-[#5a8a8a] mb-2">{col?.label ?? key}</div>
+                <div className="text-sm space-x-1">
+                  <span className="text-[#3b82f6]">{fmt(range.min)}</span>
+                  <span className="text-[#5a8a8a]/40">/</span>
+                  <span className="stat-glow font-bold">{fmt(range.median)}</span>
+                  <span className="text-[#5a8a8a]/40">/</span>
+                  <span className="text-[#f59e0b]">{fmt(range.max)}</span>
+                </div>
+                <div className="text-xs text-[#5a8a8a]/60 mt-1">Min / Median / Max</div>
               </div>
-              <div className="text-xs text-gray-500 mt-1">Min / Median / Max</div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
 
       {/* Table */}
-      <div className="overflow-x-auto rounded-xl border border-gray-800">
-        <table className="w-full text-sm">
-          <thead>
-            <tr className="bg-gray-900 border-b border-gray-800">
-              <th
-                className="px-3 py-2 text-left text-gray-400 font-medium cursor-pointer hover:text-white select-none"
-                onClick={() => handleSort("state")}
-              >
-                State <SortArrow colKey="state" />
-              </th>
-              {matrix.columns.map((col) => (
-                <th
-                  key={col.key}
-                  className="px-3 py-2 text-left text-gray-400 font-medium cursor-pointer hover:text-white select-none"
-                  onClick={() => handleSort(col.key)}
-                  title={col.description}
-                >
-                  {col.label} <SortArrow colKey={col.key} />
+      <div className="glass glow-border rounded-xl overflow-hidden">
+        <div className="overflow-x-auto">
+          <table className="lex-table">
+            <thead>
+              <tr>
+                <th onClick={() => handleSort("state")}>
+                  State <SortArrow colKey="state" />
                 </th>
-              ))}
-              <th className="px-3 py-2 text-left text-gray-400 font-medium">Citation</th>
-            </tr>
-          </thead>
-          <tbody>
-            {sortedRows.map((row, i) => (
-              <tr
-                key={row.jurisdictionId}
-                className={`border-b border-gray-800/50 ${
-                  i % 2 === 0 ? "bg-gray-950" : "bg-gray-900/30"
-                } hover:bg-gray-800/40 transition-colors`}
-              >
-                <td className="px-3 py-2 font-medium text-gray-100 whitespace-nowrap">
-                  {row.jurisdictionName}
-                </td>
                 {matrix.columns.map((col) => (
-                  <td key={col.key} className="px-3 py-2 text-gray-300 whitespace-nowrap">
-                    {formatValue(row.values[col.key], col)}
-                  </td>
+                  <th
+                    key={col.key}
+                    onClick={() => handleSort(col.key)}
+                    title={col.description}
+                  >
+                    {col.label} <SortArrow colKey={col.key} />
+                  </th>
                 ))}
-                <td className="px-3 py-2 text-gray-400 text-xs max-w-xs">
-                  {row.sourceUrls[0] ? (
-                    <a
-                      href={row.sourceUrls[0]}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-teal-400/70 hover:text-teal-400 underline"
-                      title={row.statutes[0]}
-                    >
-                      {row.statutes[0]}
-                    </a>
-                  ) : (
-                    <span>{row.statutes[0]}</span>
-                  )}
-                </td>
+                <th>Citation</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {sortedRows.map((row) => (
+                <tr key={row.jurisdictionId}>
+                  <td className="font-medium text-[#e0f2f1] whitespace-nowrap">
+                    {row.jurisdictionName}
+                  </td>
+                  {matrix.columns.map((col) => (
+                    <td key={col.key} className="whitespace-nowrap">
+                      {formatValue(row.values[col.key], col)}
+                    </td>
+                  ))}
+                  <td className="max-w-xs">
+                    {row.sourceUrls[0] ? (
+                      <a
+                        href={row.sourceUrls[0]}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="source-link font-mono text-xs"
+                        title={row.statutes[0]}
+                      >
+                        {row.statutes[0]}
+                      </a>
+                    ) : (
+                      <span className="text-xs font-mono text-[#5a8a8a]">
+                        {row.statutes[0]}
+                      </span>
+                    )}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
 
       {/* Outliers */}
       {summary.outliers.length > 0 && (
-        <div className="bg-gray-900 border border-amber-500/30 rounded-xl p-4">
-          <h3 className="text-sm font-semibold text-amber-400 mb-2">Notable Outliers</h3>
-          <ul className="text-xs text-gray-400 space-y-1">
+        <div className="glass rounded-xl p-5 border-l-2 !border-l-[#f59e0b]">
+          <h3 className="text-sm font-semibold text-[#f59e0b] mb-3">Notable Outliers</h3>
+          <ul className="text-sm text-[#b0d4d4] space-y-1.5">
             {summary.outliers.map((o, i) => (
-              <li key={i}>{o}</li>
+              <li key={i} className="flex items-start gap-2">
+                <span className="text-[#f59e0b] shrink-0">&#x2022;</span>
+                <span>{o}</span>
+              </li>
             ))}
           </ul>
         </div>

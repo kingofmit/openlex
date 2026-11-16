@@ -8,13 +8,14 @@ export const metadata = {
 
 export default function CourtsPage() {
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       <div>
-        <h1 className="text-3xl font-bold">Court System Explorer</h1>
-        <p className="text-gray-400 mt-1">
+        <h1 className="text-3xl font-bold text-[#e0f2f1] glow-text">Court System Explorer</h1>
+        <p className="text-[#5a8a8a] mt-2">
           Explore state court hierarchies — from trial courts to supreme courts, including all the quirks.
         </p>
       </div>
+      <div className="gradient-line" />
       <CourtsClient courtSystemsJson={JSON.stringify(STATE_COURT_SYSTEMS)} />
     </div>
   );

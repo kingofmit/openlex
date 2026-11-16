@@ -18,14 +18,21 @@ export default function ComparePage() {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       <div>
-        <h1 className="text-3xl font-bold">50-State Comparison</h1>
-        <p className="text-gray-400 mt-1">
+        <h1 className="text-3xl font-bold text-[#e0f2f1] glow-text">50-State Comparison</h1>
+        <p className="text-[#5a8a8a] mt-2">
           Compare how all 50 states handle any legal topic. Click column headers to sort.
         </p>
       </div>
-      <Suspense fallback={<div className="text-gray-400">Loading...</div>}>
+      <div className="gradient-line" />
+      <Suspense
+        fallback={
+          <div className="glass glow-border rounded-xl p-12 text-center text-[#5a8a8a]">
+            Loading comparison data...
+          </div>
+        }
+      >
         <CompareClient matricesJson={JSON.stringify(matrices)} />
       </Suspense>
     </div>

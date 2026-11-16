@@ -26,13 +26,14 @@ export default function StatutesPage() {
     .sort(([, a], [, b]) => a.localeCompare(b));
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       <div>
-        <h1 className="text-3xl font-bold">Statute Lookup</h1>
-        <p className="text-gray-400 mt-1">
+        <h1 className="text-3xl font-bold text-[#e0f2f1] glow-text">Statute Lookup</h1>
+        <p className="text-[#5a8a8a] mt-2">
           Browse statutes by state and topic. See citations, key provisions, penalties, and official source links.
         </p>
       </div>
+      <div className="gradient-line" />
       <StatutesClient
         topicsJson={JSON.stringify(allData)}
         statesJson={JSON.stringify(states)}
