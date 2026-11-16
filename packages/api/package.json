@@ -1,0 +1,32 @@
+{
+  "name": "@openlex/api",
+  "version": "0.1.0",
+  "description": "REST API server for OpenLex jurisdiction mapping engine.",
+  "author": "Ahmed Allem",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@openlex/core": "workspace:*",
+    "@openlex/statutes": "workspace:*",
+    "@openlex/regulations": "workspace:*",
+    "@openlex/courts": "workspace:*",
+    "@openlex/search": "workspace:*",
+    "@openlex/export": "workspace:*",
+    "hono": "^4.6.0",
+    "@hono/node-server": "^1.13.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0",
+    "tsx": "^4.0.0",
+    "@types/node": "^22.0.0"
+  }
+}
