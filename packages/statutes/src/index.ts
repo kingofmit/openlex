@@ -4,3 +4,6 @@ export * from "./compare";
 export * from "./validate";
 export * from "./data";
 export * from "./code-structures";
+export * from "./geojson";
+export * from "./jurisdiction-names";
+export * from "./comparisons";

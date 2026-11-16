@@ -118,6 +118,42 @@ export interface MonetaryValue {
   description: string;
 }
 
+/** A column definition in a comparison matrix */
+export interface ComparisonColumn {
+  key: string;
+  label: string;
+  type: "text" | "number" | "boolean" | "enum" | "currency";
+  description: string;
+}
+
+/** A single state's row in a comparison matrix */
+export interface ComparisonRow {
+  jurisdictionId: string;
+  jurisdictionName: string;
+  values: Record<string, string | number | boolean | null>;
+  statutes: string[];
+  sourceUrls: string[];
+  notes: string | null;
+}
+
+/** Summary statistics for a comparison matrix */
+export interface ComparisonSummary {
+  totalStates: number;
+  categoryCounts: Record<string, number>;
+  ranges: Record<string, { min: number; max: number; median: number }>;
+  outliers: string[];
+}
+
+/** A 50-state comparison matrix for a legal topic */
+export interface ComparisonMatrix {
+  topic: string;
+  topicName: string;
+  generatedAt: string;
+  columns: ComparisonColumn[];
+  rows: ComparisonRow[];
+  summary: ComparisonSummary;
+}
+
 /** Extended statute entry with sourcing metadata and structured provisions */
 export interface StatuteEntry extends Statute {
   sourceUrl: string;
