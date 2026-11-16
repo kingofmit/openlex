@@ -46,3 +46,7 @@ export function getAvailableTopics(): string[] {
 
 // Version history
 export { ALL_VERSIONS, getVersionHistory, getVersionedStatuteIds } from "./versions";
+
+// Municipal ordinances
+export type { MunicipalOrdinance } from "./municipal";
+export { MUNICIPAL_ORDINANCES, findOrdinancesByCity, findOrdinancesByTopic, findLocalOverrides } from "./municipal";

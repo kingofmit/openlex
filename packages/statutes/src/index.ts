@@ -7,3 +7,4 @@ export * from "./code-structures";
 export * from "./geojson";
 export * from "./jurisdiction-names";
 export * from "./comparisons";
+export * from "./freshness";
