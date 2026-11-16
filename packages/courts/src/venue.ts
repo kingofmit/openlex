@@ -1,4 +1,4 @@
-import { Court } from "@openlex/core";
+import { Court } from "@allem-law/core";
 import { getCircuit, FEDERAL_COURTS } from "./federal";
 
 export interface VenueResult {

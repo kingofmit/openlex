@@ -1,4 +1,4 @@
-import { STATE_COURT_SYSTEMS } from "@openlex/courts";
+import { STATE_COURT_SYSTEMS } from "@allem-law/courts";
 import CourtsClient from "./CourtsClient";
 
 export const metadata = {

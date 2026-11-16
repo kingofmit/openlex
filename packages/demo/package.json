@@ -1,5 +1,5 @@
 {
-  "name": "@openlex/demo",
+  "name": "@allem-law/demo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,12 +12,12 @@
     "next": "16.4.6",
     "react": "19.3.0",
     "react-dom": "19.3.0",
-    "@openlex/core": "workspace:*",
-    "@openlex/statutes": "workspace:*",
-    "@openlex/regulations": "workspace:*",
-    "@openlex/courts": "workspace:*",
-    "@openlex/search": "workspace:*",
-    "@openlex/export": "workspace:*"
+    "@allem-law/core": "workspace:*",
+    "@allem-law/statutes": "workspace:*",
+    "@allem-law/regulations": "workspace:*",
+    "@allem-law/courts": "workspace:*",
+    "@allem-law/search": "workspace:*",
+    "@allem-law/export": "workspace:*"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "4.3.3",

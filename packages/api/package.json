@@ -1,5 +1,5 @@
 {
-  "name": "@openlex/api",
+  "name": "@allem-law/api",
   "version": "0.1.0",
   "description": "REST API server for OpenLex jurisdiction mapping engine.",
   "author": "Ahmed Allem",
@@ -32,12 +32,12 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@openlex/core": "workspace:*",
-    "@openlex/statutes": "workspace:*",
-    "@openlex/regulations": "workspace:*",
-    "@openlex/courts": "workspace:*",
-    "@openlex/search": "workspace:*",
-    "@openlex/export": "workspace:*",
+    "@allem-law/core": "workspace:*",
+    "@allem-law/statutes": "workspace:*",
+    "@allem-law/regulations": "workspace:*",
+    "@allem-law/courts": "workspace:*",
+    "@allem-law/search": "workspace:*",
+    "@allem-law/export": "workspace:*",
     "hono": "^4.6.0",
     "@hono/node-server": "^1.13.0"
   },

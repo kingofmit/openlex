@@ -1,4 +1,4 @@
-import { Statute, Regulation } from "@openlex/core";
+import { Statute, Regulation } from "@allem-law/core";
 import { InvertedIndex } from "./inverted-index";
 
 /** Build a search index from statutes and regulations */

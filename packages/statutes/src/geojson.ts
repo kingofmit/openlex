@@ -1,4 +1,4 @@
-import { ComparisonMatrix } from "@openlex/core";
+import { ComparisonMatrix } from "@allem-law/core";
 import { STATE_FIPS, JURISDICTIONS } from "./jurisdiction-names";
 
 /** GeoJSON Feature for a single state */

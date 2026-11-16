@@ -26,27 +26,27 @@ importers:
 
   packages/api:
     dependencies:
+      '@allem-law/core':
+        specifier: workspace:*
+        version: link:../core
+      '@allem-law/courts':
+        specifier: workspace:*
+        version: link:../courts
+      '@allem-law/export':
+        specifier: workspace:*
+        version: link:../export
+      '@allem-law/regulations':
+        specifier: workspace:*
+        version: link:../regulations
+      '@allem-law/search':
+        specifier: workspace:*
+        version: link:../search
+      '@allem-law/statutes':
+        specifier: workspace:*
+        version: link:../statutes
       '@hono/node-server':
         specifier: ^1.13.0
         version: 1.19.19(hono@4.13.18)
-      '@openlex/core':
-        specifier: workspace:*
-        version: link:../core
-      '@openlex/courts':
-        specifier: workspace:*
-        version: link:../courts
-      '@openlex/export':
-        specifier: workspace:*
-        version: link:../export
-      '@openlex/regulations':
-        specifier: workspace:*
-        version: link:../regulations
-      '@openlex/search':
-        specifier: workspace:*
-        version: link:../search
-      '@openlex/statutes':
-        specifier: workspace:*
-        version: link:../statutes
       hono:
         specifier: ^4.6.0
         version: 4.13.18
@@ -69,7 +69,7 @@ importers:
 
   packages/courts:
     dependencies:
-      '@openlex/core':
+      '@allem-law/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -79,22 +79,22 @@ importers:
 
   packages/demo:
     dependencies:
-      '@openlex/core':
+      '@allem-law/core':
         specifier: workspace:*
         version: link:../core
-      '@openlex/courts':
+      '@allem-law/courts':
         specifier: workspace:*
         version: link:../courts
-      '@openlex/export':
+      '@allem-law/export':
         specifier: workspace:*
         version: link:../export
-      '@openlex/regulations':
+      '@allem-law/regulations':
         specifier: workspace:*
         version: link:../regulations
-      '@openlex/search':
+      '@allem-law/search':
         specifier: workspace:*
         version: link:../search
-      '@openlex/statutes':
+      '@allem-law/statutes':
         specifier: workspace:*
         version: link:../statutes
       next:
@@ -134,7 +134,7 @@ importers:
 
   packages/export:
     dependencies:
-      '@openlex/core':
+      '@allem-law/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -144,7 +144,7 @@ importers:
 
   packages/react:
     dependencies:
-      '@openlex/core':
+      '@allem-law/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -160,7 +160,7 @@ importers:
 
   packages/regulations:
     dependencies:
-      '@openlex/core':
+      '@allem-law/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -170,7 +170,7 @@ importers:
 
   packages/search:
     dependencies:
-      '@openlex/core':
+      '@allem-law/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -180,7 +180,7 @@ importers:
 
   packages/statutes:
     dependencies:
-      '@openlex/core':
+      '@allem-law/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:

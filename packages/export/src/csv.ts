@@ -1,4 +1,4 @@
-import { QueryResult } from "@openlex/core";
+import { QueryResult } from "@allem-law/core";
 
 /** Export statutes from query result as CSV */
 export function statutesToCSV(result: QueryResult): string {

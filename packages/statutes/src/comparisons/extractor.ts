@@ -1,4 +1,4 @@
-import { ComparisonColumn, ComparisonRow, StatuteEntry } from "@openlex/core";
+import { ComparisonColumn, ComparisonRow, StatuteEntry } from "@allem-law/core";
 
 /** Base interface for topic-specific comparison extractors */
 export interface TopicExtractor {

@@ -1,4 +1,4 @@
-import { StatuteEntry } from "@openlex/core";
+import { StatuteEntry } from "@allem-law/core";
 
 export interface BluebookListOptions {
   groupBy?: "jurisdiction" | "topic";

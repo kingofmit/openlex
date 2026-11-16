@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { StateCourtSystem, Court } from "@openlex/core";
+import { StateCourtSystem, Court } from "@allem-law/core";
 
 interface Props {
   courtSystemsJson: string;

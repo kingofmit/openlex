@@ -1,4 +1,4 @@
-import { PreemptionDomain } from "@openlex/core";
+import { PreemptionDomain } from "@allem-law/core";
 
 /** Federal preemption rules in employment law */
 export const employmentPreemption: PreemptionDomain = {

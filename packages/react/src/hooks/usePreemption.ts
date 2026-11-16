@@ -1,4 +1,4 @@
-import { PreemptionRule } from "@openlex/core";
+import { PreemptionRule } from "@allem-law/core";
 import { UseQueryResult } from "./useOpenLex";
 import { useFetch } from "./useFetch";
 

@@ -1,4 +1,4 @@
-import { GoverningBody } from "@openlex/core";
+import { GoverningBody } from "@allem-law/core";
 
 export { STATE_LABOR_DEPARTMENTS } from "./labor-departments";
 export { STATE_ATTORNEYS_GENERAL } from "./attorneys-general";

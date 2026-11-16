@@ -1,4 +1,4 @@
-# @openlex/api
+# @allem-law/api
 
 REST API server for the OpenLex jurisdiction mapping engine.
 
@@ -7,13 +7,13 @@ Part of [OpenLex](https://github.com/kingofmit/openlex) — open-source jurisdic
 ## Installation
 
 ```bash
-npm install @openlex/api
+npm install @allem-law/api
 ```
 
 ## Usage
 
 ```typescript
-import { createApp } from "@openlex/api";
+import { createApp } from "@allem-law/api";
 
 const app = createApp();
 app.listen(3000);

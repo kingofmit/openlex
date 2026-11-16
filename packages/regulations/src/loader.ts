@@ -1,4 +1,4 @@
-import { Regulation } from "@openlex/core";
+import { Regulation } from "@allem-law/core";
 
 /** Load regulations from data */
 export function loadRegulations(data: RegulationData[]): Regulation[] {

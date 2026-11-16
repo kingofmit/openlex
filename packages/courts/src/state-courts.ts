@@ -1,4 +1,4 @@
-import { Court, StateCourtSystem } from "@openlex/core";
+import { Court, StateCourtSystem } from "@allem-law/core";
 import { STATE_COURT_SYSTEMS } from "./data/state-courts";
 import { FEDERAL_DISTRICT_COURTS, getDistrictCourts } from "./data/federal-districts";
 

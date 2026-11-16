@@ -1,4 +1,4 @@
-import { QueryResult } from "@openlex/core";
+import { QueryResult } from "@allem-law/core";
 
 /** Export query result as clean JSON */
 export function toJSON(result: QueryResult, pretty = true): string {

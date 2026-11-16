@@ -1,4 +1,4 @@
-import { StatuteVersion } from "@openlex/core";
+import { StatuteVersion } from "@allem-law/core";
 
 /**
  * Version history for minimum wage statutes across the 15 states with

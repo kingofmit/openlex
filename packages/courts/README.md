@@ -1,4 +1,4 @@
-# @openlex/courts
+# @allem-law/courts
 
 Court system hierarchy, venue determination, and judicial structure.
 
@@ -7,13 +7,13 @@ Part of [OpenLex](https://github.com/kingofmit/openlex) — open-source jurisdic
 ## Installation
 
 ```bash
-npm install @openlex/courts
+npm install @allem-law/courts
 ```
 
 ## Usage
 
 ```typescript
-import { findCourt, determineVenue } from "@openlex/courts";
+import { findCourt, determineVenue } from "@allem-law/courts";
 
 const court = findCourt("S.D.N.Y.");
 const venue = determineVenue({ state: "NY", district: "Southern" });

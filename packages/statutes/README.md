@@ -1,4 +1,4 @@
-# @openlex/statutes
+# @allem-law/statutes
 
 U.S. Code and state statute database, citation parsing, and statute resolution.
 
@@ -7,13 +7,13 @@ Part of [OpenLex](https://github.com/kingofmit/openlex) — open-source jurisdic
 ## Installation
 
 ```bash
-npm install @openlex/statutes
+npm install @allem-law/statutes
 ```
 
 ## Usage
 
 ```typescript
-import { parseCitation, resolveStatute } from "@openlex/statutes";
+import { parseCitation, resolveStatute } from "@allem-law/statutes";
 
 const cite = parseCitation("42 U.S.C. § 1983");
 const statute = resolveStatute(cite);

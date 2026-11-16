@@ -1,4 +1,4 @@
-import { Statute, StatuteEntry, ComparisonMatrix, ComparisonRow, ComparisonSummary } from "@openlex/core";
+import { Statute, StatuteEntry, ComparisonMatrix, ComparisonRow, ComparisonSummary } from "@allem-law/core";
 import { TopicExtractor } from "./comparisons/extractor";
 import { ALL_EXTRACTORS } from "./comparisons";
 import { JURISDICTIONS } from "./jurisdiction-names";

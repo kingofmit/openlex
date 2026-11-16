@@ -1,4 +1,4 @@
-import { PreemptionRule, PreemptionDomain, PreemptionType } from "@openlex/core";
+import { PreemptionRule, PreemptionDomain, PreemptionType } from "@allem-law/core";
 import { ALL_PREEMPTION_DOMAINS } from "./data/preemption";
 
 /**

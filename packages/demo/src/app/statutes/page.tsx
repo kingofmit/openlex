@@ -1,6 +1,6 @@
-import { ALL_TOPICS, loadStatuteEntries } from "@openlex/statutes";
-import { JURISDICTIONS } from "@openlex/statutes";
-import { StatuteEntry } from "@openlex/core";
+import { ALL_TOPICS, loadStatuteEntries } from "@allem-law/statutes";
+import { JURISDICTIONS } from "@allem-law/statutes";
+import { StatuteEntry } from "@allem-law/core";
 import StatutesClient from "./StatutesClient";
 
 export const metadata = {

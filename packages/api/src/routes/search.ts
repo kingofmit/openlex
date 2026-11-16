@@ -1,6 +1,6 @@
 import { Hono } from "hono";
-import { buildLegalIndex } from "@openlex/search";
-import { ALL_TOPICS, loadStatuteEntries } from "@openlex/statutes";
+import { buildLegalIndex } from "@allem-law/search";
+import { ALL_TOPICS, loadStatuteEntries } from "@allem-law/statutes";
 
 const search = new Hono();
 

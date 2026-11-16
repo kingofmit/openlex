@@ -1,4 +1,4 @@
-import { StatuteEntry } from "@openlex/core";
+import { StatuteEntry } from "@allem-law/core";
 import { UseQueryResult } from "./useOpenLex";
 import { useFetch } from "./useFetch";
 

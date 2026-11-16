@@ -1,4 +1,4 @@
-import { Court, StateCourtSystem } from "@openlex/core";
+import { Court, StateCourtSystem } from "@allem-law/core";
 import { UseQueryResult } from "./useOpenLex";
 import { useFetch } from "./useFetch";
 

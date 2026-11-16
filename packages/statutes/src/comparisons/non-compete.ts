@@ -1,4 +1,4 @@
-import { ComparisonColumn, StatuteEntry } from "@openlex/core";
+import { ComparisonColumn, StatuteEntry } from "@allem-law/core";
 import {
   TopicExtractor,
   findMonetary,

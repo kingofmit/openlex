@@ -1,4 +1,4 @@
-import { GoverningBody } from "@openlex/core";
+import { GoverningBody } from "@allem-law/core";
 
 /** State departments of labor / workforce agencies for all 50 states + DC */
 export const STATE_LABOR_DEPARTMENTS: GoverningBody[] = [

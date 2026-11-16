@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { getAvailableTopics, ALL_TOPICS } from "@openlex/statutes";
+import { getAvailableTopics, ALL_TOPICS } from "@allem-law/statutes";
 
 const health = new Hono();
 

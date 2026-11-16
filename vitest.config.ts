@@ -5,12 +5,12 @@ export default defineConfig({
   test: { globals: true },
   resolve: {
     alias: {
-      '@openlex/core': path.resolve(__dirname, 'packages/core/src'),
-      '@openlex/statutes': path.resolve(__dirname, 'packages/statutes/src'),
-      '@openlex/courts': path.resolve(__dirname, 'packages/courts/src'),
-      '@openlex/regulations': path.resolve(__dirname, 'packages/regulations/src'),
-      '@openlex/export': path.resolve(__dirname, 'packages/export/src'),
-      '@openlex/search': path.resolve(__dirname, 'packages/search/src'),
+      '@allem-law/core': path.resolve(__dirname, 'packages/core/src'),
+      '@allem-law/statutes': path.resolve(__dirname, 'packages/statutes/src'),
+      '@allem-law/courts': path.resolve(__dirname, 'packages/courts/src'),
+      '@allem-law/regulations': path.resolve(__dirname, 'packages/regulations/src'),
+      '@allem-law/export': path.resolve(__dirname, 'packages/export/src'),
+      '@allem-law/search': path.resolve(__dirname, 'packages/search/src'),
     },
   },
 });

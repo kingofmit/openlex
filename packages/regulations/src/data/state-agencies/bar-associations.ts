@@ -1,4 +1,4 @@
-import { GoverningBody } from "@openlex/core";
+import { GoverningBody } from "@allem-law/core";
 
 /** State bar associations for all 50 states + DC */
 export const STATE_BAR_ASSOCIATIONS: GoverningBody[] = [

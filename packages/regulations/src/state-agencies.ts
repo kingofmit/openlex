@@ -1,4 +1,4 @@
-import { GoverningBody } from "@openlex/core";
+import { GoverningBody } from "@allem-law/core";
 import { ALL_STATE_AGENCIES, findStateAgencies as findFromData } from "./data/state-agencies";
 
 export { ALL_STATE_AGENCIES } from "./data/state-agencies";

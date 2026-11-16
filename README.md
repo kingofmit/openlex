@@ -22,7 +22,7 @@ pnpm build
 ### Use the API
 
 ```bash
-pnpm --filter @openlex/api start
+pnpm --filter @allem-law/api start
 # API running at http://localhost:3000
 ```
 
@@ -61,8 +61,8 @@ curl http://localhost:3000/search?q=security+deposit+return
 ### Use as a library
 
 ```typescript
-import { queryJurisdiction, AuthorityRegistry } from "@openlex/core";
-import { ALL_TOPICS, loadStatuteEntries } from "@openlex/statutes";
+import { queryJurisdiction, AuthorityRegistry } from "@allem-law/core";
+import { ALL_TOPICS, loadStatuteEntries } from "@allem-law/statutes";
 
 // Load all statute data into the registry
 const registry = new AuthorityRegistry();
@@ -84,7 +84,7 @@ const result = queryJurisdiction({
 ### Use with React
 
 ```tsx
-import { OpenLexProvider, useStatutes, JurisdictionPicker, StatuteCard } from "@openlex/react";
+import { OpenLexProvider, useStatutes, JurisdictionPicker, StatuteCard } from "@allem-law/react";
 
 function App() {
   const [state, setState] = useState("ca");
@@ -114,14 +114,14 @@ function App() {
 
 | Package | Description |
 |---------|-------------|
-| `@openlex/core` | Types, jurisdiction model (56 jurisdictions), topic taxonomy (30+ topics), query engine, temporal resolver |
-| `@openlex/statutes` | **510 statute entries** across 10 topics, citation parser (15 formats), cross-state comparison with extractors, GeoJSON output |
-| `@openlex/regulations` | Federal agency database (9 agencies), **45 preemption rules** across 8 domains, **293 state regulatory agencies** |
-| `@openlex/courts` | **51 state court hierarchies** + **94 federal district courts**, venue determination, court search |
-| `@openlex/search` | Full-text TF-IDF inverted index across all statutes and regulations |
-| `@openlex/export` | JSON, CSV, Markdown, **LaTeX** (booktabs/longtable), Bluebook citation lists, legal research memos |
-| `@openlex/api` | **REST API** with 10 endpoints (Hono), CORS, caching, multiple output formats |
-| `@openlex/react` | **6 hooks** + **4 components** — useStatutes, useCompare, useSearch, JurisdictionPicker, ComparisonTable |
+| `@allem-law/core` | Types, jurisdiction model (56 jurisdictions), topic taxonomy (30+ topics), query engine, temporal resolver |
+| `@allem-law/statutes` | **510 statute entries** across 10 topics, citation parser (15 formats), cross-state comparison with extractors, GeoJSON output |
+| `@allem-law/regulations` | Federal agency database (9 agencies), **45 preemption rules** across 8 domains, **293 state regulatory agencies** |
+| `@allem-law/courts` | **51 state court hierarchies** + **94 federal district courts**, venue determination, court search |
+| `@allem-law/search` | Full-text TF-IDF inverted index across all statutes and regulations |
+| `@allem-law/export` | JSON, CSV, Markdown, **LaTeX** (booktabs/longtable), Bluebook citation lists, legal research memos |
+| `@allem-law/api` | **REST API** with 10 endpoints (Hono), CORS, caching, multiple output formats |
+| `@allem-law/react` | **6 hooks** + **4 components** — useStatutes, useCompare, useSearch, JurisdictionPicker, ComparisonTable |
 
 ## Statute Data Coverage
 
@@ -195,7 +195,7 @@ pnpm test
 
 Start the API in dev mode:
 ```bash
-pnpm --filter @openlex/api dev
+pnpm --filter @allem-law/api dev
 ```
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for more details.

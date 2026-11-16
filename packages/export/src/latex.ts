@@ -1,4 +1,4 @@
-import { QueryResult } from "@openlex/core";
+import { QueryResult } from "@allem-law/core";
 
 /** Generate a LaTeX table from query results (booktabs style) */
 export function queryToLatex(

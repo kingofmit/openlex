@@ -4,7 +4,7 @@ import {
   findPreemptionByStateAndTopic,
   getPreemptionSummary,
   getAllPreemptionDomains,
-} from "@openlex/regulations";
+} from "@allem-law/regulations";
 
 const preemption = new Hono();
 
