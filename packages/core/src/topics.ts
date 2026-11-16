@@ -34,9 +34,15 @@ export const LEGAL_TOPICS: LegalTopic[] = [
   { id: "criminal", name: "Criminal Law", parent: null, description: "Laws defining crimes and penalties", aliases: ["penal law"], practiceArea: "Criminal" },
   { id: "dui", name: "DUI/DWI", parent: "criminal", description: "Driving under the influence laws", aliases: ["drunk driving", "OUI", "OWI", "impaired driving"], practiceArea: "Criminal" },
   { id: "expungement", name: "Expungement", parent: "criminal", description: "Sealing or clearing criminal records", aliases: ["record sealing", "record clearing"], practiceArea: "Criminal" },
+  { id: "marijuana", name: "Marijuana Legality", parent: "criminal", description: "State marijuana legalization status, possession limits, and retail licensing", aliases: ["cannabis", "weed", "pot", "THC"], practiceArea: "Criminal" },
+  { id: "concealed-carry", name: "Concealed Carry", parent: "criminal", description: "Concealed weapon permit requirements and restrictions", aliases: ["CCW", "CHL", "concealed handgun", "gun permit", "firearms"], practiceArea: "Criminal" },
 
   // Immigration
   { id: "immigration", name: "Immigration Law", parent: null, description: "Federal immigration and naturalization laws", aliases: ["visa law", "naturalization"], practiceArea: "Immigration" },
+
+  // Civil Procedure
+  { id: "civil-procedure", name: "Civil Procedure", parent: null, description: "Rules governing civil court proceedings", aliases: ["court rules", "litigation procedure"], practiceArea: "Civil Procedure" },
+  { id: "small-claims", name: "Small Claims Court", parent: "civil-procedure", description: "Dollar limits, filing procedures, and rules for small claims courts", aliases: ["small claims limit", "small claims court", "minor disputes"], practiceArea: "Civil Procedure" },
 
   // Personal Injury
   { id: "personal-injury", name: "Personal Injury", parent: null, description: "Tort law for physical and emotional harm", aliases: ["tort law", "negligence", "liability"], practiceArea: "Personal Injury" },

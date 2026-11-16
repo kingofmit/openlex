@@ -109,3 +109,23 @@ export interface QueryResult {
   timestamp: number;
   disclaimer: string;
 }
+
+/** A dollar amount, rate, or time period embedded in a statute */
+export interface MonetaryValue {
+  type: "limit" | "fine" | "fee" | "threshold" | "wage" | "penalty" | "duration";
+  amount: number;
+  unit: "usd" | "usd-per-hour" | "usd-per-month" | "usd-per-year" | "months" | "years" | "days" | "multiplier" | "ratio" | "ounces" | "grams" | "percent";
+  description: string;
+}
+
+/** Extended statute entry with sourcing metadata and structured provisions */
+export interface StatuteEntry extends Statute {
+  sourceUrl: string;
+  lastVerified: string;
+  sunsetDate: string | null;
+  supersededBy: string | null;
+  keyProvisions: string[];
+  penalties: string | null;
+  exceptions: string | null;
+  monetaryValues: MonetaryValue[];
+}
