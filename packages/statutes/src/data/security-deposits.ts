@@ -341,9 +341,9 @@ export const securityDeposits: TopicDataFile = {
       code: "Fla. Stat.",
       section: "83.49",
       citation: "Fla. Stat. § 83.49",
-      url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0083/Sections/0083.49.html",
+      url: "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0083/Sections/0083.49.html",
       sourceUrl:
-        "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0083/Sections/0083.49.html",
+        "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0083/Sections/0083.49.html",
       effectiveDate: "2020-01-01",
       lastVerified: "2026-11-15",
       topics: ["security-deposits", "landlord-tenant"],

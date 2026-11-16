@@ -19,11 +19,11 @@ import { StateCourtSystem, Court } from "@openlex/core";
 export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
   // ─── ALABAMA ───────────────────────────────────────────────────────
   {
-    stateId: "AL",
+    stateId: "al",
     stateName: "Alabama",
     supremeCourt: {
       id: "al-supreme",
-      jurisdictionId: "AL",
+      jurisdictionId: "al",
       name: "Supreme Court of Alabama",
       abbreviation: "Ala.",
       level: "supreme",
@@ -34,7 +34,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "al-civ-app",
-        jurisdictionId: "AL",
+        jurisdictionId: "al",
         name: "Alabama Court of Civil Appeals",
         abbreviation: "Ala. Civ. App.",
         level: "appellate",
@@ -44,7 +44,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "al-crim-app",
-        jurisdictionId: "AL",
+        jurisdictionId: "al",
         name: "Alabama Court of Criminal Appeals",
         abbreviation: "Ala. Crim. App.",
         level: "appellate",
@@ -56,7 +56,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "al-circuit",
-        jurisdictionId: "AL",
+        jurisdictionId: "al",
         name: "Alabama Circuit Court",
         abbreviation: "Ala. Cir. Ct.",
         level: "trial",
@@ -66,7 +66,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "al-district",
-        jurisdictionId: "AL",
+        jurisdictionId: "al",
         name: "Alabama District Court",
         abbreviation: "Ala. Dist. Ct.",
         level: "trial",
@@ -78,7 +78,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "al-probate",
-        jurisdictionId: "AL",
+        jurisdictionId: "al",
         name: "Alabama Probate Court",
         abbreviation: "Ala. Prob. Ct.",
         level: "specialized",
@@ -88,7 +88,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "al-juvenile",
-        jurisdictionId: "AL",
+        jurisdictionId: "al",
         name: "Alabama Juvenile Court",
         abbreviation: "Ala. Juv. Ct.",
         level: "specialized",
@@ -106,11 +106,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── ALASKA ────────────────────────────────────────────────────────
   {
-    stateId: "AK",
+    stateId: "ak",
     stateName: "Alaska",
     supremeCourt: {
       id: "ak-supreme",
-      jurisdictionId: "AK",
+      jurisdictionId: "ak",
       name: "Alaska Supreme Court",
       abbreviation: "Alaska",
       level: "supreme",
@@ -121,7 +121,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "ak-app",
-        jurisdictionId: "AK",
+        jurisdictionId: "ak",
         name: "Alaska Court of Appeals",
         abbreviation: "Alaska Ct. App.",
         level: "appellate",
@@ -133,7 +133,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "ak-superior",
-        jurisdictionId: "AK",
+        jurisdictionId: "ak",
         name: "Alaska Superior Court",
         abbreviation: "Alaska Super. Ct.",
         level: "trial",
@@ -143,7 +143,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ak-district",
-        jurisdictionId: "AK",
+        jurisdictionId: "ak",
         name: "Alaska District Court",
         abbreviation: "Alaska Dist. Ct.",
         level: "trial",
@@ -155,7 +155,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "ak-family",
-        jurisdictionId: "AK",
+        jurisdictionId: "ak",
         name: "Alaska Family Court",
         abbreviation: "Alaska Fam. Ct.",
         level: "specialized",
@@ -173,11 +173,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── ARIZONA ───────────────────────────────────────────────────────
   {
-    stateId: "AZ",
+    stateId: "az",
     stateName: "Arizona",
     supremeCourt: {
       id: "az-supreme",
-      jurisdictionId: "AZ",
+      jurisdictionId: "az",
       name: "Arizona Supreme Court",
       abbreviation: "Ariz.",
       level: "supreme",
@@ -188,7 +188,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "az-app-div1",
-        jurisdictionId: "AZ",
+        jurisdictionId: "az",
         name: "Arizona Court of Appeals, Division One",
         abbreviation: "Ariz. Ct. App. Div. 1",
         level: "appellate",
@@ -198,7 +198,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "az-app-div2",
-        jurisdictionId: "AZ",
+        jurisdictionId: "az",
         name: "Arizona Court of Appeals, Division Two",
         abbreviation: "Ariz. Ct. App. Div. 2",
         level: "appellate",
@@ -210,7 +210,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "az-superior",
-        jurisdictionId: "AZ",
+        jurisdictionId: "az",
         name: "Arizona Superior Court",
         abbreviation: "Ariz. Super. Ct.",
         level: "trial",
@@ -222,7 +222,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "az-justice",
-        jurisdictionId: "AZ",
+        jurisdictionId: "az",
         name: "Arizona Justice Court",
         abbreviation: "Ariz. J.P. Ct.",
         level: "specialized",
@@ -232,7 +232,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "az-tax",
-        jurisdictionId: "AZ",
+        jurisdictionId: "az",
         name: "Arizona Tax Court",
         abbreviation: "Ariz. Tax Ct.",
         level: "specialized",
@@ -250,11 +250,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── ARKANSAS ──────────────────────────────────────────────────────
   {
-    stateId: "AR",
+    stateId: "ar",
     stateName: "Arkansas",
     supremeCourt: {
       id: "ar-supreme",
-      jurisdictionId: "AR",
+      jurisdictionId: "ar",
       name: "Supreme Court of Arkansas",
       abbreviation: "Ark.",
       level: "supreme",
@@ -265,7 +265,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "ar-app",
-        jurisdictionId: "AR",
+        jurisdictionId: "ar",
         name: "Arkansas Court of Appeals",
         abbreviation: "Ark. Ct. App.",
         level: "appellate",
@@ -277,7 +277,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "ar-circuit",
-        jurisdictionId: "AR",
+        jurisdictionId: "ar",
         name: "Arkansas Circuit Court",
         abbreviation: "Ark. Cir. Ct.",
         level: "trial",
@@ -289,7 +289,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "ar-district",
-        jurisdictionId: "AR",
+        jurisdictionId: "ar",
         name: "Arkansas District Court",
         abbreviation: "Ark. Dist. Ct.",
         level: "specialized",
@@ -299,7 +299,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ar-drug",
-        jurisdictionId: "AR",
+        jurisdictionId: "ar",
         name: "Arkansas Drug Court",
         abbreviation: "Ark. Drug Ct.",
         level: "specialized",
@@ -315,11 +315,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── CALIFORNIA ────────────────────────────────────────────────────
   {
-    stateId: "CA",
+    stateId: "ca",
     stateName: "California",
     supremeCourt: {
       id: "ca-supreme",
-      jurisdictionId: "CA",
+      jurisdictionId: "ca",
       name: "Supreme Court of California",
       abbreviation: "Cal.",
       level: "supreme",
@@ -330,7 +330,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "ca-app-1",
-        jurisdictionId: "CA",
+        jurisdictionId: "ca",
         name: "California Court of Appeal, First District",
         abbreviation: "Cal. Ct. App. 1st Dist.",
         level: "appellate",
@@ -340,7 +340,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ca-app-2",
-        jurisdictionId: "CA",
+        jurisdictionId: "ca",
         name: "California Court of Appeal, Second District",
         abbreviation: "Cal. Ct. App. 2d Dist.",
         level: "appellate",
@@ -350,7 +350,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ca-app-3",
-        jurisdictionId: "CA",
+        jurisdictionId: "ca",
         name: "California Court of Appeal, Third District",
         abbreviation: "Cal. Ct. App. 3d Dist.",
         level: "appellate",
@@ -360,7 +360,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ca-app-4",
-        jurisdictionId: "CA",
+        jurisdictionId: "ca",
         name: "California Court of Appeal, Fourth District",
         abbreviation: "Cal. Ct. App. 4th Dist.",
         level: "appellate",
@@ -370,7 +370,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ca-app-5",
-        jurisdictionId: "CA",
+        jurisdictionId: "ca",
         name: "California Court of Appeal, Fifth District",
         abbreviation: "Cal. Ct. App. 5th Dist.",
         level: "appellate",
@@ -380,7 +380,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ca-app-6",
-        jurisdictionId: "CA",
+        jurisdictionId: "ca",
         name: "California Court of Appeal, Sixth District",
         abbreviation: "Cal. Ct. App. 6th Dist.",
         level: "appellate",
@@ -392,7 +392,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "ca-superior",
-        jurisdictionId: "CA",
+        jurisdictionId: "ca",
         name: "California Superior Court",
         abbreviation: "Cal. Super. Ct.",
         level: "trial",
@@ -404,7 +404,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "ca-small-claims",
-        jurisdictionId: "CA",
+        jurisdictionId: "ca",
         name: "California Small Claims Court",
         abbreviation: "Cal. Small Claims",
         level: "specialized",
@@ -414,7 +414,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ca-juvenile",
-        jurisdictionId: "CA",
+        jurisdictionId: "ca",
         name: "California Juvenile Court",
         abbreviation: "Cal. Juv. Ct.",
         level: "specialized",
@@ -424,7 +424,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ca-family",
-        jurisdictionId: "CA",
+        jurisdictionId: "ca",
         name: "California Family Court",
         abbreviation: "Cal. Fam. Ct.",
         level: "specialized",
@@ -443,11 +443,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── COLORADO ──────────────────────────────────────────────────────
   {
-    stateId: "CO",
+    stateId: "co",
     stateName: "Colorado",
     supremeCourt: {
       id: "co-supreme",
-      jurisdictionId: "CO",
+      jurisdictionId: "co",
       name: "Colorado Supreme Court",
       abbreviation: "Colo.",
       level: "supreme",
@@ -458,7 +458,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "co-app",
-        jurisdictionId: "CO",
+        jurisdictionId: "co",
         name: "Colorado Court of Appeals",
         abbreviation: "Colo. App.",
         level: "appellate",
@@ -470,7 +470,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "co-district",
-        jurisdictionId: "CO",
+        jurisdictionId: "co",
         name: "Colorado District Court",
         abbreviation: "Colo. Dist. Ct.",
         level: "trial",
@@ -480,7 +480,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "co-county",
-        jurisdictionId: "CO",
+        jurisdictionId: "co",
         name: "Colorado County Court",
         abbreviation: "Colo. Cnty. Ct.",
         level: "trial",
@@ -492,7 +492,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "co-water",
-        jurisdictionId: "CO",
+        jurisdictionId: "co",
         name: "Colorado Water Court",
         abbreviation: "Colo. Water Ct.",
         level: "specialized",
@@ -502,7 +502,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "co-juvenile",
-        jurisdictionId: "CO",
+        jurisdictionId: "co",
         name: "Colorado Juvenile Court",
         abbreviation: "Colo. Juv. Ct.",
         level: "specialized",
@@ -520,11 +520,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── CONNECTICUT ───────────────────────────────────────────────────
   {
-    stateId: "CT",
+    stateId: "ct",
     stateName: "Connecticut",
     supremeCourt: {
       id: "ct-supreme",
-      jurisdictionId: "CT",
+      jurisdictionId: "ct",
       name: "Connecticut Supreme Court",
       abbreviation: "Conn.",
       level: "supreme",
@@ -535,7 +535,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "ct-app",
-        jurisdictionId: "CT",
+        jurisdictionId: "ct",
         name: "Connecticut Appellate Court",
         abbreviation: "Conn. App. Ct.",
         level: "appellate",
@@ -547,7 +547,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "ct-superior",
-        jurisdictionId: "CT",
+        jurisdictionId: "ct",
         name: "Connecticut Superior Court",
         abbreviation: "Conn. Super. Ct.",
         level: "trial",
@@ -559,7 +559,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "ct-probate",
-        jurisdictionId: "CT",
+        jurisdictionId: "ct",
         name: "Connecticut Probate Court",
         abbreviation: "Conn. Prob. Ct.",
         level: "specialized",
@@ -569,7 +569,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ct-housing",
-        jurisdictionId: "CT",
+        jurisdictionId: "ct",
         name: "Connecticut Housing Court",
         abbreviation: "Conn. Hous. Ct.",
         level: "specialized",
@@ -585,11 +585,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── DELAWARE ──────────────────────────────────────────────────────
   {
-    stateId: "DE",
+    stateId: "de",
     stateName: "Delaware",
     supremeCourt: {
       id: "de-supreme",
-      jurisdictionId: "DE",
+      jurisdictionId: "de",
       name: "Supreme Court of Delaware",
       abbreviation: "Del.",
       level: "supreme",
@@ -601,7 +601,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "de-superior",
-        jurisdictionId: "DE",
+        jurisdictionId: "de",
         name: "Delaware Superior Court",
         abbreviation: "Del. Super. Ct.",
         level: "trial",
@@ -611,7 +611,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "de-common-pleas",
-        jurisdictionId: "DE",
+        jurisdictionId: "de",
         name: "Delaware Court of Common Pleas",
         abbreviation: "Del. C.P.",
         level: "trial",
@@ -623,7 +623,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "de-chancery",
-        jurisdictionId: "DE",
+        jurisdictionId: "de",
         name: "Delaware Court of Chancery",
         abbreviation: "Del. Ch.",
         level: "specialized",
@@ -633,7 +633,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "de-family",
-        jurisdictionId: "DE",
+        jurisdictionId: "de",
         name: "Delaware Family Court",
         abbreviation: "Del. Fam. Ct.",
         level: "specialized",
@@ -643,7 +643,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "de-justice-of-peace",
-        jurisdictionId: "DE",
+        jurisdictionId: "de",
         name: "Delaware Justice of the Peace Court",
         abbreviation: "Del. J.P. Ct.",
         level: "specialized",
@@ -662,11 +662,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── DISTRICT OF COLUMBIA ──────────────────────────────────────────
   {
-    stateId: "DC",
+    stateId: "dc",
     stateName: "District of Columbia",
     supremeCourt: {
       id: "dc-court-of-appeals",
-      jurisdictionId: "DC",
+      jurisdictionId: "dc",
       name: "District of Columbia Court of Appeals",
       abbreviation: "D.C.",
       level: "supreme",
@@ -678,7 +678,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "dc-superior",
-        jurisdictionId: "DC",
+        jurisdictionId: "dc",
         name: "Superior Court of the District of Columbia",
         abbreviation: "D.C. Super. Ct.",
         level: "trial",
@@ -690,7 +690,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "dc-family",
-        jurisdictionId: "DC",
+        jurisdictionId: "dc",
         name: "DC Family Court",
         abbreviation: "D.C. Fam. Ct.",
         level: "specialized",
@@ -700,7 +700,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "dc-tax",
-        jurisdictionId: "DC",
+        jurisdictionId: "dc",
         name: "DC Tax Division",
         abbreviation: "D.C. Tax Div.",
         level: "specialized",
@@ -719,11 +719,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── FLORIDA ───────────────────────────────────────────────────────
   {
-    stateId: "FL",
+    stateId: "fl",
     stateName: "Florida",
     supremeCourt: {
       id: "fl-supreme",
-      jurisdictionId: "FL",
+      jurisdictionId: "fl",
       name: "Supreme Court of Florida",
       abbreviation: "Fla.",
       level: "supreme",
@@ -734,7 +734,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "fl-dca-1",
-        jurisdictionId: "FL",
+        jurisdictionId: "fl",
         name: "Florida First District Court of Appeal",
         abbreviation: "Fla. 1st DCA",
         level: "appellate",
@@ -744,7 +744,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "fl-dca-2",
-        jurisdictionId: "FL",
+        jurisdictionId: "fl",
         name: "Florida Second District Court of Appeal",
         abbreviation: "Fla. 2d DCA",
         level: "appellate",
@@ -754,7 +754,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "fl-dca-3",
-        jurisdictionId: "FL",
+        jurisdictionId: "fl",
         name: "Florida Third District Court of Appeal",
         abbreviation: "Fla. 3d DCA",
         level: "appellate",
@@ -764,7 +764,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "fl-dca-4",
-        jurisdictionId: "FL",
+        jurisdictionId: "fl",
         name: "Florida Fourth District Court of Appeal",
         abbreviation: "Fla. 4th DCA",
         level: "appellate",
@@ -774,7 +774,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "fl-dca-5",
-        jurisdictionId: "FL",
+        jurisdictionId: "fl",
         name: "Florida Fifth District Court of Appeal",
         abbreviation: "Fla. 5th DCA",
         level: "appellate",
@@ -784,7 +784,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "fl-dca-6",
-        jurisdictionId: "FL",
+        jurisdictionId: "fl",
         name: "Florida Sixth District Court of Appeal",
         abbreviation: "Fla. 6th DCA",
         level: "appellate",
@@ -796,7 +796,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "fl-circuit",
-        jurisdictionId: "FL",
+        jurisdictionId: "fl",
         name: "Florida Circuit Court",
         abbreviation: "Fla. Cir. Ct.",
         level: "trial",
@@ -806,7 +806,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "fl-county",
-        jurisdictionId: "FL",
+        jurisdictionId: "fl",
         name: "Florida County Court",
         abbreviation: "Fla. Cnty. Ct.",
         level: "trial",
@@ -818,7 +818,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "fl-juvenile",
-        jurisdictionId: "FL",
+        jurisdictionId: "fl",
         name: "Florida Juvenile Court",
         abbreviation: "Fla. Juv. Ct.",
         level: "specialized",
@@ -828,7 +828,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "fl-drug",
-        jurisdictionId: "FL",
+        jurisdictionId: "fl",
         name: "Florida Drug Court",
         abbreviation: "Fla. Drug Ct.",
         level: "specialized",
@@ -847,11 +847,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── GEORGIA ───────────────────────────────────────────────────────
   {
-    stateId: "GA",
+    stateId: "ga",
     stateName: "Georgia",
     supremeCourt: {
       id: "ga-supreme",
-      jurisdictionId: "GA",
+      jurisdictionId: "ga",
       name: "Supreme Court of Georgia",
       abbreviation: "Ga.",
       level: "supreme",
@@ -862,7 +862,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "ga-app",
-        jurisdictionId: "GA",
+        jurisdictionId: "ga",
         name: "Georgia Court of Appeals",
         abbreviation: "Ga. Ct. App.",
         level: "appellate",
@@ -874,7 +874,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "ga-superior",
-        jurisdictionId: "GA",
+        jurisdictionId: "ga",
         name: "Georgia Superior Court",
         abbreviation: "Ga. Super. Ct.",
         level: "trial",
@@ -884,7 +884,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ga-state",
-        jurisdictionId: "GA",
+        jurisdictionId: "ga",
         name: "Georgia State Court",
         abbreviation: "Ga. State Ct.",
         level: "trial",
@@ -896,7 +896,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "ga-probate",
-        jurisdictionId: "GA",
+        jurisdictionId: "ga",
         name: "Georgia Probate Court",
         abbreviation: "Ga. Prob. Ct.",
         level: "specialized",
@@ -906,7 +906,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ga-juvenile",
-        jurisdictionId: "GA",
+        jurisdictionId: "ga",
         name: "Georgia Juvenile Court",
         abbreviation: "Ga. Juv. Ct.",
         level: "specialized",
@@ -916,7 +916,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ga-magistrate",
-        jurisdictionId: "GA",
+        jurisdictionId: "ga",
         name: "Georgia Magistrate Court",
         abbreviation: "Ga. Mag. Ct.",
         level: "magistrate",
@@ -934,11 +934,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── HAWAII ────────────────────────────────────────────────────────
   {
-    stateId: "HI",
+    stateId: "hi",
     stateName: "Hawaii",
     supremeCourt: {
       id: "hi-supreme",
-      jurisdictionId: "HI",
+      jurisdictionId: "hi",
       name: "Supreme Court of Hawaii",
       abbreviation: "Haw.",
       level: "supreme",
@@ -949,7 +949,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "hi-app",
-        jurisdictionId: "HI",
+        jurisdictionId: "hi",
         name: "Hawaii Intermediate Court of Appeals",
         abbreviation: "Haw. App.",
         level: "appellate",
@@ -961,7 +961,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "hi-circuit",
-        jurisdictionId: "HI",
+        jurisdictionId: "hi",
         name: "Hawaii Circuit Court",
         abbreviation: "Haw. Cir. Ct.",
         level: "trial",
@@ -971,7 +971,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "hi-district",
-        jurisdictionId: "HI",
+        jurisdictionId: "hi",
         name: "Hawaii District Court",
         abbreviation: "Haw. Dist. Ct.",
         level: "trial",
@@ -983,7 +983,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "hi-family",
-        jurisdictionId: "HI",
+        jurisdictionId: "hi",
         name: "Hawaii Family Court",
         abbreviation: "Haw. Fam. Ct.",
         level: "specialized",
@@ -993,7 +993,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "hi-land",
-        jurisdictionId: "HI",
+        jurisdictionId: "hi",
         name: "Hawaii Land Court",
         abbreviation: "Haw. Land Ct.",
         level: "specialized",
@@ -1011,11 +1011,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── IDAHO ─────────────────────────────────────────────────────────
   {
-    stateId: "ID",
+    stateId: "id",
     stateName: "Idaho",
     supremeCourt: {
       id: "id-supreme",
-      jurisdictionId: "ID",
+      jurisdictionId: "id",
       name: "Idaho Supreme Court",
       abbreviation: "Idaho",
       level: "supreme",
@@ -1026,7 +1026,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "id-app",
-        jurisdictionId: "ID",
+        jurisdictionId: "id",
         name: "Idaho Court of Appeals",
         abbreviation: "Idaho Ct. App.",
         level: "appellate",
@@ -1038,7 +1038,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "id-district",
-        jurisdictionId: "ID",
+        jurisdictionId: "id",
         name: "Idaho District Court",
         abbreviation: "Idaho Dist. Ct.",
         level: "trial",
@@ -1050,7 +1050,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "id-magistrate",
-        jurisdictionId: "ID",
+        jurisdictionId: "id",
         name: "Idaho Magistrate Court",
         abbreviation: "Idaho Mag. Ct.",
         level: "magistrate",
@@ -1060,7 +1060,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "id-drug",
-        jurisdictionId: "ID",
+        jurisdictionId: "id",
         name: "Idaho Drug Court",
         abbreviation: "Idaho Drug Ct.",
         level: "specialized",
@@ -1076,11 +1076,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── ILLINOIS ──────────────────────────────────────────────────────
   {
-    stateId: "IL",
+    stateId: "il",
     stateName: "Illinois",
     supremeCourt: {
       id: "il-supreme",
-      jurisdictionId: "IL",
+      jurisdictionId: "il",
       name: "Supreme Court of Illinois",
       abbreviation: "Ill.",
       level: "supreme",
@@ -1091,7 +1091,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "il-app-1",
-        jurisdictionId: "IL",
+        jurisdictionId: "il",
         name: "Illinois Appellate Court, First District",
         abbreviation: "Ill. App. Ct. 1st Dist.",
         level: "appellate",
@@ -1101,7 +1101,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "il-app-2",
-        jurisdictionId: "IL",
+        jurisdictionId: "il",
         name: "Illinois Appellate Court, Second District",
         abbreviation: "Ill. App. Ct. 2d Dist.",
         level: "appellate",
@@ -1111,7 +1111,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "il-app-3",
-        jurisdictionId: "IL",
+        jurisdictionId: "il",
         name: "Illinois Appellate Court, Third District",
         abbreviation: "Ill. App. Ct. 3d Dist.",
         level: "appellate",
@@ -1121,7 +1121,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "il-app-4",
-        jurisdictionId: "IL",
+        jurisdictionId: "il",
         name: "Illinois Appellate Court, Fourth District",
         abbreviation: "Ill. App. Ct. 4th Dist.",
         level: "appellate",
@@ -1131,7 +1131,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "il-app-5",
-        jurisdictionId: "IL",
+        jurisdictionId: "il",
         name: "Illinois Appellate Court, Fifth District",
         abbreviation: "Ill. App. Ct. 5th Dist.",
         level: "appellate",
@@ -1143,7 +1143,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "il-circuit",
-        jurisdictionId: "IL",
+        jurisdictionId: "il",
         name: "Illinois Circuit Court",
         abbreviation: "Ill. Cir. Ct.",
         level: "trial",
@@ -1155,7 +1155,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "il-court-of-claims",
-        jurisdictionId: "IL",
+        jurisdictionId: "il",
         name: "Illinois Court of Claims",
         abbreviation: "Ill. Ct. Cl.",
         level: "specialized",
@@ -1174,11 +1174,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── INDIANA ───────────────────────────────────────────────────────
   {
-    stateId: "IN",
+    stateId: "in",
     stateName: "Indiana",
     supremeCourt: {
       id: "in-supreme",
-      jurisdictionId: "IN",
+      jurisdictionId: "in",
       name: "Indiana Supreme Court",
       abbreviation: "Ind.",
       level: "supreme",
@@ -1189,7 +1189,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "in-app",
-        jurisdictionId: "IN",
+        jurisdictionId: "in",
         name: "Indiana Court of Appeals",
         abbreviation: "Ind. Ct. App.",
         level: "appellate",
@@ -1199,7 +1199,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "in-tax",
-        jurisdictionId: "IN",
+        jurisdictionId: "in",
         name: "Indiana Tax Court",
         abbreviation: "Ind. Tax Ct.",
         level: "appellate",
@@ -1211,7 +1211,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "in-circuit",
-        jurisdictionId: "IN",
+        jurisdictionId: "in",
         name: "Indiana Circuit Court",
         abbreviation: "Ind. Cir. Ct.",
         level: "trial",
@@ -1221,7 +1221,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "in-superior",
-        jurisdictionId: "IN",
+        jurisdictionId: "in",
         name: "Indiana Superior Court",
         abbreviation: "Ind. Super. Ct.",
         level: "trial",
@@ -1233,7 +1233,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "in-small-claims",
-        jurisdictionId: "IN",
+        jurisdictionId: "in",
         name: "Indiana Small Claims Court",
         abbreviation: "Ind. Sm. Cl. Ct.",
         level: "specialized",
@@ -1252,11 +1252,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── IOWA ──────────────────────────────────────────────────────────
   {
-    stateId: "IA",
+    stateId: "ia",
     stateName: "Iowa",
     supremeCourt: {
       id: "ia-supreme",
-      jurisdictionId: "IA",
+      jurisdictionId: "ia",
       name: "Iowa Supreme Court",
       abbreviation: "Iowa",
       level: "supreme",
@@ -1267,7 +1267,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "ia-app",
-        jurisdictionId: "IA",
+        jurisdictionId: "ia",
         name: "Iowa Court of Appeals",
         abbreviation: "Iowa Ct. App.",
         level: "appellate",
@@ -1279,7 +1279,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "ia-district",
-        jurisdictionId: "IA",
+        jurisdictionId: "ia",
         name: "Iowa District Court",
         abbreviation: "Iowa Dist. Ct.",
         level: "trial",
@@ -1291,7 +1291,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "ia-juvenile",
-        jurisdictionId: "IA",
+        jurisdictionId: "ia",
         name: "Iowa Juvenile Court",
         abbreviation: "Iowa Juv. Ct.",
         level: "specialized",
@@ -1301,7 +1301,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ia-small-claims",
-        jurisdictionId: "IA",
+        jurisdictionId: "ia",
         name: "Iowa Small Claims Court",
         abbreviation: "Iowa Sm. Cl.",
         level: "specialized",
@@ -1317,11 +1317,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── KANSAS ────────────────────────────────────────────────────────
   {
-    stateId: "KS",
+    stateId: "ks",
     stateName: "Kansas",
     supremeCourt: {
       id: "ks-supreme",
-      jurisdictionId: "KS",
+      jurisdictionId: "ks",
       name: "Kansas Supreme Court",
       abbreviation: "Kan.",
       level: "supreme",
@@ -1332,7 +1332,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "ks-app",
-        jurisdictionId: "KS",
+        jurisdictionId: "ks",
         name: "Kansas Court of Appeals",
         abbreviation: "Kan. Ct. App.",
         level: "appellate",
@@ -1344,7 +1344,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "ks-district",
-        jurisdictionId: "KS",
+        jurisdictionId: "ks",
         name: "Kansas District Court",
         abbreviation: "Kan. Dist. Ct.",
         level: "trial",
@@ -1356,7 +1356,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "ks-municipal",
-        jurisdictionId: "KS",
+        jurisdictionId: "ks",
         name: "Kansas Municipal Court",
         abbreviation: "Kan. Mun. Ct.",
         level: "specialized",
@@ -1372,11 +1372,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── KENTUCKY ──────────────────────────────────────────────────────
   {
-    stateId: "KY",
+    stateId: "ky",
     stateName: "Kentucky",
     supremeCourt: {
       id: "ky-supreme",
-      jurisdictionId: "KY",
+      jurisdictionId: "ky",
       name: "Supreme Court of Kentucky",
       abbreviation: "Ky.",
       level: "supreme",
@@ -1387,7 +1387,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "ky-app",
-        jurisdictionId: "KY",
+        jurisdictionId: "ky",
         name: "Kentucky Court of Appeals",
         abbreviation: "Ky. Ct. App.",
         level: "appellate",
@@ -1399,7 +1399,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "ky-circuit",
-        jurisdictionId: "KY",
+        jurisdictionId: "ky",
         name: "Kentucky Circuit Court",
         abbreviation: "Ky. Cir. Ct.",
         level: "trial",
@@ -1409,7 +1409,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ky-district",
-        jurisdictionId: "KY",
+        jurisdictionId: "ky",
         name: "Kentucky District Court",
         abbreviation: "Ky. Dist. Ct.",
         level: "trial",
@@ -1421,7 +1421,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "ky-family",
-        jurisdictionId: "KY",
+        jurisdictionId: "ky",
         name: "Kentucky Family Court",
         abbreviation: "Ky. Fam. Ct.",
         level: "specialized",
@@ -1437,11 +1437,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── LOUISIANA ─────────────────────────────────────────────────────
   {
-    stateId: "LA",
+    stateId: "la",
     stateName: "Louisiana",
     supremeCourt: {
       id: "la-supreme",
-      jurisdictionId: "LA",
+      jurisdictionId: "la",
       name: "Louisiana Supreme Court",
       abbreviation: "La.",
       level: "supreme",
@@ -1452,7 +1452,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "la-app-1",
-        jurisdictionId: "LA",
+        jurisdictionId: "la",
         name: "Louisiana First Circuit Court of Appeal",
         abbreviation: "La. App. 1 Cir.",
         level: "appellate",
@@ -1462,7 +1462,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "la-app-2",
-        jurisdictionId: "LA",
+        jurisdictionId: "la",
         name: "Louisiana Second Circuit Court of Appeal",
         abbreviation: "La. App. 2 Cir.",
         level: "appellate",
@@ -1472,7 +1472,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "la-app-3",
-        jurisdictionId: "LA",
+        jurisdictionId: "la",
         name: "Louisiana Third Circuit Court of Appeal",
         abbreviation: "La. App. 3 Cir.",
         level: "appellate",
@@ -1482,7 +1482,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "la-app-4",
-        jurisdictionId: "LA",
+        jurisdictionId: "la",
         name: "Louisiana Fourth Circuit Court of Appeal",
         abbreviation: "La. App. 4 Cir.",
         level: "appellate",
@@ -1492,7 +1492,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "la-app-5",
-        jurisdictionId: "LA",
+        jurisdictionId: "la",
         name: "Louisiana Fifth Circuit Court of Appeal",
         abbreviation: "La. App. 5 Cir.",
         level: "appellate",
@@ -1504,7 +1504,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "la-district",
-        jurisdictionId: "LA",
+        jurisdictionId: "la",
         name: "Louisiana District Court",
         abbreviation: "La. Dist. Ct.",
         level: "trial",
@@ -1516,7 +1516,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "la-family",
-        jurisdictionId: "LA",
+        jurisdictionId: "la",
         name: "Louisiana Family Court",
         abbreviation: "La. Fam. Ct.",
         level: "specialized",
@@ -1526,7 +1526,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "la-juvenile",
-        jurisdictionId: "LA",
+        jurisdictionId: "la",
         name: "Louisiana Juvenile Court",
         abbreviation: "La. Juv. Ct.",
         level: "specialized",
@@ -1545,11 +1545,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── MAINE ─────────────────────────────────────────────────────────
   {
-    stateId: "ME",
+    stateId: "me",
     stateName: "Maine",
     supremeCourt: {
       id: "me-supreme",
-      jurisdictionId: "ME",
+      jurisdictionId: "me",
       name: "Maine Supreme Judicial Court",
       abbreviation: "Me.",
       level: "supreme",
@@ -1561,7 +1561,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "me-superior",
-        jurisdictionId: "ME",
+        jurisdictionId: "me",
         name: "Maine Superior Court",
         abbreviation: "Me. Super. Ct.",
         level: "trial",
@@ -1571,7 +1571,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "me-district",
-        jurisdictionId: "ME",
+        jurisdictionId: "me",
         name: "Maine District Court",
         abbreviation: "Me. Dist. Ct.",
         level: "trial",
@@ -1583,7 +1583,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "me-probate",
-        jurisdictionId: "ME",
+        jurisdictionId: "me",
         name: "Maine Probate Court",
         abbreviation: "Me. Prob. Ct.",
         level: "specialized",
@@ -1593,7 +1593,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "me-family",
-        jurisdictionId: "ME",
+        jurisdictionId: "me",
         name: "Maine Family Division",
         abbreviation: "Me. Fam. Div.",
         level: "specialized",
@@ -1612,11 +1612,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── MARYLAND ──────────────────────────────────────────────────────
   {
-    stateId: "MD",
+    stateId: "md",
     stateName: "Maryland",
     supremeCourt: {
       id: "md-supreme",
-      jurisdictionId: "MD",
+      jurisdictionId: "md",
       name: "Supreme Court of Maryland",
       abbreviation: "Md.",
       level: "supreme",
@@ -1627,7 +1627,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "md-appellate",
-        jurisdictionId: "MD",
+        jurisdictionId: "md",
         name: "Appellate Court of Maryland",
         abbreviation: "Md. App.",
         level: "appellate",
@@ -1639,7 +1639,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "md-circuit",
-        jurisdictionId: "MD",
+        jurisdictionId: "md",
         name: "Maryland Circuit Court",
         abbreviation: "Md. Cir. Ct.",
         level: "trial",
@@ -1649,7 +1649,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "md-district",
-        jurisdictionId: "MD",
+        jurisdictionId: "md",
         name: "Maryland District Court",
         abbreviation: "Md. Dist. Ct.",
         level: "trial",
@@ -1661,7 +1661,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "md-orphans",
-        jurisdictionId: "MD",
+        jurisdictionId: "md",
         name: "Maryland Orphans' Court",
         abbreviation: "Md. Orph. Ct.",
         level: "specialized",
@@ -1671,7 +1671,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "md-tax",
-        jurisdictionId: "MD",
+        jurisdictionId: "md",
         name: "Maryland Tax Court",
         abbreviation: "Md. Tax Ct.",
         level: "specialized",
@@ -1690,11 +1690,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── MASSACHUSETTS ─────────────────────────────────────────────────
   {
-    stateId: "MA",
+    stateId: "ma",
     stateName: "Massachusetts",
     supremeCourt: {
       id: "ma-sjc",
-      jurisdictionId: "MA",
+      jurisdictionId: "ma",
       name: "Massachusetts Supreme Judicial Court",
       abbreviation: "Mass.",
       level: "supreme",
@@ -1705,7 +1705,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "ma-app",
-        jurisdictionId: "MA",
+        jurisdictionId: "ma",
         name: "Massachusetts Appeals Court",
         abbreviation: "Mass. App. Ct.",
         level: "appellate",
@@ -1717,7 +1717,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "ma-superior",
-        jurisdictionId: "MA",
+        jurisdictionId: "ma",
         name: "Massachusetts Superior Court",
         abbreviation: "Mass. Super. Ct.",
         level: "trial",
@@ -1727,7 +1727,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ma-district",
-        jurisdictionId: "MA",
+        jurisdictionId: "ma",
         name: "Massachusetts District Court",
         abbreviation: "Mass. Dist. Ct.",
         level: "trial",
@@ -1739,7 +1739,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "ma-probate-family",
-        jurisdictionId: "MA",
+        jurisdictionId: "ma",
         name: "Massachusetts Probate and Family Court",
         abbreviation: "Mass. Prob. & Fam. Ct.",
         level: "specialized",
@@ -1749,7 +1749,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ma-housing",
-        jurisdictionId: "MA",
+        jurisdictionId: "ma",
         name: "Massachusetts Housing Court",
         abbreviation: "Mass. Hous. Ct.",
         level: "specialized",
@@ -1759,7 +1759,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ma-land",
-        jurisdictionId: "MA",
+        jurisdictionId: "ma",
         name: "Massachusetts Land Court",
         abbreviation: "Mass. Land Ct.",
         level: "specialized",
@@ -1769,7 +1769,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ma-juvenile",
-        jurisdictionId: "MA",
+        jurisdictionId: "ma",
         name: "Massachusetts Juvenile Court",
         abbreviation: "Mass. Juv. Ct.",
         level: "specialized",
@@ -1787,11 +1787,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── MICHIGAN ──────────────────────────────────────────────────────
   {
-    stateId: "MI",
+    stateId: "mi",
     stateName: "Michigan",
     supremeCourt: {
       id: "mi-supreme",
-      jurisdictionId: "MI",
+      jurisdictionId: "mi",
       name: "Michigan Supreme Court",
       abbreviation: "Mich.",
       level: "supreme",
@@ -1802,7 +1802,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "mi-app",
-        jurisdictionId: "MI",
+        jurisdictionId: "mi",
         name: "Michigan Court of Appeals",
         abbreviation: "Mich. Ct. App.",
         level: "appellate",
@@ -1814,7 +1814,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "mi-circuit",
-        jurisdictionId: "MI",
+        jurisdictionId: "mi",
         name: "Michigan Circuit Court",
         abbreviation: "Mich. Cir. Ct.",
         level: "trial",
@@ -1824,7 +1824,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "mi-district",
-        jurisdictionId: "MI",
+        jurisdictionId: "mi",
         name: "Michigan District Court",
         abbreviation: "Mich. Dist. Ct.",
         level: "trial",
@@ -1836,7 +1836,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "mi-probate",
-        jurisdictionId: "MI",
+        jurisdictionId: "mi",
         name: "Michigan Probate Court",
         abbreviation: "Mich. Prob. Ct.",
         level: "specialized",
@@ -1846,7 +1846,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "mi-claims",
-        jurisdictionId: "MI",
+        jurisdictionId: "mi",
         name: "Michigan Court of Claims",
         abbreviation: "Mich. Ct. Cl.",
         level: "specialized",
@@ -1862,11 +1862,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── MINNESOTA ─────────────────────────────────────────────────────
   {
-    stateId: "MN",
+    stateId: "mn",
     stateName: "Minnesota",
     supremeCourt: {
       id: "mn-supreme",
-      jurisdictionId: "MN",
+      jurisdictionId: "mn",
       name: "Minnesota Supreme Court",
       abbreviation: "Minn.",
       level: "supreme",
@@ -1877,7 +1877,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "mn-app",
-        jurisdictionId: "MN",
+        jurisdictionId: "mn",
         name: "Minnesota Court of Appeals",
         abbreviation: "Minn. Ct. App.",
         level: "appellate",
@@ -1889,7 +1889,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "mn-district",
-        jurisdictionId: "MN",
+        jurisdictionId: "mn",
         name: "Minnesota District Court",
         abbreviation: "Minn. Dist. Ct.",
         level: "trial",
@@ -1901,7 +1901,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "mn-tax",
-        jurisdictionId: "MN",
+        jurisdictionId: "mn",
         name: "Minnesota Tax Court",
         abbreviation: "Minn. Tax Ct.",
         level: "specialized",
@@ -1911,7 +1911,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "mn-workers-comp",
-        jurisdictionId: "MN",
+        jurisdictionId: "mn",
         name: "Minnesota Workers' Compensation Court of Appeals",
         abbreviation: "Minn. Workers' Comp. Ct. App.",
         level: "specialized",
@@ -1927,11 +1927,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── MISSISSIPPI ───────────────────────────────────────────────────
   {
-    stateId: "MS",
+    stateId: "ms",
     stateName: "Mississippi",
     supremeCourt: {
       id: "ms-supreme",
-      jurisdictionId: "MS",
+      jurisdictionId: "ms",
       name: "Supreme Court of Mississippi",
       abbreviation: "Miss.",
       level: "supreme",
@@ -1942,7 +1942,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "ms-app",
-        jurisdictionId: "MS",
+        jurisdictionId: "ms",
         name: "Mississippi Court of Appeals",
         abbreviation: "Miss. Ct. App.",
         level: "appellate",
@@ -1954,7 +1954,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "ms-circuit",
-        jurisdictionId: "MS",
+        jurisdictionId: "ms",
         name: "Mississippi Circuit Court",
         abbreviation: "Miss. Cir. Ct.",
         level: "trial",
@@ -1964,7 +1964,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ms-chancery",
-        jurisdictionId: "MS",
+        jurisdictionId: "ms",
         name: "Mississippi Chancery Court",
         abbreviation: "Miss. Ch. Ct.",
         level: "trial",
@@ -1976,7 +1976,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "ms-county",
-        jurisdictionId: "MS",
+        jurisdictionId: "ms",
         name: "Mississippi County Court",
         abbreviation: "Miss. Cnty. Ct.",
         level: "specialized",
@@ -1986,7 +1986,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ms-youth",
-        jurisdictionId: "MS",
+        jurisdictionId: "ms",
         name: "Mississippi Youth Court",
         abbreviation: "Miss. Youth Ct.",
         level: "specialized",
@@ -2004,11 +2004,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── MISSOURI ──────────────────────────────────────────────────────
   {
-    stateId: "MO",
+    stateId: "mo",
     stateName: "Missouri",
     supremeCourt: {
       id: "mo-supreme",
-      jurisdictionId: "MO",
+      jurisdictionId: "mo",
       name: "Supreme Court of Missouri",
       abbreviation: "Mo.",
       level: "supreme",
@@ -2019,7 +2019,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "mo-app-eastern",
-        jurisdictionId: "MO",
+        jurisdictionId: "mo",
         name: "Missouri Court of Appeals, Eastern District",
         abbreviation: "Mo. Ct. App. E.D.",
         level: "appellate",
@@ -2029,7 +2029,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "mo-app-western",
-        jurisdictionId: "MO",
+        jurisdictionId: "mo",
         name: "Missouri Court of Appeals, Western District",
         abbreviation: "Mo. Ct. App. W.D.",
         level: "appellate",
@@ -2039,7 +2039,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "mo-app-southern",
-        jurisdictionId: "MO",
+        jurisdictionId: "mo",
         name: "Missouri Court of Appeals, Southern District",
         abbreviation: "Mo. Ct. App. S.D.",
         level: "appellate",
@@ -2051,7 +2051,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "mo-circuit",
-        jurisdictionId: "MO",
+        jurisdictionId: "mo",
         name: "Missouri Circuit Court",
         abbreviation: "Mo. Cir. Ct.",
         level: "trial",
@@ -2063,7 +2063,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "mo-municipal",
-        jurisdictionId: "MO",
+        jurisdictionId: "mo",
         name: "Missouri Municipal Court",
         abbreviation: "Mo. Mun. Ct.",
         level: "specialized",
@@ -2073,7 +2073,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "mo-drug",
-        jurisdictionId: "MO",
+        jurisdictionId: "mo",
         name: "Missouri Drug Court",
         abbreviation: "Mo. Drug Ct.",
         level: "specialized",
@@ -2091,11 +2091,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── MONTANA ───────────────────────────────────────────────────────
   {
-    stateId: "MT",
+    stateId: "mt",
     stateName: "Montana",
     supremeCourt: {
       id: "mt-supreme",
-      jurisdictionId: "MT",
+      jurisdictionId: "mt",
       name: "Montana Supreme Court",
       abbreviation: "Mont.",
       level: "supreme",
@@ -2107,7 +2107,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "mt-district",
-        jurisdictionId: "MT",
+        jurisdictionId: "mt",
         name: "Montana District Court",
         abbreviation: "Mont. Dist. Ct.",
         level: "trial",
@@ -2119,7 +2119,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "mt-justice",
-        jurisdictionId: "MT",
+        jurisdictionId: "mt",
         name: "Montana Justice Court",
         abbreviation: "Mont. Just. Ct.",
         level: "specialized",
@@ -2129,7 +2129,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "mt-water",
-        jurisdictionId: "MT",
+        jurisdictionId: "mt",
         name: "Montana Water Court",
         abbreviation: "Mont. Water Ct.",
         level: "specialized",
@@ -2139,7 +2139,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "mt-workers-comp",
-        jurisdictionId: "MT",
+        jurisdictionId: "mt",
         name: "Montana Workers' Compensation Court",
         abbreviation: "Mont. Workers' Comp. Ct.",
         level: "specialized",
@@ -2158,11 +2158,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── NEBRASKA ──────────────────────────────────────────────────────
   {
-    stateId: "NE",
+    stateId: "ne",
     stateName: "Nebraska",
     supremeCourt: {
       id: "ne-supreme",
-      jurisdictionId: "NE",
+      jurisdictionId: "ne",
       name: "Nebraska Supreme Court",
       abbreviation: "Neb.",
       level: "supreme",
@@ -2174,7 +2174,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "ne-district",
-        jurisdictionId: "NE",
+        jurisdictionId: "ne",
         name: "Nebraska District Court",
         abbreviation: "Neb. Dist. Ct.",
         level: "trial",
@@ -2184,7 +2184,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ne-county",
-        jurisdictionId: "NE",
+        jurisdictionId: "ne",
         name: "Nebraska County Court",
         abbreviation: "Neb. Cnty. Ct.",
         level: "trial",
@@ -2196,7 +2196,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "ne-juvenile",
-        jurisdictionId: "NE",
+        jurisdictionId: "ne",
         name: "Nebraska Juvenile Court",
         abbreviation: "Neb. Juv. Ct.",
         level: "specialized",
@@ -2206,7 +2206,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ne-workers-comp",
-        jurisdictionId: "NE",
+        jurisdictionId: "ne",
         name: "Nebraska Workers' Compensation Court",
         abbreviation: "Neb. Workers' Comp. Ct.",
         level: "specialized",
@@ -2225,11 +2225,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── NEVADA ────────────────────────────────────────────────────────
   {
-    stateId: "NV",
+    stateId: "nv",
     stateName: "Nevada",
     supremeCourt: {
       id: "nv-supreme",
-      jurisdictionId: "NV",
+      jurisdictionId: "nv",
       name: "Supreme Court of Nevada",
       abbreviation: "Nev.",
       level: "supreme",
@@ -2240,7 +2240,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "nv-app",
-        jurisdictionId: "NV",
+        jurisdictionId: "nv",
         name: "Nevada Court of Appeals",
         abbreviation: "Nev. Ct. App.",
         level: "appellate",
@@ -2252,7 +2252,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "nv-district",
-        jurisdictionId: "NV",
+        jurisdictionId: "nv",
         name: "Nevada District Court",
         abbreviation: "Nev. Dist. Ct.",
         level: "trial",
@@ -2264,7 +2264,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "nv-justice",
-        jurisdictionId: "NV",
+        jurisdictionId: "nv",
         name: "Nevada Justice Court",
         abbreviation: "Nev. Just. Ct.",
         level: "specialized",
@@ -2274,7 +2274,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "nv-family",
-        jurisdictionId: "NV",
+        jurisdictionId: "nv",
         name: "Nevada Family Court",
         abbreviation: "Nev. Fam. Ct.",
         level: "specialized",
@@ -2292,11 +2292,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── NEW HAMPSHIRE ─────────────────────────────────────────────────
   {
-    stateId: "NH",
+    stateId: "nh",
     stateName: "New Hampshire",
     supremeCourt: {
       id: "nh-supreme",
-      jurisdictionId: "NH",
+      jurisdictionId: "nh",
       name: "New Hampshire Supreme Court",
       abbreviation: "N.H.",
       level: "supreme",
@@ -2308,7 +2308,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "nh-superior",
-        jurisdictionId: "NH",
+        jurisdictionId: "nh",
         name: "New Hampshire Superior Court",
         abbreviation: "N.H. Super. Ct.",
         level: "trial",
@@ -2318,7 +2318,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "nh-circuit",
-        jurisdictionId: "NH",
+        jurisdictionId: "nh",
         name: "New Hampshire Circuit Court",
         abbreviation: "N.H. Cir. Ct.",
         level: "trial",
@@ -2330,7 +2330,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "nh-family",
-        jurisdictionId: "NH",
+        jurisdictionId: "nh",
         name: "New Hampshire Family Division",
         abbreviation: "N.H. Fam. Div.",
         level: "specialized",
@@ -2340,7 +2340,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "nh-probate",
-        jurisdictionId: "NH",
+        jurisdictionId: "nh",
         name: "New Hampshire Probate Division",
         abbreviation: "N.H. Prob. Div.",
         level: "specialized",
@@ -2358,11 +2358,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── NEW JERSEY ────────────────────────────────────────────────────
   {
-    stateId: "NJ",
+    stateId: "nj",
     stateName: "New Jersey",
     supremeCourt: {
       id: "nj-supreme",
-      jurisdictionId: "NJ",
+      jurisdictionId: "nj",
       name: "New Jersey Supreme Court",
       abbreviation: "N.J.",
       level: "supreme",
@@ -2373,7 +2373,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "nj-app",
-        jurisdictionId: "NJ",
+        jurisdictionId: "nj",
         name: "New Jersey Superior Court, Appellate Division",
         abbreviation: "N.J. Super. Ct. App. Div.",
         level: "appellate",
@@ -2385,7 +2385,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "nj-superior",
-        jurisdictionId: "NJ",
+        jurisdictionId: "nj",
         name: "New Jersey Superior Court",
         abbreviation: "N.J. Super. Ct.",
         level: "trial",
@@ -2397,7 +2397,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "nj-tax",
-        jurisdictionId: "NJ",
+        jurisdictionId: "nj",
         name: "New Jersey Tax Court",
         abbreviation: "N.J. Tax Ct.",
         level: "specialized",
@@ -2407,7 +2407,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "nj-municipal",
-        jurisdictionId: "NJ",
+        jurisdictionId: "nj",
         name: "New Jersey Municipal Court",
         abbreviation: "N.J. Mun. Ct.",
         level: "specialized",
@@ -2425,11 +2425,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── NEW MEXICO ────────────────────────────────────────────────────
   {
-    stateId: "NM",
+    stateId: "nm",
     stateName: "New Mexico",
     supremeCourt: {
       id: "nm-supreme",
-      jurisdictionId: "NM",
+      jurisdictionId: "nm",
       name: "New Mexico Supreme Court",
       abbreviation: "N.M.",
       level: "supreme",
@@ -2440,7 +2440,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "nm-app",
-        jurisdictionId: "NM",
+        jurisdictionId: "nm",
         name: "New Mexico Court of Appeals",
         abbreviation: "N.M. Ct. App.",
         level: "appellate",
@@ -2452,7 +2452,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "nm-district",
-        jurisdictionId: "NM",
+        jurisdictionId: "nm",
         name: "New Mexico District Court",
         abbreviation: "N.M. Dist. Ct.",
         level: "trial",
@@ -2464,7 +2464,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "nm-magistrate",
-        jurisdictionId: "NM",
+        jurisdictionId: "nm",
         name: "New Mexico Magistrate Court",
         abbreviation: "N.M. Mag. Ct.",
         level: "magistrate",
@@ -2474,7 +2474,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "nm-metropolitan",
-        jurisdictionId: "NM",
+        jurisdictionId: "nm",
         name: "New Mexico Metropolitan Court",
         abbreviation: "N.M. Metro. Ct.",
         level: "specialized",
@@ -2490,11 +2490,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── NEW YORK ──────────────────────────────────────────────────────
   {
-    stateId: "NY",
+    stateId: "ny",
     stateName: "New York",
     supremeCourt: {
       id: "ny-court-of-appeals",
-      jurisdictionId: "NY",
+      jurisdictionId: "ny",
       name: "New York Court of Appeals",
       abbreviation: "N.Y.",
       level: "supreme",
@@ -2505,7 +2505,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "ny-app-div-1",
-        jurisdictionId: "NY",
+        jurisdictionId: "ny",
         name: "New York Supreme Court, Appellate Division, First Department",
         abbreviation: "N.Y. App. Div. 1st Dep't",
         level: "appellate",
@@ -2515,7 +2515,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ny-app-div-2",
-        jurisdictionId: "NY",
+        jurisdictionId: "ny",
         name: "New York Supreme Court, Appellate Division, Second Department",
         abbreviation: "N.Y. App. Div. 2d Dep't",
         level: "appellate",
@@ -2525,7 +2525,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ny-app-div-3",
-        jurisdictionId: "NY",
+        jurisdictionId: "ny",
         name: "New York Supreme Court, Appellate Division, Third Department",
         abbreviation: "N.Y. App. Div. 3d Dep't",
         level: "appellate",
@@ -2535,7 +2535,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ny-app-div-4",
-        jurisdictionId: "NY",
+        jurisdictionId: "ny",
         name: "New York Supreme Court, Appellate Division, Fourth Department",
         abbreviation: "N.Y. App. Div. 4th Dep't",
         level: "appellate",
@@ -2545,7 +2545,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ny-app-term",
-        jurisdictionId: "NY",
+        jurisdictionId: "ny",
         name: "New York Supreme Court, Appellate Term",
         abbreviation: "N.Y. App. Term",
         level: "appellate",
@@ -2557,7 +2557,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "ny-supreme",
-        jurisdictionId: "NY",
+        jurisdictionId: "ny",
         name: "New York Supreme Court",
         abbreviation: "N.Y. Sup. Ct.",
         level: "trial",
@@ -2567,7 +2567,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ny-county",
-        jurisdictionId: "NY",
+        jurisdictionId: "ny",
         name: "New York County Court",
         abbreviation: "N.Y. Cnty. Ct.",
         level: "trial",
@@ -2579,7 +2579,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "ny-family",
-        jurisdictionId: "NY",
+        jurisdictionId: "ny",
         name: "New York Family Court",
         abbreviation: "N.Y. Fam. Ct.",
         level: "specialized",
@@ -2589,7 +2589,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ny-surrogate",
-        jurisdictionId: "NY",
+        jurisdictionId: "ny",
         name: "New York Surrogate's Court",
         abbreviation: "N.Y. Sur. Ct.",
         level: "specialized",
@@ -2599,7 +2599,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ny-court-of-claims",
-        jurisdictionId: "NY",
+        jurisdictionId: "ny",
         name: "New York Court of Claims",
         abbreviation: "N.Y. Ct. Cl.",
         level: "specialized",
@@ -2609,7 +2609,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ny-housing",
-        jurisdictionId: "NY",
+        jurisdictionId: "ny",
         name: "New York City Housing Court",
         abbreviation: "N.Y.C. Hous. Ct.",
         level: "specialized",
@@ -2628,11 +2628,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── NORTH CAROLINA ────────────────────────────────────────────────
   {
-    stateId: "NC",
+    stateId: "nc",
     stateName: "North Carolina",
     supremeCourt: {
       id: "nc-supreme",
-      jurisdictionId: "NC",
+      jurisdictionId: "nc",
       name: "Supreme Court of North Carolina",
       abbreviation: "N.C.",
       level: "supreme",
@@ -2643,7 +2643,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "nc-app",
-        jurisdictionId: "NC",
+        jurisdictionId: "nc",
         name: "North Carolina Court of Appeals",
         abbreviation: "N.C. Ct. App.",
         level: "appellate",
@@ -2655,7 +2655,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "nc-superior",
-        jurisdictionId: "NC",
+        jurisdictionId: "nc",
         name: "North Carolina Superior Court",
         abbreviation: "N.C. Super. Ct.",
         level: "trial",
@@ -2665,7 +2665,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "nc-district",
-        jurisdictionId: "NC",
+        jurisdictionId: "nc",
         name: "North Carolina District Court",
         abbreviation: "N.C. Dist. Ct.",
         level: "trial",
@@ -2677,7 +2677,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "nc-business",
-        jurisdictionId: "NC",
+        jurisdictionId: "nc",
         name: "North Carolina Business Court",
         abbreviation: "N.C. Bus. Ct.",
         level: "specialized",
@@ -2695,11 +2695,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── NORTH DAKOTA ──────────────────────────────────────────────────
   {
-    stateId: "ND",
+    stateId: "nd",
     stateName: "North Dakota",
     supremeCourt: {
       id: "nd-supreme",
-      jurisdictionId: "ND",
+      jurisdictionId: "nd",
       name: "North Dakota Supreme Court",
       abbreviation: "N.D.",
       level: "supreme",
@@ -2711,7 +2711,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "nd-district",
-        jurisdictionId: "ND",
+        jurisdictionId: "nd",
         name: "North Dakota District Court",
         abbreviation: "N.D. Dist. Ct.",
         level: "trial",
@@ -2723,7 +2723,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "nd-municipal",
-        jurisdictionId: "ND",
+        jurisdictionId: "nd",
         name: "North Dakota Municipal Court",
         abbreviation: "N.D. Mun. Ct.",
         level: "specialized",
@@ -2741,11 +2741,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── OHIO ──────────────────────────────────────────────────────────
   {
-    stateId: "OH",
+    stateId: "oh",
     stateName: "Ohio",
     supremeCourt: {
       id: "oh-supreme",
-      jurisdictionId: "OH",
+      jurisdictionId: "oh",
       name: "Supreme Court of Ohio",
       abbreviation: "Ohio",
       level: "supreme",
@@ -2756,7 +2756,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "oh-app",
-        jurisdictionId: "OH",
+        jurisdictionId: "oh",
         name: "Ohio District Court of Appeals",
         abbreviation: "Ohio Ct. App.",
         level: "appellate",
@@ -2768,7 +2768,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "oh-common-pleas",
-        jurisdictionId: "OH",
+        jurisdictionId: "oh",
         name: "Ohio Court of Common Pleas",
         abbreviation: "Ohio C.P.",
         level: "trial",
@@ -2780,7 +2780,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "oh-municipal",
-        jurisdictionId: "OH",
+        jurisdictionId: "oh",
         name: "Ohio Municipal Court",
         abbreviation: "Ohio Mun. Ct.",
         level: "specialized",
@@ -2790,7 +2790,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "oh-court-of-claims",
-        jurisdictionId: "OH",
+        jurisdictionId: "oh",
         name: "Ohio Court of Claims",
         abbreviation: "Ohio Ct. Cl.",
         level: "specialized",
@@ -2808,11 +2808,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── OKLAHOMA ──────────────────────────────────────────────────────
   {
-    stateId: "OK",
+    stateId: "ok",
     stateName: "Oklahoma",
     supremeCourt: {
       id: "ok-supreme",
-      jurisdictionId: "OK",
+      jurisdictionId: "ok",
       name: "Oklahoma Supreme Court",
       abbreviation: "Okla.",
       level: "supreme",
@@ -2823,7 +2823,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "ok-crim-app",
-        jurisdictionId: "OK",
+        jurisdictionId: "ok",
         name: "Oklahoma Court of Criminal Appeals",
         abbreviation: "Okla. Crim. App.",
         level: "appellate",
@@ -2833,7 +2833,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ok-civ-app",
-        jurisdictionId: "OK",
+        jurisdictionId: "ok",
         name: "Oklahoma Court of Civil Appeals",
         abbreviation: "Okla. Civ. App.",
         level: "appellate",
@@ -2845,7 +2845,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "ok-district",
-        jurisdictionId: "OK",
+        jurisdictionId: "ok",
         name: "Oklahoma District Court",
         abbreviation: "Okla. Dist. Ct.",
         level: "trial",
@@ -2857,7 +2857,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "ok-municipal",
-        jurisdictionId: "OK",
+        jurisdictionId: "ok",
         name: "Oklahoma Municipal Court",
         abbreviation: "Okla. Mun. Ct.",
         level: "specialized",
@@ -2867,7 +2867,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ok-workers-comp",
-        jurisdictionId: "OK",
+        jurisdictionId: "ok",
         name: "Oklahoma Workers' Compensation Commission",
         abbreviation: "Okla. Workers' Comp.",
         level: "specialized",
@@ -2886,11 +2886,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── OREGON ────────────────────────────────────────────────────────
   {
-    stateId: "OR",
+    stateId: "or",
     stateName: "Oregon",
     supremeCourt: {
       id: "or-supreme",
-      jurisdictionId: "OR",
+      jurisdictionId: "or",
       name: "Oregon Supreme Court",
       abbreviation: "Or.",
       level: "supreme",
@@ -2901,7 +2901,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "or-app",
-        jurisdictionId: "OR",
+        jurisdictionId: "or",
         name: "Oregon Court of Appeals",
         abbreviation: "Or. Ct. App.",
         level: "appellate",
@@ -2913,7 +2913,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "or-circuit",
-        jurisdictionId: "OR",
+        jurisdictionId: "or",
         name: "Oregon Circuit Court",
         abbreviation: "Or. Cir. Ct.",
         level: "trial",
@@ -2925,7 +2925,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "or-tax",
-        jurisdictionId: "OR",
+        jurisdictionId: "or",
         name: "Oregon Tax Court",
         abbreviation: "Or. Tax Ct.",
         level: "specialized",
@@ -2935,7 +2935,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "or-juvenile",
-        jurisdictionId: "OR",
+        jurisdictionId: "or",
         name: "Oregon Juvenile Court",
         abbreviation: "Or. Juv. Ct.",
         level: "specialized",
@@ -2953,11 +2953,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── PENNSYLVANIA ──────────────────────────────────────────────────
   {
-    stateId: "PA",
+    stateId: "pa",
     stateName: "Pennsylvania",
     supremeCourt: {
       id: "pa-supreme",
-      jurisdictionId: "PA",
+      jurisdictionId: "pa",
       name: "Supreme Court of Pennsylvania",
       abbreviation: "Pa.",
       level: "supreme",
@@ -2968,7 +2968,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "pa-superior",
-        jurisdictionId: "PA",
+        jurisdictionId: "pa",
         name: "Pennsylvania Superior Court",
         abbreviation: "Pa. Super. Ct.",
         level: "appellate",
@@ -2978,7 +2978,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "pa-commonwealth",
-        jurisdictionId: "PA",
+        jurisdictionId: "pa",
         name: "Pennsylvania Commonwealth Court",
         abbreviation: "Pa. Commw. Ct.",
         level: "appellate",
@@ -2990,7 +2990,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "pa-common-pleas",
-        jurisdictionId: "PA",
+        jurisdictionId: "pa",
         name: "Pennsylvania Court of Common Pleas",
         abbreviation: "Pa. C.P.",
         level: "trial",
@@ -3002,7 +3002,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "pa-municipal",
-        jurisdictionId: "PA",
+        jurisdictionId: "pa",
         name: "Philadelphia Municipal Court",
         abbreviation: "Phila. Mun. Ct.",
         level: "specialized",
@@ -3012,7 +3012,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "pa-magisterial",
-        jurisdictionId: "PA",
+        jurisdictionId: "pa",
         name: "Pennsylvania Magisterial District Court",
         abbreviation: "Pa. Mag. Dist. Ct.",
         level: "magistrate",
@@ -3030,11 +3030,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── RHODE ISLAND ──────────────────────────────────────────────────
   {
-    stateId: "RI",
+    stateId: "ri",
     stateName: "Rhode Island",
     supremeCourt: {
       id: "ri-supreme",
-      jurisdictionId: "RI",
+      jurisdictionId: "ri",
       name: "Rhode Island Supreme Court",
       abbreviation: "R.I.",
       level: "supreme",
@@ -3046,7 +3046,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "ri-superior",
-        jurisdictionId: "RI",
+        jurisdictionId: "ri",
         name: "Rhode Island Superior Court",
         abbreviation: "R.I. Super. Ct.",
         level: "trial",
@@ -3056,7 +3056,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ri-district",
-        jurisdictionId: "RI",
+        jurisdictionId: "ri",
         name: "Rhode Island District Court",
         abbreviation: "R.I. Dist. Ct.",
         level: "trial",
@@ -3068,7 +3068,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "ri-family",
-        jurisdictionId: "RI",
+        jurisdictionId: "ri",
         name: "Rhode Island Family Court",
         abbreviation: "R.I. Fam. Ct.",
         level: "specialized",
@@ -3078,7 +3078,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ri-workers-comp",
-        jurisdictionId: "RI",
+        jurisdictionId: "ri",
         name: "Rhode Island Workers' Compensation Court",
         abbreviation: "R.I. Workers' Comp. Ct.",
         level: "specialized",
@@ -3096,11 +3096,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── SOUTH CAROLINA ────────────────────────────────────────────────
   {
-    stateId: "SC",
+    stateId: "sc",
     stateName: "South Carolina",
     supremeCourt: {
       id: "sc-supreme",
-      jurisdictionId: "SC",
+      jurisdictionId: "sc",
       name: "South Carolina Supreme Court",
       abbreviation: "S.C.",
       level: "supreme",
@@ -3111,7 +3111,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "sc-app",
-        jurisdictionId: "SC",
+        jurisdictionId: "sc",
         name: "South Carolina Court of Appeals",
         abbreviation: "S.C. Ct. App.",
         level: "appellate",
@@ -3123,7 +3123,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "sc-circuit",
-        jurisdictionId: "SC",
+        jurisdictionId: "sc",
         name: "South Carolina Circuit Court",
         abbreviation: "S.C. Cir. Ct.",
         level: "trial",
@@ -3135,7 +3135,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "sc-family",
-        jurisdictionId: "SC",
+        jurisdictionId: "sc",
         name: "South Carolina Family Court",
         abbreviation: "S.C. Fam. Ct.",
         level: "specialized",
@@ -3145,7 +3145,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "sc-probate",
-        jurisdictionId: "SC",
+        jurisdictionId: "sc",
         name: "South Carolina Probate Court",
         abbreviation: "S.C. Prob. Ct.",
         level: "specialized",
@@ -3155,7 +3155,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "sc-magistrate",
-        jurisdictionId: "SC",
+        jurisdictionId: "sc",
         name: "South Carolina Magistrate Court",
         abbreviation: "S.C. Mag. Ct.",
         level: "magistrate",
@@ -3171,11 +3171,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── SOUTH DAKOTA ──────────────────────────────────────────────────
   {
-    stateId: "SD",
+    stateId: "sd",
     stateName: "South Dakota",
     supremeCourt: {
       id: "sd-supreme",
-      jurisdictionId: "SD",
+      jurisdictionId: "sd",
       name: "South Dakota Supreme Court",
       abbreviation: "S.D.",
       level: "supreme",
@@ -3187,7 +3187,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "sd-circuit",
-        jurisdictionId: "SD",
+        jurisdictionId: "sd",
         name: "South Dakota Circuit Court",
         abbreviation: "S.D. Cir. Ct.",
         level: "trial",
@@ -3199,7 +3199,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "sd-magistrate",
-        jurisdictionId: "SD",
+        jurisdictionId: "sd",
         name: "South Dakota Magistrate Court",
         abbreviation: "S.D. Mag. Ct.",
         level: "magistrate",
@@ -3209,7 +3209,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "sd-small-claims",
-        jurisdictionId: "SD",
+        jurisdictionId: "sd",
         name: "South Dakota Small Claims Court",
         abbreviation: "S.D. Sm. Cl.",
         level: "specialized",
@@ -3227,11 +3227,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── TENNESSEE ─────────────────────────────────────────────────────
   {
-    stateId: "TN",
+    stateId: "tn",
     stateName: "Tennessee",
     supremeCourt: {
       id: "tn-supreme",
-      jurisdictionId: "TN",
+      jurisdictionId: "tn",
       name: "Tennessee Supreme Court",
       abbreviation: "Tenn.",
       level: "supreme",
@@ -3242,7 +3242,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "tn-app",
-        jurisdictionId: "TN",
+        jurisdictionId: "tn",
         name: "Tennessee Court of Appeals",
         abbreviation: "Tenn. Ct. App.",
         level: "appellate",
@@ -3252,7 +3252,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tn-crim-app",
-        jurisdictionId: "TN",
+        jurisdictionId: "tn",
         name: "Tennessee Court of Criminal Appeals",
         abbreviation: "Tenn. Crim. App.",
         level: "appellate",
@@ -3264,7 +3264,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "tn-circuit",
-        jurisdictionId: "TN",
+        jurisdictionId: "tn",
         name: "Tennessee Circuit Court",
         abbreviation: "Tenn. Cir. Ct.",
         level: "trial",
@@ -3274,7 +3274,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tn-chancery",
-        jurisdictionId: "TN",
+        jurisdictionId: "tn",
         name: "Tennessee Chancery Court",
         abbreviation: "Tenn. Ch. Ct.",
         level: "trial",
@@ -3284,7 +3284,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tn-criminal",
-        jurisdictionId: "TN",
+        jurisdictionId: "tn",
         name: "Tennessee Criminal Court",
         abbreviation: "Tenn. Crim. Ct.",
         level: "trial",
@@ -3296,7 +3296,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "tn-juvenile",
-        jurisdictionId: "TN",
+        jurisdictionId: "tn",
         name: "Tennessee Juvenile Court",
         abbreviation: "Tenn. Juv. Ct.",
         level: "specialized",
@@ -3306,7 +3306,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tn-probate",
-        jurisdictionId: "TN",
+        jurisdictionId: "tn",
         name: "Tennessee Probate Court",
         abbreviation: "Tenn. Prob. Ct.",
         level: "specialized",
@@ -3324,11 +3324,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── TEXAS ─────────────────────────────────────────────────────────
   {
-    stateId: "TX",
+    stateId: "tx",
     stateName: "Texas",
     supremeCourt: {
       id: "tx-supreme",
-      jurisdictionId: "TX",
+      jurisdictionId: "tx",
       name: "Supreme Court of Texas",
       abbreviation: "Tex.",
       level: "supreme",
@@ -3339,7 +3339,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "tx-crim-app",
-        jurisdictionId: "TX",
+        jurisdictionId: "tx",
         name: "Texas Court of Criminal Appeals",
         abbreviation: "Tex. Crim. App.",
         level: "appellate",
@@ -3349,7 +3349,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tx-app-1",
-        jurisdictionId: "TX",
+        jurisdictionId: "tx",
         name: "Texas First Court of Appeals",
         abbreviation: "Tex. App.—Houston [1st Dist.]",
         level: "appellate",
@@ -3359,7 +3359,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tx-app-2",
-        jurisdictionId: "TX",
+        jurisdictionId: "tx",
         name: "Texas Second Court of Appeals",
         abbreviation: "Tex. App.—Fort Worth",
         level: "appellate",
@@ -3369,7 +3369,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tx-app-3",
-        jurisdictionId: "TX",
+        jurisdictionId: "tx",
         name: "Texas Third Court of Appeals",
         abbreviation: "Tex. App.—Austin",
         level: "appellate",
@@ -3379,7 +3379,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tx-app-4",
-        jurisdictionId: "TX",
+        jurisdictionId: "tx",
         name: "Texas Fourth Court of Appeals",
         abbreviation: "Tex. App.—San Antonio",
         level: "appellate",
@@ -3389,7 +3389,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tx-app-5",
-        jurisdictionId: "TX",
+        jurisdictionId: "tx",
         name: "Texas Fifth Court of Appeals",
         abbreviation: "Tex. App.—Dallas",
         level: "appellate",
@@ -3399,7 +3399,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tx-app-6",
-        jurisdictionId: "TX",
+        jurisdictionId: "tx",
         name: "Texas Sixth Court of Appeals",
         abbreviation: "Tex. App.—Texarkana",
         level: "appellate",
@@ -3409,7 +3409,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tx-app-7",
-        jurisdictionId: "TX",
+        jurisdictionId: "tx",
         name: "Texas Seventh Court of Appeals",
         abbreviation: "Tex. App.—Amarillo",
         level: "appellate",
@@ -3419,7 +3419,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tx-app-8",
-        jurisdictionId: "TX",
+        jurisdictionId: "tx",
         name: "Texas Eighth Court of Appeals",
         abbreviation: "Tex. App.—El Paso",
         level: "appellate",
@@ -3429,7 +3429,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tx-app-9",
-        jurisdictionId: "TX",
+        jurisdictionId: "tx",
         name: "Texas Ninth Court of Appeals",
         abbreviation: "Tex. App.—Beaumont",
         level: "appellate",
@@ -3439,7 +3439,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tx-app-10",
-        jurisdictionId: "TX",
+        jurisdictionId: "tx",
         name: "Texas Tenth Court of Appeals",
         abbreviation: "Tex. App.—Waco",
         level: "appellate",
@@ -3449,7 +3449,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tx-app-11",
-        jurisdictionId: "TX",
+        jurisdictionId: "tx",
         name: "Texas Eleventh Court of Appeals",
         abbreviation: "Tex. App.—Eastland",
         level: "appellate",
@@ -3459,7 +3459,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tx-app-12",
-        jurisdictionId: "TX",
+        jurisdictionId: "tx",
         name: "Texas Twelfth Court of Appeals",
         abbreviation: "Tex. App.—Tyler",
         level: "appellate",
@@ -3469,7 +3469,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tx-app-13",
-        jurisdictionId: "TX",
+        jurisdictionId: "tx",
         name: "Texas Thirteenth Court of Appeals",
         abbreviation: "Tex. App.—Corpus Christi-Edinburg",
         level: "appellate",
@@ -3479,7 +3479,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tx-app-14",
-        jurisdictionId: "TX",
+        jurisdictionId: "tx",
         name: "Texas Fourteenth Court of Appeals",
         abbreviation: "Tex. App.—Houston [14th Dist.]",
         level: "appellate",
@@ -3491,7 +3491,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "tx-district",
-        jurisdictionId: "TX",
+        jurisdictionId: "tx",
         name: "Texas District Court",
         abbreviation: "Tex. Dist. Ct.",
         level: "trial",
@@ -3501,7 +3501,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tx-county-at-law",
-        jurisdictionId: "TX",
+        jurisdictionId: "tx",
         name: "Texas County Court at Law",
         abbreviation: "Tex. Cnty. Ct. at Law",
         level: "trial",
@@ -3513,7 +3513,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "tx-justice",
-        jurisdictionId: "TX",
+        jurisdictionId: "tx",
         name: "Texas Justice Court",
         abbreviation: "Tex. Just. Ct.",
         level: "specialized",
@@ -3523,7 +3523,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "tx-municipal",
-        jurisdictionId: "TX",
+        jurisdictionId: "tx",
         name: "Texas Municipal Court",
         abbreviation: "Tex. Mun. Ct.",
         level: "specialized",
@@ -3543,11 +3543,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── UTAH ──────────────────────────────────────────────────────────
   {
-    stateId: "UT",
+    stateId: "ut",
     stateName: "Utah",
     supremeCourt: {
       id: "ut-supreme",
-      jurisdictionId: "UT",
+      jurisdictionId: "ut",
       name: "Utah Supreme Court",
       abbreviation: "Utah",
       level: "supreme",
@@ -3558,7 +3558,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "ut-app",
-        jurisdictionId: "UT",
+        jurisdictionId: "ut",
         name: "Utah Court of Appeals",
         abbreviation: "Utah Ct. App.",
         level: "appellate",
@@ -3570,7 +3570,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "ut-district",
-        jurisdictionId: "UT",
+        jurisdictionId: "ut",
         name: "Utah District Court",
         abbreviation: "Utah Dist. Ct.",
         level: "trial",
@@ -3582,7 +3582,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "ut-juvenile",
-        jurisdictionId: "UT",
+        jurisdictionId: "ut",
         name: "Utah Juvenile Court",
         abbreviation: "Utah Juv. Ct.",
         level: "specialized",
@@ -3592,7 +3592,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "ut-justice",
-        jurisdictionId: "UT",
+        jurisdictionId: "ut",
         name: "Utah Justice Court",
         abbreviation: "Utah Just. Ct.",
         level: "specialized",
@@ -3608,11 +3608,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── VERMONT ───────────────────────────────────────────────────────
   {
-    stateId: "VT",
+    stateId: "vt",
     stateName: "Vermont",
     supremeCourt: {
       id: "vt-supreme",
-      jurisdictionId: "VT",
+      jurisdictionId: "vt",
       name: "Vermont Supreme Court",
       abbreviation: "Vt.",
       level: "supreme",
@@ -3624,7 +3624,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "vt-superior",
-        jurisdictionId: "VT",
+        jurisdictionId: "vt",
         name: "Vermont Superior Court",
         abbreviation: "Vt. Super. Ct.",
         level: "trial",
@@ -3636,7 +3636,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "vt-family",
-        jurisdictionId: "VT",
+        jurisdictionId: "vt",
         name: "Vermont Family Division",
         abbreviation: "Vt. Fam. Div.",
         level: "specialized",
@@ -3646,7 +3646,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "vt-environmental",
-        jurisdictionId: "VT",
+        jurisdictionId: "vt",
         name: "Vermont Environmental Division",
         abbreviation: "Vt. Envtl. Div.",
         level: "specialized",
@@ -3656,7 +3656,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "vt-probate",
-        jurisdictionId: "VT",
+        jurisdictionId: "vt",
         name: "Vermont Probate Division",
         abbreviation: "Vt. Prob. Div.",
         level: "specialized",
@@ -3675,11 +3675,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── VIRGINIA ──────────────────────────────────────────────────────
   {
-    stateId: "VA",
+    stateId: "va",
     stateName: "Virginia",
     supremeCourt: {
       id: "va-supreme",
-      jurisdictionId: "VA",
+      jurisdictionId: "va",
       name: "Supreme Court of Virginia",
       abbreviation: "Va.",
       level: "supreme",
@@ -3690,7 +3690,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "va-app",
-        jurisdictionId: "VA",
+        jurisdictionId: "va",
         name: "Court of Appeals of Virginia",
         abbreviation: "Va. Ct. App.",
         level: "appellate",
@@ -3702,7 +3702,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "va-circuit",
-        jurisdictionId: "VA",
+        jurisdictionId: "va",
         name: "Virginia Circuit Court",
         abbreviation: "Va. Cir. Ct.",
         level: "trial",
@@ -3712,7 +3712,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "va-gdc",
-        jurisdictionId: "VA",
+        jurisdictionId: "va",
         name: "Virginia General District Court",
         abbreviation: "Va. Gen. Dist. Ct.",
         level: "trial",
@@ -3724,7 +3724,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "va-jdr",
-        jurisdictionId: "VA",
+        jurisdictionId: "va",
         name: "Virginia Juvenile and Domestic Relations District Court",
         abbreviation: "Va. J&DR Ct.",
         level: "specialized",
@@ -3742,11 +3742,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── WASHINGTON ────────────────────────────────────────────────────
   {
-    stateId: "WA",
+    stateId: "wa",
     stateName: "Washington",
     supremeCourt: {
       id: "wa-supreme",
-      jurisdictionId: "WA",
+      jurisdictionId: "wa",
       name: "Washington Supreme Court",
       abbreviation: "Wash.",
       level: "supreme",
@@ -3757,7 +3757,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "wa-app-div1",
-        jurisdictionId: "WA",
+        jurisdictionId: "wa",
         name: "Washington Court of Appeals, Division I",
         abbreviation: "Wash. Ct. App. Div. 1",
         level: "appellate",
@@ -3767,7 +3767,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "wa-app-div2",
-        jurisdictionId: "WA",
+        jurisdictionId: "wa",
         name: "Washington Court of Appeals, Division II",
         abbreviation: "Wash. Ct. App. Div. 2",
         level: "appellate",
@@ -3777,7 +3777,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "wa-app-div3",
-        jurisdictionId: "WA",
+        jurisdictionId: "wa",
         name: "Washington Court of Appeals, Division III",
         abbreviation: "Wash. Ct. App. Div. 3",
         level: "appellate",
@@ -3789,7 +3789,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "wa-superior",
-        jurisdictionId: "WA",
+        jurisdictionId: "wa",
         name: "Washington Superior Court",
         abbreviation: "Wash. Super. Ct.",
         level: "trial",
@@ -3799,7 +3799,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "wa-district",
-        jurisdictionId: "WA",
+        jurisdictionId: "wa",
         name: "Washington District Court",
         abbreviation: "Wash. Dist. Ct.",
         level: "trial",
@@ -3811,7 +3811,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "wa-municipal",
-        jurisdictionId: "WA",
+        jurisdictionId: "wa",
         name: "Washington Municipal Court",
         abbreviation: "Wash. Mun. Ct.",
         level: "specialized",
@@ -3829,11 +3829,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── WEST VIRGINIA ─────────────────────────────────────────────────
   {
-    stateId: "WV",
+    stateId: "wv",
     stateName: "West Virginia",
     supremeCourt: {
       id: "wv-supreme",
-      jurisdictionId: "WV",
+      jurisdictionId: "wv",
       name: "Supreme Court of Appeals of West Virginia",
       abbreviation: "W. Va.",
       level: "supreme",
@@ -3845,7 +3845,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "wv-circuit",
-        jurisdictionId: "WV",
+        jurisdictionId: "wv",
         name: "West Virginia Circuit Court",
         abbreviation: "W. Va. Cir. Ct.",
         level: "trial",
@@ -3857,7 +3857,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "wv-magistrate",
-        jurisdictionId: "WV",
+        jurisdictionId: "wv",
         name: "West Virginia Magistrate Court",
         abbreviation: "W. Va. Mag. Ct.",
         level: "magistrate",
@@ -3867,7 +3867,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "wv-family",
-        jurisdictionId: "WV",
+        jurisdictionId: "wv",
         name: "West Virginia Family Court",
         abbreviation: "W. Va. Fam. Ct.",
         level: "specialized",
@@ -3886,11 +3886,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── WISCONSIN ─────────────────────────────────────────────────────
   {
-    stateId: "WI",
+    stateId: "wi",
     stateName: "Wisconsin",
     supremeCourt: {
       id: "wi-supreme",
-      jurisdictionId: "WI",
+      jurisdictionId: "wi",
       name: "Wisconsin Supreme Court",
       abbreviation: "Wis.",
       level: "supreme",
@@ -3901,7 +3901,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     appellateCourts: [
       {
         id: "wi-app",
-        jurisdictionId: "WI",
+        jurisdictionId: "wi",
         name: "Wisconsin Court of Appeals",
         abbreviation: "Wis. Ct. App.",
         level: "appellate",
@@ -3913,7 +3913,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "wi-circuit",
-        jurisdictionId: "WI",
+        jurisdictionId: "wi",
         name: "Wisconsin Circuit Court",
         abbreviation: "Wis. Cir. Ct.",
         level: "trial",
@@ -3925,7 +3925,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "wi-municipal",
-        jurisdictionId: "WI",
+        jurisdictionId: "wi",
         name: "Wisconsin Municipal Court",
         abbreviation: "Wis. Mun. Ct.",
         level: "specialized",
@@ -3943,11 +3943,11 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
 
   // ─── WYOMING ───────────────────────────────────────────────────────
   {
-    stateId: "WY",
+    stateId: "wy",
     stateName: "Wyoming",
     supremeCourt: {
       id: "wy-supreme",
-      jurisdictionId: "WY",
+      jurisdictionId: "wy",
       name: "Wyoming Supreme Court",
       abbreviation: "Wyo.",
       level: "supreme",
@@ -3959,7 +3959,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     trialCourts: [
       {
         id: "wy-district",
-        jurisdictionId: "WY",
+        jurisdictionId: "wy",
         name: "Wyoming District Court",
         abbreviation: "Wyo. Dist. Ct.",
         level: "trial",
@@ -3971,7 +3971,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
     specializedCourts: [
       {
         id: "wy-circuit",
-        jurisdictionId: "WY",
+        jurisdictionId: "wy",
         name: "Wyoming Circuit Court",
         abbreviation: "Wyo. Cir. Ct.",
         level: "specialized",
@@ -3981,7 +3981,7 @@ export const STATE_COURT_SYSTEMS: StateCourtSystem[] = [
       },
       {
         id: "wy-municipal",
-        jurisdictionId: "WY",
+        jurisdictionId: "wy",
         name: "Wyoming Municipal Court",
         abbreviation: "Wyo. Mun. Ct.",
         level: "specialized",

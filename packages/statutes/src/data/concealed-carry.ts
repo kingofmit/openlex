@@ -10,7 +10,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Alabama ──────────────────────────────────────────────────────────
     {
       id: "al-concealed-carry",
-      jurisdiction: "AL",
+      jurisdiction: "al",
       title: "Concealed Carry — Permitless Carry",
       code: "Code of Alabama",
       section: "§ 13A-11-73",
@@ -40,7 +40,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Alaska ────────────────────────────────────────────────────────────
     {
       id: "ak-concealed-carry",
-      jurisdiction: "AK",
+      jurisdiction: "ak",
       title: "Concealed Carry — Permitless Carry",
       code: "Alaska Statutes",
       section: "§ 11.61.220",
@@ -70,7 +70,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Arizona ───────────────────────────────────────────────────────────
     {
       id: "az-concealed-carry",
-      jurisdiction: "AZ",
+      jurisdiction: "az",
       title: "Concealed Carry — Permitless Carry",
       code: "Arizona Revised Statutes",
       section: "§ 13-3102",
@@ -100,7 +100,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Arkansas ──────────────────────────────────────────────────────────
     {
       id: "ar-concealed-carry",
-      jurisdiction: "AR",
+      jurisdiction: "ar",
       title: "Concealed Carry — Permitless Carry",
       code: "Arkansas Code",
       section: "§ 5-73-120",
@@ -130,7 +130,7 @@ export const concealedCarry: TopicDataFile = {
     // ── California ────────────────────────────────────────────────────────
     {
       id: "ca-concealed-carry",
-      jurisdiction: "CA",
+      jurisdiction: "ca",
       title: "Concealed Carry — Shall-Issue (Post-Bruen)",
       code: "California Penal Code",
       section: "§ 26150",
@@ -161,7 +161,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Colorado ──────────────────────────────────────────────────────────
     {
       id: "co-concealed-carry",
-      jurisdiction: "CO",
+      jurisdiction: "co",
       title: "Concealed Carry — Shall-Issue",
       code: "Colorado Revised Statutes",
       section: "§ 18-12-203",
@@ -191,7 +191,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Connecticut ───────────────────────────────────────────────────────
     {
       id: "ct-concealed-carry",
-      jurisdiction: "CT",
+      jurisdiction: "ct",
       title: "Concealed Carry — Shall-Issue (Post-Bruen)",
       code: "Connecticut General Statutes",
       section: "§ 29-28",
@@ -222,7 +222,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Delaware ──────────────────────────────────────────────────────────
     {
       id: "de-concealed-carry",
-      jurisdiction: "DE",
+      jurisdiction: "de",
       title: "Concealed Carry — Shall-Issue (Post-Bruen)",
       code: "Delaware Code",
       section: "Title 11, § 1441",
@@ -253,7 +253,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Florida ───────────────────────────────────────────────────────────
     {
       id: "fl-concealed-carry",
-      jurisdiction: "FL",
+      jurisdiction: "fl",
       title: "Concealed Carry — Permitless Carry",
       code: "Florida Statutes",
       section: "§ 790.01",
@@ -283,7 +283,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Georgia ───────────────────────────────────────────────────────────
     {
       id: "ga-concealed-carry",
-      jurisdiction: "GA",
+      jurisdiction: "ga",
       title: "Concealed Carry — Permitless Carry",
       code: "Official Code of Georgia Annotated",
       section: "§ 16-11-126",
@@ -313,7 +313,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Hawaii ────────────────────────────────────────────────────────────
     {
       id: "hi-concealed-carry",
-      jurisdiction: "HI",
+      jurisdiction: "hi",
       title: "Concealed Carry — Shall-Issue (Post-Bruen)",
       code: "Hawaii Revised Statutes",
       section: "§ 134-9",
@@ -344,7 +344,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Idaho ─────────────────────────────────────────────────────────────
     {
       id: "id-concealed-carry",
-      jurisdiction: "ID",
+      jurisdiction: "id",
       title: "Concealed Carry — Permitless Carry",
       code: "Idaho Code",
       section: "§ 18-3302",
@@ -374,7 +374,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Illinois ──────────────────────────────────────────────────────────
     {
       id: "il-concealed-carry",
-      jurisdiction: "IL",
+      jurisdiction: "il",
       title: "Concealed Carry — Shall-Issue",
       code: "Illinois Compiled Statutes",
       section: "430 ILCS 66",
@@ -404,7 +404,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Indiana ───────────────────────────────────────────────────────────
     {
       id: "in-concealed-carry",
-      jurisdiction: "IN",
+      jurisdiction: "in",
       title: "Concealed Carry — Permitless Carry",
       code: "Indiana Code",
       section: "§ 35-47-2-1",
@@ -434,7 +434,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Iowa ──────────────────────────────────────────────────────────────
     {
       id: "ia-concealed-carry",
-      jurisdiction: "IA",
+      jurisdiction: "ia",
       title: "Concealed Carry — Permitless Carry",
       code: "Iowa Code",
       section: "§ 724.4",
@@ -464,7 +464,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Kansas ────────────────────────────────────────────────────────────
     {
       id: "ks-concealed-carry",
-      jurisdiction: "KS",
+      jurisdiction: "ks",
       title: "Concealed Carry — Permitless Carry",
       code: "Kansas Statutes",
       section: "§ 21-6302",
@@ -494,7 +494,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Kentucky ──────────────────────────────────────────────────────────
     {
       id: "ky-concealed-carry",
-      jurisdiction: "KY",
+      jurisdiction: "ky",
       title: "Concealed Carry — Permitless Carry",
       code: "Kentucky Revised Statutes",
       section: "§ 237.110",
@@ -524,7 +524,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Louisiana ─────────────────────────────────────────────────────────
     {
       id: "la-concealed-carry",
-      jurisdiction: "LA",
+      jurisdiction: "la",
       title: "Concealed Carry — Permitless Carry",
       code: "Louisiana Revised Statutes",
       section: "§ 40:1379.3",
@@ -554,7 +554,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Maine ─────────────────────────────────────────────────────────────
     {
       id: "me-concealed-carry",
-      jurisdiction: "ME",
+      jurisdiction: "me",
       title: "Concealed Carry — Permitless Carry",
       code: "Maine Revised Statutes",
       section: "Title 25, § 2001-A",
@@ -584,7 +584,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Maryland ──────────────────────────────────────────────────────────
     {
       id: "md-concealed-carry",
-      jurisdiction: "MD",
+      jurisdiction: "md",
       title: "Concealed Carry — Shall-Issue (Post-Bruen)",
       code: "Maryland Code, Public Safety",
       section: "§ 5-306",
@@ -615,7 +615,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Massachusetts ─────────────────────────────────────────────────────
     {
       id: "ma-concealed-carry",
-      jurisdiction: "MA",
+      jurisdiction: "ma",
       title: "Concealed Carry — Shall-Issue (Post-Bruen)",
       code: "Massachusetts General Laws",
       section: "Ch. 140, § 131",
@@ -646,7 +646,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Michigan ──────────────────────────────────────────────────────────
     {
       id: "mi-concealed-carry",
-      jurisdiction: "MI",
+      jurisdiction: "mi",
       title: "Concealed Carry — Shall-Issue",
       code: "Michigan Compiled Laws",
       section: "§ 28.425b",
@@ -676,7 +676,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Minnesota ─────────────────────────────────────────────────────────
     {
       id: "mn-concealed-carry",
-      jurisdiction: "MN",
+      jurisdiction: "mn",
       title: "Concealed Carry — Shall-Issue",
       code: "Minnesota Statutes",
       section: "§ 624.714",
@@ -706,7 +706,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Mississippi ───────────────────────────────────────────────────────
     {
       id: "ms-concealed-carry",
-      jurisdiction: "MS",
+      jurisdiction: "ms",
       title: "Concealed Carry — Permitless Carry",
       code: "Mississippi Code",
       section: "§ 45-9-101",
@@ -736,7 +736,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Missouri ──────────────────────────────────────────────────────────
     {
       id: "mo-concealed-carry",
-      jurisdiction: "MO",
+      jurisdiction: "mo",
       title: "Concealed Carry — Permitless Carry",
       code: "Missouri Revised Statutes",
       section: "§ 571.030",
@@ -766,7 +766,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Montana ───────────────────────────────────────────────────────────
     {
       id: "mt-concealed-carry",
-      jurisdiction: "MT",
+      jurisdiction: "mt",
       title: "Concealed Carry — Permitless Carry",
       code: "Montana Code Annotated",
       section: "§ 45-8-321",
@@ -796,7 +796,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Nebraska ──────────────────────────────────────────────────────────
     {
       id: "ne-concealed-carry",
-      jurisdiction: "NE",
+      jurisdiction: "ne",
       title: "Concealed Carry — Permitless Carry",
       code: "Nebraska Revised Statutes",
       section: "§ 69-2441",
@@ -826,7 +826,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Nevada ────────────────────────────────────────────────────────────
     {
       id: "nv-concealed-carry",
-      jurisdiction: "NV",
+      jurisdiction: "nv",
       title: "Concealed Carry — Shall-Issue",
       code: "Nevada Revised Statutes",
       section: "§ 202.3653",
@@ -856,7 +856,7 @@ export const concealedCarry: TopicDataFile = {
     // ── New Hampshire ─────────────────────────────────────────────────────
     {
       id: "nh-concealed-carry",
-      jurisdiction: "NH",
+      jurisdiction: "nh",
       title: "Concealed Carry — Permitless Carry",
       code: "New Hampshire Revised Statutes",
       section: "§ 159:6",
@@ -886,7 +886,7 @@ export const concealedCarry: TopicDataFile = {
     // ── New Jersey ────────────────────────────────────────────────────────
     {
       id: "nj-concealed-carry",
-      jurisdiction: "NJ",
+      jurisdiction: "nj",
       title: "Concealed Carry — Shall-Issue (Post-Bruen)",
       code: "New Jersey Statutes",
       section: "§ 2C:58-4",
@@ -917,7 +917,7 @@ export const concealedCarry: TopicDataFile = {
     // ── New Mexico ────────────────────────────────────────────────────────
     {
       id: "nm-concealed-carry",
-      jurisdiction: "NM",
+      jurisdiction: "nm",
       title: "Concealed Carry — Shall-Issue",
       code: "New Mexico Statutes",
       section: "§ 29-19-4",
@@ -947,7 +947,7 @@ export const concealedCarry: TopicDataFile = {
     // ── New York ──────────────────────────────────────────────────────────
     {
       id: "ny-concealed-carry",
-      jurisdiction: "NY",
+      jurisdiction: "ny",
       title: "Concealed Carry — Shall-Issue (Post-Bruen)",
       code: "New York Penal Law",
       section: "§ 400.00",
@@ -978,7 +978,7 @@ export const concealedCarry: TopicDataFile = {
     // ── North Carolina ────────────────────────────────────────────────────
     {
       id: "nc-concealed-carry",
-      jurisdiction: "NC",
+      jurisdiction: "nc",
       title: "Concealed Carry — Permitless Carry",
       code: "North Carolina General Statutes",
       section: "§ 14-415.11",
@@ -1008,7 +1008,7 @@ export const concealedCarry: TopicDataFile = {
     // ── North Dakota ──────────────────────────────────────────────────────
     {
       id: "nd-concealed-carry",
-      jurisdiction: "ND",
+      jurisdiction: "nd",
       title: "Concealed Carry — Permitless Carry",
       code: "North Dakota Century Code",
       section: "§ 62.1-04-02",
@@ -1038,7 +1038,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Ohio ──────────────────────────────────────────────────────────────
     {
       id: "oh-concealed-carry",
-      jurisdiction: "OH",
+      jurisdiction: "oh",
       title: "Concealed Carry — Permitless Carry",
       code: "Ohio Revised Code",
       section: "§ 2923.111",
@@ -1069,7 +1069,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Oklahoma ──────────────────────────────────────────────────────────
     {
       id: "ok-concealed-carry",
-      jurisdiction: "OK",
+      jurisdiction: "ok",
       title: "Concealed Carry — Permitless Carry",
       code: "Oklahoma Statutes",
       section: "Title 21, § 1290.2",
@@ -1099,7 +1099,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Oregon ────────────────────────────────────────────────────────────
     {
       id: "or-concealed-carry",
-      jurisdiction: "OR",
+      jurisdiction: "or",
       title: "Concealed Carry — Shall-Issue",
       code: "Oregon Revised Statutes",
       section: "§ 166.291",
@@ -1130,7 +1130,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Pennsylvania ──────────────────────────────────────────────────────
     {
       id: "pa-concealed-carry",
-      jurisdiction: "PA",
+      jurisdiction: "pa",
       title: "Concealed Carry — Shall-Issue",
       code: "Pennsylvania Consolidated Statutes",
       section: "18 Pa.C.S. § 6109",
@@ -1160,7 +1160,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Rhode Island ──────────────────────────────────────────────────────
     {
       id: "ri-concealed-carry",
-      jurisdiction: "RI",
+      jurisdiction: "ri",
       title: "Concealed Carry — Shall-Issue (Post-Bruen)",
       code: "Rhode Island General Laws",
       section: "§ 11-47-11",
@@ -1191,7 +1191,7 @@ export const concealedCarry: TopicDataFile = {
     // ── South Carolina ────────────────────────────────────────────────────
     {
       id: "sc-concealed-carry",
-      jurisdiction: "SC",
+      jurisdiction: "sc",
       title: "Concealed Carry — Permitless Carry",
       code: "South Carolina Code of Laws",
       section: "§ 23-31-210",
@@ -1221,7 +1221,7 @@ export const concealedCarry: TopicDataFile = {
     // ── South Dakota ──────────────────────────────────────────────────────
     {
       id: "sd-concealed-carry",
-      jurisdiction: "SD",
+      jurisdiction: "sd",
       title: "Concealed Carry — Permitless Carry",
       code: "South Dakota Codified Laws",
       section: "§ 22-14-9",
@@ -1251,7 +1251,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Tennessee ─────────────────────────────────────────────────────────
     {
       id: "tn-concealed-carry",
-      jurisdiction: "TN",
+      jurisdiction: "tn",
       title: "Concealed Carry — Permitless Carry",
       code: "Tennessee Code",
       section: "§ 39-17-1307",
@@ -1281,7 +1281,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Texas ─────────────────────────────────────────────────────────────
     {
       id: "tx-concealed-carry",
-      jurisdiction: "TX",
+      jurisdiction: "tx",
       title: "Concealed Carry — Permitless Carry",
       code: "Texas Penal Code",
       section: "§ 46.02",
@@ -1311,7 +1311,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Utah ──────────────────────────────────────────────────────────────
     {
       id: "ut-concealed-carry",
-      jurisdiction: "UT",
+      jurisdiction: "ut",
       title: "Concealed Carry — Permitless Carry",
       code: "Utah Code",
       section: "§ 76-10-523",
@@ -1341,7 +1341,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Vermont ───────────────────────────────────────────────────────────
     {
       id: "vt-concealed-carry",
-      jurisdiction: "VT",
+      jurisdiction: "vt",
       title: "Concealed Carry — Permitless Carry (Vermont Carry)",
       code: "Vermont Statutes",
       section: "Title 13, § 4003",
@@ -1372,7 +1372,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Virginia ──────────────────────────────────────────────────────────
     {
       id: "va-concealed-carry",
-      jurisdiction: "VA",
+      jurisdiction: "va",
       title: "Concealed Carry — Shall-Issue",
       code: "Code of Virginia",
       section: "§ 18.2-308",
@@ -1402,7 +1402,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Washington ────────────────────────────────────────────────────────
     {
       id: "wa-concealed-carry",
-      jurisdiction: "WA",
+      jurisdiction: "wa",
       title: "Concealed Carry — Shall-Issue",
       code: "Revised Code of Washington",
       section: "§ 9.41.070",
@@ -1433,7 +1433,7 @@ export const concealedCarry: TopicDataFile = {
     // ── West Virginia ─────────────────────────────────────────────────────
     {
       id: "wv-concealed-carry",
-      jurisdiction: "WV",
+      jurisdiction: "wv",
       title: "Concealed Carry — Permitless Carry",
       code: "West Virginia Code",
       section: "§ 61-7-7",
@@ -1463,7 +1463,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Wisconsin ─────────────────────────────────────────────────────────
     {
       id: "wi-concealed-carry",
-      jurisdiction: "WI",
+      jurisdiction: "wi",
       title: "Concealed Carry — Shall-Issue",
       code: "Wisconsin Statutes",
       section: "§ 175.60",
@@ -1493,7 +1493,7 @@ export const concealedCarry: TopicDataFile = {
     // ── Wyoming ───────────────────────────────────────────────────────────
     {
       id: "wy-concealed-carry",
-      jurisdiction: "WY",
+      jurisdiction: "wy",
       title: "Concealed Carry — Permitless Carry",
       code: "Wyoming Statutes",
       section: "§ 6-8-104",
@@ -1523,7 +1523,7 @@ export const concealedCarry: TopicDataFile = {
     // ── District of Columbia ──────────────────────────────────────────────
     {
       id: "dc-concealed-carry",
-      jurisdiction: "DC",
+      jurisdiction: "dc",
       title: "Concealed Carry — Shall-Issue (Post-Bruen)",
       code: "District of Columbia Official Code",
       section: "§ 7-2509.02",
