@@ -19,6 +19,12 @@ const court = findCourt("S.D.N.Y.");
 const venue = determineVenue({ state: "NY", district: "Southern" });
 ```
 
+## Links
+
+- [Homepage](https://kingallem.com/open-source)
+- [All packages](https://www.npmjs.com/org/openlex)
+- [GitHub](https://github.com/kingofmit/openlex)
+
 ## License
 
 MIT

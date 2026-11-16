@@ -1,6 +1,6 @@
 {
   "name": "@openlex/api",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "REST API server for OpenLex jurisdiction mapping engine.",
   "author": "Ahmed Allem",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "url": "https://github.com/kingofmit/openlex.git",
     "directory": "packages/api"
   },
-  "homepage": "https://github.com/kingofmit/openlex",
+  "homepage": "https://kingallem.com/open-source",
   "bugs": "https://github.com/kingofmit/openlex/issues",
   "keywords": ["legal", "law", "statutes", "jurisdiction", "united-states", "openlex", "api", "rest", "hono", "server"],
   "sideEffects": false,

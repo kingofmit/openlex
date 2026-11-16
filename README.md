@@ -4,10 +4,18 @@
 
 <p align="center">
   <a href="https://doi.org/10.5281/zenodo.24259139"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.24259139.svg" alt="DOI" /></a>
+  <a href="https://www.npmjs.com/org/openlex"><img src="https://img.shields.io/npm/v/@openlex/core?label=npm&color=teal" alt="npm" /></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License" /></a>
   <img src="https://img.shields.io/badge/typescript-strict-blue" alt="TypeScript" />
   <img src="https://img.shields.io/badge/statutes-510-teal" alt="510 Statutes" />
   <img src="https://img.shields.io/badge/jurisdictions-50%20states%20%2B%20DC-teal" alt="50 States + DC" />
+</p>
+
+<p align="center">
+  <a href="https://kingallem.com/open-source">Website</a> &middot;
+  <a href="https://www.npmjs.com/org/openlex">npm</a> &middot;
+  <a href="https://doi.org/10.5281/zenodo.24259139">DOI</a> &middot;
+  <a href="./CONTRIBUTING.md">Contributing</a>
 </p>
 
 Open-source jurisdiction mapping engine for U.S. law. Given a legal topic and location, returns applicable statutes, regulations, governing bodies, courts, and preemption rules with real citations and official source URLs.
@@ -209,6 +217,13 @@ OpenLex provides legal information, not legal advice. This data is for informati
 If you find OpenLex useful, consider supporting its development:
 
 <a href="https://buymeacoffee.com/kingofmit" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="50" /></a>
+
+## Links
+
+- [Homepage](https://kingallem.com/open-source) — all open-source projects by Ahmed Allem
+- [npm](https://www.npmjs.com/org/openlex) — `@openlex/*` packages
+- [GitHub](https://github.com/kingofmit/openlex) — source code
+- [DOI](https://doi.org/10.5281/zenodo.24259139) — citation for academic use
 
 ## License
 

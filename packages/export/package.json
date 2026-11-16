@@ -1,6 +1,6 @@
 {
   "name": "@openlex/export",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Export query results to JSON, CSV, Markdown, and legal memo format.",
   "author": "Ahmed Allem",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "url": "https://github.com/kingofmit/openlex.git",
     "directory": "packages/export"
   },
-  "homepage": "https://github.com/kingofmit/openlex",
+  "homepage": "https://kingallem.com/open-source",
   "bugs": "https://github.com/kingofmit/openlex/issues",
   "keywords": ["legal", "law", "statutes", "jurisdiction", "united-states", "openlex", "export", "csv", "markdown", "latex", "bluebook"],
   "sideEffects": false,

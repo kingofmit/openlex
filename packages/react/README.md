@@ -19,6 +19,12 @@ const { jurisdiction, setJurisdiction } = useJurisdiction();
 return <JurisdictionPicker value={jurisdiction} onChange={setJurisdiction} />;
 ```
 
+## Links
+
+- [Homepage](https://kingallem.com/open-source)
+- [All packages](https://www.npmjs.com/org/openlex)
+- [GitHub](https://github.com/kingofmit/openlex)
+
 ## License
 
 MIT

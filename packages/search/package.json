@@ -1,6 +1,6 @@
 {
   "name": "@openlex/search",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Full-text and semantic search across legal authorities.",
   "author": "Ahmed Allem",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "url": "https://github.com/kingofmit/openlex.git",
     "directory": "packages/search"
   },
-  "homepage": "https://github.com/kingofmit/openlex",
+  "homepage": "https://kingallem.com/open-source",
   "bugs": "https://github.com/kingofmit/openlex/issues",
   "keywords": ["legal", "law", "statutes", "jurisdiction", "united-states", "openlex", "search", "full-text", "tf-idf", "inverted-index"],
   "sideEffects": false,
