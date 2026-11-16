@@ -614,6 +614,423 @@ const paidSickLeave: MunicipalOrdinance[] = [
 ];
 
 // ---------------------------------------------------------------------------
+// Business Licensing
+// ---------------------------------------------------------------------------
+
+const businessLicensing: MunicipalOrdinance[] = [
+  {
+    cityId: "new-york-city",
+    cityName: "New York City",
+    stateId: "ny",
+    topic: "business-licensing",
+    ordinanceName: "NYC Business License & Permit Requirements",
+    citation: "NYC Admin. Code Title 20; 6 RCNY various",
+    description:
+      "NYC requires most businesses to obtain licenses or permits from the Department of Consumer and Worker Protection (DCWP) in addition to state registration. Over 50 license categories exist.",
+    keyProvisions: [
+      "General vendor license required for street vendors (limited supply; long waitlist)",
+      "Home occupation permits required for home-based businesses in residential zones",
+      "Food service establishments require DOHMH permit plus DCWP license",
+      "Biennial renewal for most DCWP licenses",
+      "Filing with NYC Department of Finance for Commercial Rent Tax if in Manhattan below 96th St",
+      "All businesses must register for NYC Employer Identification Number",
+    ],
+    effectiveDate: "2023-01-01",
+    sourceUrl: "https://www.nyc.gov/site/dca/businesses/license-702.page",
+    differenceFromState:
+      "NYS requires a general business registration (Articles of Organization/Incorporation) filed with DOS. NYC adds its own extensive licensing layer, particularly for consumer-facing businesses, with separate fees and inspections.",
+  },
+  {
+    cityId: "los-angeles",
+    cityName: "Los Angeles",
+    stateId: "ca",
+    topic: "business-licensing",
+    ordinanceName: "City of Los Angeles Business Tax Registration Certificate",
+    citation: "LAMC Article 1, Chapter II (Business Tax); LAMC 21.00 et seq.",
+    description:
+      "All businesses operating in LA must obtain a Business Tax Registration Certificate (BTRC) from the Office of Finance. Tax rates vary by business classification.",
+    keyProvisions: [
+      "Business Tax Registration Certificate (BTRC) required for all businesses",
+      "Tax rates range from $1.01 to $5.07 per $1,000 of gross receipts depending on category",
+      "Annual renewal required by specified due dates based on account number",
+      "Home-based businesses subject to same BTRC requirement",
+      "Small business exemption: businesses with gross receipts under $100,000 exempt from tax (not registration)",
+      "New businesses exempt from tax for first two years under Start-Up Incentive Program",
+    ],
+    effectiveDate: "2024-01-01",
+    sourceUrl: "https://finance.lacity.org/business-tax",
+    differenceFromState:
+      "CA does not impose a statewide business license. Cities set their own business tax and registration requirements. LA's gross-receipts-based business tax is the primary local business levy.",
+  },
+  {
+    cityId: "chicago",
+    cityName: "Chicago",
+    stateId: "il",
+    topic: "business-licensing",
+    ordinanceName: "Chicago Business License Requirements",
+    citation: "Chicago Municipal Code Title 4",
+    description:
+      "Chicago requires a Limited Business License for most businesses, plus activity-specific licenses administered by the Business Affairs and Consumer Protection (BACP) department.",
+    keyProvisions: [
+      "Limited Business License (LBL) required for most businesses ($250 for 2 years)",
+      "Activity-specific licenses required for food, liquor, public place of amusement, etc.",
+      "Retail food establishment license: $660/2 years (1-10,000 sq ft)",
+      "Shared kitchen license available for food entrepreneurs ($125/2 years)",
+      "Business must pass zoning review before license issuance",
+      "Annual regulatory inspections for food, health, and safety compliance",
+    ],
+    effectiveDate: "2024-01-01",
+    sourceUrl: "https://www.chicago.gov/city/en/depts/bacp/provdrs/bus.html",
+    differenceFromState:
+      "IL requires state-level registration through the Secretary of State but does not impose a statewide business license. Chicago's LBL and activity-specific licensing add significant local requirements and fees.",
+  },
+  {
+    cityId: "houston",
+    cityName: "Houston",
+    stateId: "tx",
+    topic: "business-licensing",
+    ordinanceName: "Houston Business Permits and Registrations",
+    citation: "Houston Code of Ordinances Chapter 28; Chapter 10 (Health)",
+    description:
+      "Houston has no general business license requirement but requires activity-specific permits. Notably, Houston is the largest U.S. city without zoning, so land use restrictions are minimal.",
+    keyProvisions: [
+      "No general business license or business tax at the city level",
+      "Activity-specific permits: food dealer, sexually oriented business, massage establishment, etc.",
+      "Food dealer permits required from Houston Health Department ($340-$660/year)",
+      "Businesses must register with Harris County for property tax purposes",
+      "No zoning ordinance; land use governed by deed restrictions and development ordinances",
+      "Franchise tax at state level (TX Margin Tax) is the primary business levy",
+    ],
+    effectiveDate: "2023-01-01",
+    sourceUrl: "https://www.houstontx.gov/absd/",
+    differenceFromState:
+      "TX has no state income tax or general business license. Houston mirrors this light-regulation approach with no general business license, making it one of the least restrictive major cities for business formation.",
+  },
+  {
+    cityId: "phoenix",
+    cityName: "Phoenix",
+    stateId: "az",
+    topic: "business-licensing",
+    ordinanceName: "Phoenix Transaction Privilege Tax License and Business Registration",
+    citation: "Phoenix City Code Chapter 14; ARS 42-6001 et seq.",
+    description:
+      "Businesses operating in Phoenix must obtain a Transaction Privilege Tax (TPT) license from the AZ Department of Revenue. Phoenix adds its own TPT surcharge.",
+    keyProvisions: [
+      "TPT license required from AZ DOR for businesses making taxable sales ($12 fee)",
+      "Phoenix city TPT rate of 2.3% added to state 5.6% base rate",
+      "Specific business activity licenses for contractors, liquor establishments, and food service",
+      "Regulatory license required for massage establishments, tobacco retailers, etc.",
+      "Home-based businesses must comply with home occupation permit requirements under zoning code",
+      "No general city business license beyond TPT registration",
+    ],
+    effectiveDate: "2024-01-01",
+    sourceUrl: "https://www.phoenix.gov/finance/plt",
+    differenceFromState:
+      "AZ handles TPT licensing at the state level through the unified DOR system. Phoenix adds its own TPT rate and activity-specific regulatory permits, but does not require a separate general city business license.",
+  },
+];
+
+// ---------------------------------------------------------------------------
+// Cannabis Dispensary Regulations
+// ---------------------------------------------------------------------------
+
+const cannabisDispensary: MunicipalOrdinance[] = [
+  {
+    cityId: "denver",
+    cityName: "Denver",
+    stateId: "co",
+    topic: "cannabis-dispensary",
+    ordinanceName: "Denver Retail Marijuana Code",
+    citation: "Denver Revised Municipal Code 6-200 through 6-230",
+    description:
+      "Denver was among the first cities to license retail marijuana establishments after CO Amendment 64 (2012). Local licensing adds to state Marijuana Enforcement Division requirements.",
+    keyProvisions: [
+      "Local retail marijuana store license required in addition to state MED license",
+      "1,000-foot buffer from schools, childcare centers, and drug/alcohol treatment facilities",
+      "No new licenses within 1,000 feet of an existing dispensary (density cap)",
+      "Social consumption (tasting room) pilot program established under I-300",
+      "Delivery permitted under state HB 19-1234; local opt-in required",
+      "Annual local license fee approximately $3,000-$5,000 depending on license type",
+    ],
+    effectiveDate: "2023-01-01",
+    sourceUrl: "https://www.denvergov.org/Government/Agencies-Departments-Offices/Business-Licensing/Marijuana-Licenses",
+    differenceFromState:
+      "CO allows municipalities to opt out of allowing marijuana businesses entirely. Denver permits them with additional local licensing, zoning buffers, and density caps beyond state requirements.",
+  },
+  {
+    cityId: "portland",
+    cityName: "Portland",
+    stateId: "or",
+    topic: "cannabis-dispensary",
+    ordinanceName: "Portland Cannabis Business Regulations",
+    citation: "Portland City Code 14B.130; ORS 475C",
+    description:
+      "Portland allows cannabis retail with local licensing requirements layered on top of the Oregon Liquor and Cannabis Commission (OLCC) framework.",
+    keyProvisions: [
+      "OLCC state license required plus Portland business license",
+      "1,000-foot buffer from schools and other cannabis retailers",
+      "Zoning: permitted in commercial and employment zones; prohibited in residential zones",
+      "Local tax: 3% local sales tax on recreational cannabis (Measure 26-180)",
+      "Operating hours restricted to 7 AM - 10 PM",
+      "Delivery permitted with OLCC delivery endorsement",
+    ],
+    effectiveDate: "2023-01-01",
+    sourceUrl: "https://www.portland.gov/revenue/cannabis-tax",
+    differenceFromState:
+      "Oregon allows local governments to impose a local tax up to 3% on recreational cannabis sales. Portland exercises this full 3% local tax option. OR cities that voted against Measure 91 may ban retail.",
+  },
+  {
+    cityId: "san-francisco",
+    cityName: "San Francisco",
+    stateId: "ca",
+    topic: "cannabis-dispensary",
+    ordinanceName: "San Francisco Cannabis Business Permit",
+    citation: "S.F. Business & Tax Regulations Code Article 16; S.F. Health Code Article 19H",
+    description:
+      "SF operates an equity-focused cannabis licensing program with multiple permit types. The Office of Cannabis oversees local permits alongside state Bureau of Cannabis Control licensing.",
+    keyProvisions: [
+      "Local Cannabis Business Permit required from SF Office of Cannabis",
+      "Equity Program: fee waivers, technical assistance, and priority processing for equity applicants",
+      "600-foot buffer from K-12 schools; 600-foot discretionary buffer from other sensitive uses",
+      "No cap on total number of retail permits (market-driven)",
+      "On-site consumption lounges permitted with additional endorsement",
+      "Local cannabis business tax of 1-5% of gross receipts depending on activity type",
+    ],
+    effectiveDate: "2023-07-01",
+    sourceUrl: "https://officeofcannabis.sfgov.org/",
+    differenceFromState:
+      "CA allows cities to set their own cannabis regulations and can ban or permit retail. SF permits retail with an equity focus and allows on-site consumption, which many CA cities prohibit.",
+  },
+  {
+    cityId: "chicago",
+    cityName: "Chicago",
+    stateId: "il",
+    topic: "cannabis-dispensary",
+    ordinanceName: "Chicago Cannabis Business Zoning and Licensing",
+    citation: "Chicago Municipal Code 7-42; Chicago Zoning Ordinance 17-9-130",
+    description:
+      "Chicago allows adult-use cannabis dispensaries in designated zoning districts with a local licensing process that prioritizes social equity applicants from disproportionately impacted areas.",
+    keyProvisions: [
+      "Local dispensary license required in addition to IL IDFPR adult-use dispensary license",
+      "Limited to 110 total dispensary licenses within city limits (7 wards cap)",
+      "Social equity applicant priority: 50% of licenses reserved for social equity applicants",
+      "1,500-foot buffer between dispensaries",
+      "Permitted in B, C, and M zoning districts; special use permit required in some zones",
+      "3% local cannabis tax on top of state and county taxes",
+    ],
+    effectiveDate: "2023-01-01",
+    sourceUrl: "https://www.chicago.gov/city/en/depts/bacp/provdrs/bus/svcs/cannabis.html",
+    differenceFromState:
+      "IL Cannabis Regulation and Tax Act allows municipalities to restrict or ban dispensaries. Chicago permits them with stringent density caps, social equity priority, and an additional 3% local tax.",
+  },
+  {
+    cityId: "boston",
+    cityName: "Boston",
+    stateId: "ma",
+    topic: "cannabis-dispensary",
+    ordinanceName: "Boston Cannabis Establishment Zoning and Licensing",
+    citation: "Boston Zoning Code Article 8M; City of Boston Cannabis Equity Ordinance",
+    description:
+      "Boston licenses cannabis establishments through the Mayor's Office of Economic Opportunity & Inclusion with a strong emphasis on equity applicants from communities disproportionately impacted by past marijuana enforcement.",
+    keyProvisions: [
+      "Host Community Agreement (HCA) required between operator and City of Boston",
+      "Community impact fee capped at 3% of gross revenue (per state regulation)",
+      "Equity applicants receive priority in permitting and fee waivers",
+      "500-foot buffer from schools; conditional use permit required in most zones",
+      "On-site consumption not yet permitted (under review)",
+      "Operating hours: 8 AM - 10 PM (some locations limited to 9 PM by HCA)",
+    ],
+    effectiveDate: "2023-07-01",
+    sourceUrl: "https://www.boston.gov/departments/economic-opportunity-and-inclusion/cannabis",
+    differenceFromState:
+      "MA Cannabis Control Commission sets baseline statewide regulations. Boston adds HCA requirements, equity priority licensing, and local zoning restrictions. MA capped HCA community impact fees at 3% in 2022 guidance.",
+  },
+];
+
+// ---------------------------------------------------------------------------
+// Tenant Protections (beyond rent control)
+// ---------------------------------------------------------------------------
+
+const tenantProtections: MunicipalOrdinance[] = [
+  {
+    cityId: "new-york-city",
+    cityName: "New York City",
+    stateId: "ny",
+    topic: "tenant-protections",
+    ordinanceName: "Right to Counsel in Eviction Proceedings (Intro. 214-B / Local Law 136 of 2017)",
+    citation: "NYC Admin. Code ss 26-1301 et seq.",
+    description:
+      "NYC was the first city in the U.S. to guarantee free legal representation to tenants facing eviction in Housing Court, regardless of immigration status.",
+    keyProvisions: [
+      "Guaranteed right to legal counsel for tenants facing eviction in Housing Court",
+      "Income-eligible tenants (at or below 200% FPL) in designated zip codes receive free representation",
+      "Phased citywide rollout: all zip codes covered by 2022",
+      "Administered through contracted legal services providers funded by city budget ($166M+ annually)",
+      "Covers holdover, nonpayment, and HP (repair) proceedings",
+      "Tenant representation rate increased from 1% to over 70% in covered areas",
+    ],
+    effectiveDate: "2017-08-11",
+    sourceUrl: "https://www.nyc.gov/site/hra/help/legal-services-background.page",
+    differenceFromState:
+      "NYS has no statewide right to counsel in eviction cases. NYC's program was the first in the nation and has served as a model for similar legislation in other cities and states (including statewide proposals).",
+  },
+  {
+    cityId: "san-francisco",
+    cityName: "San Francisco",
+    stateId: "ca",
+    topic: "tenant-protections",
+    ordinanceName: "Restrictions on Ellis Act Evictions and Tenant Buyout Agreements",
+    citation: "S.F. Admin. Code Chapter 37, ss 37.9A, 37.9E",
+    description:
+      "SF imposes additional local protections on top of the state Ellis Act, including mandatory buyout disclosure, relocation payments, and re-rental restrictions for Ellis Act withdrawals.",
+    keyProvisions: [
+      "Ellis Act withdrawal requires 120-day notice (1 year for elderly/disabled tenants)",
+      "Relocation payments required: approximately $7,000-$50,000+ per tenant depending on household composition and disability/senior status",
+      "Landlords may not re-rent withdrawn units for at least 5 years; 10-year restriction if any original tenant displaced",
+      "Buyout agreements must be filed with the Rent Board; tenants have 45-day rescission period",
+      "Tenants have right of first refusal if units are re-offered for rent",
+      "Annual relocation payment amounts adjusted by Rent Board",
+    ],
+    effectiveDate: "2023-03-01",
+    sourceUrl: "https://sfrb.org/ellis-act-evictions",
+    differenceFromState:
+      "CA Ellis Act (Gov. Code 7060-7060.7) gives landlords the right to exit the rental business. SF layers on substantial local protections including higher relocation payments, longer notice periods for protected classes, and buyout regulation that do not exist at the state level.",
+  },
+  {
+    cityId: "seattle",
+    cityName: "Seattle",
+    stateId: "wa",
+    topic: "tenant-protections",
+    ordinanceName: "First-in-Time Tenant Screening Requirement",
+    citation: "SMC 14.08.050",
+    description:
+      "Seattle requires landlords to offer rental units to the first qualified applicant who meets the stated screening criteria, preventing discrimination in the selection of tenants.",
+    keyProvisions: [
+      "Landlords must provide written screening criteria before accepting applications",
+      "Applications must be screened in chronological order received",
+      "Unit must be offered to the first applicant who meets all stated criteria",
+      "Landlord may not skip or reject a qualified applicant in favor of a later one",
+      "Screening criteria must be lawful (cannot include source of income, criminal history lookback beyond limits)",
+      "Violations enforced by Seattle Office of Civil Rights; private right of action available",
+    ],
+    effectiveDate: "2017-01-01",
+    sourceUrl: "https://www.seattle.gov/civilrights/civil-rights/fair-housing/first-in-time",
+    differenceFromState:
+      "WA state law does not require first-in-time screening. Seattle's ordinance is unique among major U.S. cities and aims to reduce discrimination by removing subjective landlord selection among qualified applicants.",
+  },
+  {
+    cityId: "portland",
+    cityName: "Portland",
+    stateId: "or",
+    topic: "tenant-protections",
+    ordinanceName: "Fair Access in Renting (FAIR) Ordinance — Low-Barrier Screening Criteria",
+    citation: "Portland City Code 30.01.086",
+    description:
+      "Portland's FAIR Ordinance limits the screening criteria landlords may use to evaluate rental applicants, focusing on reducing barriers for applicants with criminal records, prior evictions, and low credit scores.",
+    keyProvisions: [
+      "Landlords may not deny based on criminal history more than 7 years old (most offenses)",
+      "Credit score minimum capped: cannot require score above 500",
+      "Prior eviction filings (without judgment) cannot be used as basis for denial",
+      "Income-to-rent ratio limited to 2:1 (cannot require more than 2x rent in income)",
+      "Security deposit capped at one month's rent under Oregon SB 611",
+      "Landlords must provide individualized assessment before denial based on screening criteria",
+    ],
+    effectiveDate: "2020-03-01",
+    sourceUrl: "https://www.portland.gov/phb/rental-services/renter-protections/fair-access-renting",
+    differenceFromState:
+      "Oregon SB 608 and SB 611 provide statewide tenant protections but do not restrict screening criteria to this extent. Portland's FAIR Ordinance goes substantially further by limiting credit score requirements, criminal history lookback periods, and income-to-rent ratios.",
+  },
+  {
+    cityId: "dc",
+    cityName: "Washington, D.C.",
+    stateId: "dc",
+    topic: "tenant-protections",
+    ordinanceName: "Tenant Opportunity to Purchase Act (TOPA)",
+    citation: "D.C. Code ss 42-3404.01 et seq.",
+    description:
+      "TOPA gives DC tenants the right of first refusal to purchase their rental property when the owner decides to sell, enabling tenant cooperatives and affordable housing preservation.",
+    keyProvisions: [
+      "Landlord must provide written offer of sale to tenants before selling the property",
+      "Single-family homes: tenant has 30 days to respond, 60 additional days to negotiate, 60 days to close",
+      "Multi-family buildings: tenant association has 45 days to respond, 120 days to negotiate, 120 days to close",
+      "Tenants may assign TOPA rights to a third party (often affordable housing developers)",
+      "Conversion to condominium triggers additional tenant protections under DCAPA",
+      "Failure to comply with TOPA voids the sale; tenants may sue for injunctive relief and damages",
+    ],
+    effectiveDate: "1980-09-10",
+    sourceUrl: "https://dhcd.dc.gov/service/tenant-opportunity-purchase-act-topa",
+    differenceFromState:
+      "DC is its own jurisdiction with no state-level overlay. TOPA is virtually unique in the U.S.; no other major jurisdiction provides tenants a comparable right of first refusal on property sales. It has been a key tool for preserving affordable housing in DC.",
+  },
+  {
+    cityId: "minneapolis",
+    cityName: "Minneapolis",
+    stateId: "mn",
+    topic: "tenant-protections",
+    ordinanceName: "Minneapolis Renter Protection Ordinances (Tenant Screening and Just Cause)",
+    citation: "Minneapolis Code of Ordinances 244.2020-244.2060",
+    description:
+      "Minneapolis enacted a suite of renter protections including limits on tenant screening criteria, advance notice of landlord sale, and protections against retaliation.",
+    keyProvisions: [
+      "Landlords cannot reject applicants solely for criminal history, prior evictions, or credit score under threshold",
+      "Tenants must receive 90 days' notice before lease non-renewal",
+      "Advance disclosure of screening criteria before application fee is paid",
+      "Tenant protection period after property sale: new owner must honor existing leases",
+      "Anti-retaliation protections for tenants who assert legal rights",
+      "Enforcement through Minneapolis Civil Rights Department",
+    ],
+    effectiveDate: "2023-01-01",
+    sourceUrl: "https://www.minneapolismn.gov/government/government-data/datasource/renters-protection/",
+    differenceFromState:
+      "MN does not have statewide tenant screening restrictions at this level. Minneapolis goes beyond state law with criminal history, eviction record, and credit score limitations for screening.",
+  },
+  {
+    cityId: "philadelphia",
+    cityName: "Philadelphia",
+    stateId: "pa",
+    topic: "tenant-protections",
+    ordinanceName: "Philadelphia Right to Counsel and Eviction Diversion Program",
+    citation: "Philadelphia Code 9-820; Bill No. 200357",
+    description:
+      "Philadelphia established a right to counsel for low-income tenants in eviction proceedings and an Eviction Diversion Program requiring landlords to participate in mediation before filing.",
+    keyProvisions: [
+      "Free legal representation for income-eligible tenants (below 200% FPL) in eviction cases",
+      "Eviction Diversion Program: landlords must engage in good-faith mediation before filing for eviction",
+      "Mediation through city-contracted community organizations",
+      "Covers nonpayment and lease violation proceedings in Municipal Court",
+      "Emergency rental assistance integrated into diversion program",
+      "Program expanded from pilot to permanent during COVID-19 pandemic",
+    ],
+    effectiveDate: "2022-01-01",
+    sourceUrl: "https://www.phila.gov/programs/right-to-counsel-for-tenants-in-eviction-proceedings/",
+    differenceFromState:
+      "PA has no statewide right to counsel in eviction cases or mandatory diversion program. Philadelphia's program is locally funded and was among the first to combine right to counsel with mandatory pre-filing mediation.",
+  },
+  {
+    cityId: "los-angeles",
+    cityName: "Los Angeles",
+    stateId: "ca",
+    topic: "tenant-protections",
+    ordinanceName: "LA Tenant Anti-Harassment Ordinance",
+    citation: "LAMC Section 45.33",
+    description:
+      "LA enacted an anti-harassment ordinance prohibiting landlords from engaging in a wide range of harassing behaviors intended to coerce tenants into vacating their units.",
+    keyProvisions: [
+      "Prohibits landlord harassment including threats, intimidation, service reduction, and privacy violations",
+      "Covers actions such as removing housing services, filing frivolous evictions, and construction disturbances intended to displace",
+      "Private right of action: tenants may sue for actual damages, punitive damages, and attorney fees",
+      "Civil penalties of $1,000-$10,000 per violation",
+      "Rebuttable presumption of retaliation if adverse action taken within 180 days of tenant complaint",
+      "Applies to all residential rental units within LA city limits",
+    ],
+    effectiveDate: "2021-08-07",
+    sourceUrl: "https://housing.lacity.org/residents/anti-harassment",
+    differenceFromState:
+      "CA Civil Code 1940.2 prohibits certain landlord harassment but LA's ordinance covers a broader range of harassing conduct with stronger enforcement mechanisms and higher penalties than the state law.",
+  },
+];
+
+// ---------------------------------------------------------------------------
 // Combined export
 // ---------------------------------------------------------------------------
 
@@ -622,6 +1039,9 @@ export const MUNICIPAL_ORDINANCES: MunicipalOrdinance[] = [
   ...minimumWage,
   ...shortTermRental,
   ...paidSickLeave,
+  ...businessLicensing,
+  ...cannabisDispensary,
+  ...tenantProtections,
 ];
 
 /** Find municipal ordinances by city */

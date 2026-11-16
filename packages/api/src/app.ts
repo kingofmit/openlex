@@ -10,6 +10,7 @@ import { courts } from "./routes/courts";
 import { search } from "./routes/search";
 import { citations } from "./routes/citations";
 import { preemption } from "./routes/preemption";
+import { openapi } from "./routes/openapi";
 
 export function createApp(): Hono {
   const app = new Hono();
@@ -28,6 +29,7 @@ export function createApp(): Hono {
   app.route("/search", search);
   app.route("/citations", citations);
   app.route("/preemption", preemption);
+  app.route("/openapi.json", openapi);
 
   // Root
   app.get("/", (c) =>

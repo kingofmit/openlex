@@ -19,3 +19,7 @@ export { ComparisonTable } from "./components/ComparisonTable";
 export type { ComparisonTableProps } from "./components/ComparisonTable";
 export { CourtHierarchy } from "./components/CourtHierarchy";
 export type { CourtHierarchyProps } from "./components/CourtHierarchy";
+export { TopicBrowser } from "./components/TopicBrowser";
+export type { TopicBrowserProps } from "./components/TopicBrowser";
+export { CitationInput } from "./components/CitationInput";
+export type { CitationInputProps, CitationParseResult } from "./components/CitationInput";
