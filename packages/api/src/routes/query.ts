@@ -1,6 +1,6 @@
 import { Hono } from "hono";
-import { queryJurisdiction, AuthorityRegistry } from "@allem-law/core";
-import { ALL_TOPICS, loadStatuteEntries } from "@allem-law/statutes";
+import { queryJurisdiction, AuthorityRegistry } from "@openlex/core";
+import { ALL_TOPICS, loadStatuteEntries } from "@openlex/statutes";
 
 const query = new Hono();
 

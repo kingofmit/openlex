@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { parseCitation, formatCitation, validateCitation } from "@allem-law/statutes";
-import type { ParsedCitation, CitationFormat } from "@allem-law/statutes";
+import { parseCitation, formatCitation, validateCitation } from "@openlex/statutes";
+import type { ParsedCitation, CitationFormat } from "@openlex/statutes";
 
 const EXAMPLE_CITATIONS = [
   "42 U.S.C. \u00a7 1983",

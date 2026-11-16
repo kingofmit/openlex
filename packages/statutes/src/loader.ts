@@ -1,4 +1,4 @@
-import { Statute, StatuteEntry } from "@allem-law/core";
+import { Statute, StatuteEntry } from "@openlex/core";
 
 /** Raw statute data input — used for loading from data files */
 export interface StatuteData {

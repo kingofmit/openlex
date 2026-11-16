@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { StatuteEntry, MonetaryValue } from "@allem-law/core";
+import { StatuteEntry, MonetaryValue } from "@openlex/core";
 
 interface TopicEntries {
   topic: string;

@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
-import { ComparisonMatrix, ComparisonColumn } from "@allem-law/core";
+import { ComparisonMatrix, ComparisonColumn } from "@openlex/core";
 
 interface Props {
   matricesJson: string;

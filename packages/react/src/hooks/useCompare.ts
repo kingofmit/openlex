@@ -1,4 +1,4 @@
-import { ComparisonMatrix } from "@allem-law/core";
+import { ComparisonMatrix } from "@openlex/core";
 import { UseQueryResult } from "./useOpenLex";
 import { useFetch } from "./useFetch";
 

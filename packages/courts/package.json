@@ -1,5 +1,5 @@
 {
-  "name": "@allem-law/courts",
+  "name": "@openlex/courts",
   "version": "0.1.0",
   "description": "Court system hierarchy, venue determination, and judicial structure.",
   "author": "Ahmed Allem",
@@ -31,7 +31,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@allem-law/core": "workspace:*"
+    "@openlex/core": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.8.0"

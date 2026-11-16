@@ -1,5 +1,5 @@
 {
-  "name": "@allem-law/regulations",
+  "name": "@openlex/regulations",
   "version": "0.1.0",
   "description": "CFR and state regulatory code mapping, agency resolution.",
   "author": "Ahmed Allem",
@@ -31,7 +31,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@allem-law/core": "workspace:*"
+    "@openlex/core": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.8.0"

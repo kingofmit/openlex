@@ -1,4 +1,4 @@
-import { GoverningBody } from "@allem-law/core";
+import { GoverningBody } from "@openlex/core";
 
 /** State Attorneys General offices for all 50 states + DC */
 export const STATE_ATTORNEYS_GENERAL: GoverningBody[] = [

@@ -1,4 +1,4 @@
-import { Court } from "@allem-law/core";
+import { Court } from "@openlex/core";
 
 /**
  * All 94 U.S. federal district courts.

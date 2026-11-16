@@ -1,4 +1,4 @@
-# @allem-law/search
+# @openlex/search
 
 Full-text and semantic search across legal authorities.
 
@@ -7,13 +7,13 @@ Part of [OpenLex](https://github.com/kingofmit/openlex) — open-source jurisdic
 ## Installation
 
 ```bash
-npm install @allem-law/search
+npm install @openlex/search
 ```
 
 ## Usage
 
 ```typescript
-import { createIndex, search } from "@allem-law/search";
+import { createIndex, search } from "@openlex/search";
 
 const index = createIndex(documents);
 const results = search(index, "due process equal protection");

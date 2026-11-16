@@ -1,4 +1,4 @@
-import { StatuteVersion } from "@allem-law/core";
+import { StatuteVersion } from "@openlex/core";
 import { MINIMUM_WAGE_VERSIONS } from "./minimum-wage-versions";
 
 export { MINIMUM_WAGE_VERSIONS } from "./minimum-wage-versions";

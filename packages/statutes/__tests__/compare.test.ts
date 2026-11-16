@@ -2,7 +2,7 @@ import { buildComparisonMatrix, compareTopicAcrossStates } from "../src/compare"
 import { loadStatuteEntries } from "../src/loader";
 import { getTopicData } from "../src/data";
 import { toGeoJSON } from "../src/geojson";
-import { comparisonToCSV } from "@allem-law/export";
+import { comparisonToCSV } from "@openlex/export";
 
 function loadMinimumWageEntries() {
   const data = getTopicData("minimum-wage");

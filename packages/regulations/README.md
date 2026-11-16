@@ -1,4 +1,4 @@
-# @allem-law/regulations
+# @openlex/regulations
 
 CFR and state regulatory code mapping, agency resolution.
 
@@ -7,13 +7,13 @@ Part of [OpenLex](https://github.com/kingofmit/openlex) — open-source jurisdic
 ## Installation
 
 ```bash
-npm install @allem-law/regulations
+npm install @openlex/regulations
 ```
 
 ## Usage
 
 ```typescript
-import { lookupCFR, resolveAgency } from "@allem-law/regulations";
+import { lookupCFR, resolveAgency } from "@openlex/regulations";
 
 const reg = lookupCFR({ title: 21, part: 314 });
 const agency = resolveAgency("FDA");

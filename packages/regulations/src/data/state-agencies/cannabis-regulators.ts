@@ -1,4 +1,4 @@
-import { GoverningBody } from "@allem-law/core";
+import { GoverningBody } from "@openlex/core";
 
 /** State cannabis regulatory agencies — only states with legal recreational or medical marijuana programs */
 export const STATE_CANNABIS_REGULATORS: GoverningBody[] = [

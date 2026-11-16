@@ -1,4 +1,4 @@
-import { Court } from "@allem-law/core";
+import { Court } from "@openlex/core";
 
 /** Federal court system */
 export const FEDERAL_COURTS: Court[] = [

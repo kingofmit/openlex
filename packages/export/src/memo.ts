@@ -1,4 +1,4 @@
-import { QueryResult, StatuteEntry, PreemptionNote } from "@allem-law/core";
+import { QueryResult, StatuteEntry, PreemptionNote } from "@openlex/core";
 
 export interface MemoOptions {
   author?: string;

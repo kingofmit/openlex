@@ -1,4 +1,4 @@
-import { Court } from "@allem-law/core";
+import { Court } from "@openlex/core";
 
 export interface CourtHierarchyProps {
   courts: Court[];

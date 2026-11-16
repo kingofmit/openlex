@@ -1,4 +1,4 @@
-import { ALL_PREEMPTION_DOMAINS } from "@allem-law/regulations";
+import { ALL_PREEMPTION_DOMAINS } from "@openlex/regulations";
 import PreemptionClient from "./PreemptionClient";
 
 export const metadata = {

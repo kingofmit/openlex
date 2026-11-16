@@ -1,4 +1,4 @@
-# @allem-law/export
+# @openlex/export
 
 Export query results to JSON, CSV, Markdown, and legal memo format.
 
@@ -7,13 +7,13 @@ Part of [OpenLex](https://github.com/kingofmit/openlex) — open-source jurisdic
 ## Installation
 
 ```bash
-npm install @allem-law/export
+npm install @openlex/export
 ```
 
 ## Usage
 
 ```typescript
-import { exportToCSV, exportToMarkdown } from "@allem-law/export";
+import { exportToCSV, exportToMarkdown } from "@openlex/export";
 
 const csv = exportToCSV(queryResults);
 const markdown = exportToMarkdown(queryResults);

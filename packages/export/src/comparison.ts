@@ -1,4 +1,4 @@
-import { ComparisonMatrix } from "@allem-law/core";
+import { ComparisonMatrix } from "@openlex/core";
 
 /** Export a comparison matrix as CSV */
 export function comparisonToCSV(matrix: ComparisonMatrix): string {

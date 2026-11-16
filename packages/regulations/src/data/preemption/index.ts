@@ -1,4 +1,4 @@
-import { PreemptionDomain, PreemptionRule } from "@allem-law/core";
+import { PreemptionDomain, PreemptionRule } from "@openlex/core";
 
 import { employmentPreemption } from "./employment";
 import { consumerProtectionPreemption } from "./consumer-protection";

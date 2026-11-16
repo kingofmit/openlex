@@ -1,6 +1,6 @@
 import { Hono } from "hono";
-import { parseCitation, formatCitation, validateCitation, processCitation } from "@allem-law/statutes";
-import type { CitationFormat } from "@allem-law/statutes";
+import { parseCitation, formatCitation, validateCitation, processCitation } from "@openlex/statutes";
+import type { CitationFormat } from "@openlex/statutes";
 
 const citations = new Hono();
 

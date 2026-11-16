@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { ALL_TOPICS, getAvailableTopics } from "@allem-law/statutes";
-import { getPracticeAreas } from "@allem-law/core";
-import { ALL_PREEMPTION_DOMAINS } from "@allem-law/regulations";
-import { STATE_COURT_SYSTEMS } from "@allem-law/courts";
+import { ALL_TOPICS, getAvailableTopics } from "@openlex/statutes";
+import { getPracticeAreas } from "@openlex/core";
+import { ALL_PREEMPTION_DOMAINS } from "@openlex/regulations";
+import { STATE_COURT_SYSTEMS } from "@openlex/courts";
 
 export default function Home() {
   const topics = getAvailableTopics();

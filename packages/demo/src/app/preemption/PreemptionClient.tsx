@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { PreemptionDomain, PreemptionRule, PreemptionType } from "@allem-law/core";
+import { PreemptionDomain, PreemptionRule, PreemptionType } from "@openlex/core";
 
 interface Props {
   domainsJson: string;

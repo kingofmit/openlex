@@ -3,9 +3,9 @@
   "changelog": "@changesets/cli/changelog",
   "commit": false,
   "fixed": [],
-  "linked": [["@allem-law/*"]],
+  "linked": [["@openlex/*"]],
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["@allem-law/demo"]
+  "ignore": ["@openlex/demo"]
 }

@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { getStateCourtSystem, getAllCourtsForState, searchCourts } from "@allem-law/courts";
+import { getStateCourtSystem, getAllCourtsForState, searchCourts } from "@openlex/courts";
 
 const courts = new Hono();
 

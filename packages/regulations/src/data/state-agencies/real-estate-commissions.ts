@@ -1,4 +1,4 @@
-import { GoverningBody } from "@allem-law/core";
+import { GoverningBody } from "@openlex/core";
 
 /** State real estate regulatory bodies for all 50 states + DC */
 export const STATE_REAL_ESTATE_COMMISSIONS: GoverningBody[] = [

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ComparisonMatrix } from "@allem-law/core";
+import { ComparisonMatrix } from "@openlex/core";
 
 export interface ComparisonTableProps {
   matrix: ComparisonMatrix;

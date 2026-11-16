@@ -1,6 +1,6 @@
 import { Suspense } from "react";
-import { ALL_TOPICS, buildComparisonMatrix, loadStatuteEntries } from "@allem-law/statutes";
-import { ComparisonMatrix } from "@allem-law/core";
+import { ALL_TOPICS, buildComparisonMatrix, loadStatuteEntries } from "@openlex/statutes";
+import { ComparisonMatrix } from "@openlex/core";
 import CompareClient from "./CompareClient";
 
 export const metadata = {

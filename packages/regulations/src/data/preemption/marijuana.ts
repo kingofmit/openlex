@@ -1,4 +1,4 @@
-import { PreemptionDomain } from "@allem-law/core";
+import { PreemptionDomain } from "@openlex/core";
 
 /** Federal preemption rules in marijuana/cannabis law */
 export const marijuanaPreemption: PreemptionDomain = {

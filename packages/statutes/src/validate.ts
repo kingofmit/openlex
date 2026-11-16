@@ -1,4 +1,4 @@
-import { StatuteEntry, MonetaryValue } from "@allem-law/core";
+import { StatuteEntry, MonetaryValue } from "@openlex/core";
 import { TopicDataFile, StatuteEntryData } from "./loader";
 
 export interface ValidationError {

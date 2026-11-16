@@ -1,4 +1,4 @@
-import { QueryResult } from "@allem-law/core";
+import { QueryResult } from "@openlex/core";
 
 /** Export query result as a legal research memo in Markdown */
 export function toMarkdown(result: QueryResult): string {

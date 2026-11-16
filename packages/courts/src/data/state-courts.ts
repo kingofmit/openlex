@@ -1,4 +1,4 @@
-import { StateCourtSystem, Court } from "@allem-law/core";
+import { StateCourtSystem, Court } from "@openlex/core";
 
 /**
  * Complete court hierarchy data for all 50 US states plus the District of Columbia.

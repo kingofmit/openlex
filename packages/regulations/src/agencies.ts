@@ -1,4 +1,4 @@
-import { GoverningBody } from "@allem-law/core";
+import { GoverningBody } from "@openlex/core";
 
 /** Major federal regulatory agencies */
 export const FEDERAL_AGENCIES: GoverningBody[] = [

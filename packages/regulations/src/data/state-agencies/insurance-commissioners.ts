@@ -1,4 +1,4 @@
-import { GoverningBody } from "@allem-law/core";
+import { GoverningBody } from "@openlex/core";
 
 /** State insurance regulatory bodies for all 50 states + DC */
 export const STATE_INSURANCE_COMMISSIONERS: GoverningBody[] = [

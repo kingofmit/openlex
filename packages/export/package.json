@@ -1,5 +1,5 @@
 {
-  "name": "@allem-law/export",
+  "name": "@openlex/export",
   "version": "0.1.0",
   "description": "Export query results to JSON, CSV, Markdown, and legal memo format.",
   "author": "Ahmed Allem",
@@ -31,7 +31,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@allem-law/core": "workspace:*"
+    "@openlex/core": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.8.0"

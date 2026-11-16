@@ -1,4 +1,4 @@
-# @allem-law/react
+# @openlex/react
 
 React hooks and components for the OpenLex jurisdiction mapping engine.
 
@@ -7,13 +7,13 @@ Part of [OpenLex](https://github.com/kingofmit/openlex) — open-source jurisdic
 ## Installation
 
 ```bash
-npm install @allem-law/react
+npm install @openlex/react
 ```
 
 ## Usage
 
 ```typescript
-import { useJurisdiction, JurisdictionPicker } from "@allem-law/react";
+import { useJurisdiction, JurisdictionPicker } from "@openlex/react";
 
 const { jurisdiction, setJurisdiction } = useJurisdiction();
 return <JurisdictionPicker value={jurisdiction} onChange={setJurisdiction} />;

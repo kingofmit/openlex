@@ -1,6 +1,6 @@
 import { Hono } from "hono";
-import { getTopicData, loadStatuteEntries, compareTopicAcrossStates, toGeoJSON } from "@allem-law/statutes";
-import { comparisonToCSV, comparisonToMarkdown } from "@allem-law/export";
+import { getTopicData, loadStatuteEntries, compareTopicAcrossStates, toGeoJSON } from "@openlex/statutes";
+import { comparisonToCSV, comparisonToMarkdown } from "@openlex/export";
 
 const compare = new Hono();
 

@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { getTopicData, loadStatuteEntries } from "@allem-law/statutes";
+import { getTopicData, loadStatuteEntries } from "@openlex/statutes";
 
 const statutes = new Hono();
 
