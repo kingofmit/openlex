@@ -4,9 +4,33 @@
   "description": "Types, jurisdiction model, topic taxonomy, and query engine for OpenLex.",
   "author": "Ahmed Allem",
   "license": "MIT",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": ["dist"],
-  "scripts": { "build": "tsc", "dev": "tsc --watch", "clean": "rm -rf dist", "lint": "tsc --noEmit" },
-  "devDependencies": { "typescript": "^5.8.0" }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kingofmit/openlex.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/kingofmit/openlex",
+  "bugs": "https://github.com/kingofmit/openlex/issues",
+  "keywords": ["legal", "law", "statutes", "jurisdiction", "united-states", "openlex", "types", "jurisdiction", "taxonomy", "query-engine"],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0"
+  }
 }

@@ -4,10 +4,36 @@
   "description": "U.S. Code and state statute database, citation parsing, and statute resolution.",
   "author": "Ahmed Allem",
   "license": "MIT",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": ["dist"],
-  "scripts": { "build": "tsc", "dev": "tsc --watch", "clean": "rm -rf dist", "lint": "tsc --noEmit" },
-  "dependencies": { "@openlex/core": "workspace:*" },
-  "devDependencies": { "typescript": "^5.8.0" }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kingofmit/openlex.git",
+    "directory": "packages/statutes"
+  },
+  "homepage": "https://github.com/kingofmit/openlex",
+  "bugs": "https://github.com/kingofmit/openlex/issues",
+  "keywords": ["legal", "law", "statutes", "jurisdiction", "united-states", "openlex", "citation", "parser", "comparison", "bluebook"],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "@openlex/core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0"
+  }
 }
