@@ -130,6 +130,18 @@ export interface StateCourtSystem {
   notes: string[];
 }
 
+/** A historical version of a statute */
+export interface StatuteVersion {
+  statuteId: string;
+  version: number;
+  effectiveDate: string;
+  expirationDate: string | null;
+  changes: string;
+  previousVersion: number | null;
+  monetaryValues: MonetaryValue[];
+  keyProvisions: string[];
+}
+
 /** A query to the jurisdiction engine */
 export interface JurisdictionQuery {
   topic: string;
@@ -139,6 +151,7 @@ export interface JurisdictionQuery {
   includeFederal?: boolean;
   includeRegulations?: boolean;
   includeCourts?: boolean;
+  asOfDate?: string;
 }
 
 /** Query result */

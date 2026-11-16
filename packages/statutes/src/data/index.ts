@@ -43,3 +43,6 @@ export function getTopicData(topicId: string): TopicDataFile | undefined {
 export function getAvailableTopics(): string[] {
   return ALL_TOPICS.map((t) => t.topic);
 }
+
+// Version history
+export { ALL_VERSIONS, getVersionHistory, getVersionedStatuteIds } from "./versions";
