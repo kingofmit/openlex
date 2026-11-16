@@ -35,6 +35,7 @@ export function buildComparisonMatrix(
   topic: string,
   entries: StatuteEntry[],
   extractor?: TopicExtractor,
+  generatedAt?: string,
 ): ComparisonMatrix {
   const ext = extractor ?? ALL_EXTRACTORS.get(topic);
   if (!ext) {
@@ -61,7 +62,7 @@ export function buildComparisonMatrix(
   return {
     topic: ext.topic,
     topicName: ext.topicName,
-    generatedAt: new Date().toISOString(),
+    generatedAt: generatedAt ?? new Date().toISOString(),
     columns: ext.columns,
     rows,
     summary,
