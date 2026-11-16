@@ -83,12 +83,38 @@ export interface LegalAuthority {
   preemption: PreemptionNote[];
 }
 
-/** Federal preemption or state-federal interaction note */
+/** Federal preemption or state-federal interaction note (legacy) */
 export interface PreemptionNote {
   federalAuthority: string;
   stateAuthority: string;
   relationship: "preempts" | "supplements" | "concurrent" | "defers";
   description: string;
+}
+
+/** Preemption type classification */
+export type PreemptionType = "express" | "field" | "conflict" | "floor" | "ceiling";
+
+/** Detailed preemption rule — models federal-state regulatory interaction */
+export interface PreemptionRule {
+  id: string;
+  federalStatute: string;
+  federalCitation: string;
+  type: PreemptionType;
+  scope: string;
+  description: string;
+  stateCanExceed: boolean;
+  affectedTopics: string[];
+  affectedStates: string[] | "all";
+  exceptions: string[];
+  keyCase: string | null;
+  sourceUrl: string;
+}
+
+/** A preemption domain — a collection of related preemption rules */
+export interface PreemptionDomain {
+  domain: string;
+  description: string;
+  rules: PreemptionRule[];
 }
 
 /** A query to the jurisdiction engine */
