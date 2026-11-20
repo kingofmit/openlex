@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://doi.org/10.5281/zenodo.24259139"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.24259139.svg" alt="DOI" /></a>
+  <a href="https://doi.org/10.5281/zenodo.24259138"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.24259138.svg" alt="DOI" /></a>
   <a href="https://www.npmjs.com/org/openlex"><img src="https://img.shields.io/npm/v/@openlex/core?label=npm&color=teal" alt="npm" /></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License" /></a>
   <img src="https://img.shields.io/badge/typescript-strict-blue" alt="TypeScript" />
@@ -14,7 +14,7 @@
 <p align="center">
   <a href="https://kingallem.com/open-source">Website</a> &middot;
   <a href="https://www.npmjs.com/org/openlex">npm</a> &middot;
-  <a href="https://doi.org/10.5281/zenodo.24259139">DOI</a> &middot;
+  <a href="https://doi.org/10.5281/zenodo.24259138">DOI</a> &middot;
   <a href="./CONTRIBUTING.md">Contributing</a>
 </p>
 
@@ -223,7 +223,7 @@ If you find OpenLex useful, consider supporting its development:
 - [Homepage](https://kingallem.com/open-source) — all open-source projects by Ahmed Allem
 - [npm](https://www.npmjs.com/org/openlex) — `@openlex/*` packages
 - [GitHub](https://github.com/kingofmit/openlex) — source code
-- [DOI](https://doi.org/10.5281/zenodo.24259139) — citation for academic use
+- [DOI](https://doi.org/10.5281/zenodo.24259138) — citation for academic use
 
 ## License
 
