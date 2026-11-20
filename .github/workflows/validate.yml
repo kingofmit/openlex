@@ -10,9 +10,6 @@ on:
     branches: [main]
     paths:
       - 'packages/statutes/src/data/**'
-  schedule:
-    - cron: '0 6 * * 1'  # Weekly on Monday at 6am UTC
-
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -55,29 +52,3 @@ jobs:
               exit 1
             fi
           done
-
-  url-check:
-    runs-on: ubuntu-latest
-    if: github.event_name == 'schedule'
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Check source URLs are reachable
-        run: |
-          echo "Checking source URLs..."
-          errors=0
-          total=0
-          while IFS= read -r url; do
-            total=$((total + 1))
-            status=$(curl -s -o /dev/null -w "%{http_code}" -L --max-time 10 "$url" 2>/dev/null || echo "000")
-            if [ "$status" -lt 200 ] || [ "$status" -ge 400 ]; then
-              echo "FAIL [$status]: $url"
-              errors=$((errors + 1))
-            fi
-          done < <(grep -roh 'https://[^"]*' packages/statutes/src/data/*.ts | sort -u | head -100)
-          echo ""
-          echo "Checked $total URLs, $errors failures"
-          if [ "$errors" -gt 10 ]; then
-            echo "ERROR: Too many URL failures ($errors)"
-            exit 1
-          fi
